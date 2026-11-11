@@ -29,6 +29,7 @@
       <nav id="site-nav" class="site-nav">
         {% assign here = page.url %}
         <a href="{{ '/' | relative_url }}" {% if here == '/' %}aria-current="page"{% endif %}>Home</a>
+        <a href="{{ '/about/' | relative_url }}" {% if here == '/about/' %}aria-current="page"{% endif %}>About</a>
         <a href="{{ '/programme/' | relative_url }}" {% if here == '/programme/' %}aria-current="page"{% endif %}>Programme</a>
         <a href="{{ '/weekly-competition/' | relative_url }}" {% if here == '/weekly-competition/' %}aria-current="page"{% endif %}>Weekly competition</a>
         <a href="{{ '/results/' | relative_url }}" {% if here == '/results/' %}aria-current="page"{% endif %}>Results</a>
@@ -56,6 +57,7 @@
       <div>
         <p class="label">Explore</p>
         <ul class="footer-nav">
+          <li><a href="{{ '/about/' | relative_url }}">About and office bearers</a></li>
           <li><a href="{{ '/programme/' | relative_url }}">Programme</a></li>
           <li><a href="{{ '/weekly-competition/' | relative_url }}">Weekly competition</a></li>
           <li><a href="{{ '/results/' | relative_url }}">Results</a></li>

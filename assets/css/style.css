@@ -369,3 +369,18 @@ h1 em, h2 em, .statement em, .footer-name em {
 @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
 
 .photo-open img, .slide img, .lb-img { -webkit-user-drag: none; -webkit-touch-callout: none; }
+
+/* About page */
+.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: start; padding-top: 56px; margin-bottom: 110px; }
+.about-text p { font-size: 1.08rem; }
+.about-text .btn { margin-top: 8px; }
+.about-facts { display: grid; gap: 16px; }
+@media (max-width: 820px) { .about-grid { grid-template-columns: 1fr; } }
+.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 28px; margin-top: 32px; }
+.person { text-align: center; }
+.person-photo { width: 150px; height: 150px; margin: 0 auto 16px; border-radius: 50%; padding: 4px; background: var(--sunset); box-shadow: 0 14px 40px rgba(0,0,0,.5); transition: transform .5s var(--ease); }
+.person:hover .person-photo { transform: translateY(-4px) rotate(-2deg); }
+.person-photo img, .person-photo span { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: grid; place-items: center; background: var(--surface-2); }
+.person-photo span { font-family: var(--display); font-weight: 800; font-size: 2.6rem; color: var(--gold-2); text-transform: uppercase; }
+.person-name { font-family: var(--display); font-weight: 700; font-size: 1.3rem; margin: 0 0 4px; }
+.person .label { margin-bottom: .3em; }

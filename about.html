@@ -1,0 +1,69 @@
+---
+title: About the club
+permalink: /about/
+---
+{% assign bearers = site.data.committee.people | where_exp: "p", "p.name and p.name != ''" %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">About the club</p>
+    <h1>Photographers helping <em>photographers</em></h1>
+    <p class="lede">Levern Camera Club is a non-profit club based in Barrhead. We are an open, friendly group of photographers who are happy to share their knowledge with others.</p>
+  </div>
+</section>
+
+<section class="wrap about-grid">
+  <div class="about-text reveal">
+    <h2>Come along</h2>
+    <p>If you have an interest in photography and would like to get involved, feel free to come along to Fereneze Golf Club any Wednesday evening at 7.30pm and see if our club is for you.</p>
+    <p>We meet every Wednesday from September until the end of May. Evenings mix hands-on studio sessions, talks, editing demonstrations and friendly competitions. Whether you shoot on a camera or a phone, and whether you're just starting out or have been at it for years, you'll be made welcome.</p>
+    <p><a class="btn" href="{{ '/programme/' | relative_url }}">See this season's programme</a></p>
+  </div>
+  <div class="about-facts">
+    <div class="card info reveal">
+      <p class="label">When</p>
+      <p class="big">Wednesdays, 7.30pm</p>
+      <p>September until the end of May</p>
+    </div>
+    <div class="card info reveal">
+      <p class="label">Where</p>
+      <p class="big">Fereneze Golf Club</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Fereneze+Golf+Club+Barrhead">Barrhead · Open map →</a></p>
+    </div>
+    {% if site.data.settings.email and site.data.settings.email != "" %}
+    <div class="card info reveal">
+      <p class="label">Get in touch</p>
+      <p><a href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a></p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section id="office-bearers" class="wrap home-section">
+  <div class="section-head reveal">
+    <div><p class="eyebrow">Office bearers</p><h2>Who runs the club</h2></div>
+  </div>
+  <p class="lede reveal">{{ site.data.committee.intro }}</p>
+  {% if bearers.size > 0 %}
+  <div class="people">
+    {% for p in bearers %}
+    <div class="person reveal">
+      <div class="person-photo">
+        {% if p.photo and p.photo != "" %}
+          <img src="{{ p.photo | relative_url }}" alt="{{ p.name | escape }}" loading="lazy">
+        {% else %}
+          {% assign parts = p.name | split: " " %}
+          <span aria-hidden="true">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>
+        {% endif %}
+      </div>
+      <p class="label">{{ p.role }}</p>
+      <p class="person-name">{{ p.name }}</p>
+      {% if p.contact and p.contact != "" %}
+        {% if p.contact contains "@" %}<a href="mailto:{{ p.contact }}">{{ p.contact }}</a>{% else %}<span class="meta">{{ p.contact }}</span>{% endif %}
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty reveal"><p>Our office bearers will be listed here soon.</p></div>
+  {% endif %}
+</section>

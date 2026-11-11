@@ -1,0 +1,8 @@
+intro: Our club is run by volunteers elected at the Annual General Meeting each November.
+people:
+  - { role: President, name: "", photo: "", contact: "" }
+  - { role: Vice President, name: "", photo: "", contact: "" }
+  - { role: Secretary, name: "", photo: "", contact: "" }
+  - { role: Treasurer, name: "", photo: "", contact: "" }
+  - { role: Competition Secretary, name: "", photo: "", contact: "" }
+  - { role: Syllabus Secretary, name: "", photo: "", contact: "" }

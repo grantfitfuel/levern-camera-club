@@ -196,6 +196,34 @@ content:
             label: Taken by (optional)
             type: string
 
+  - name: committee
+    label: Office bearers
+    type: file
+    path: _data/committee.yml
+    fields:
+      - name: intro
+        label: Intro text
+        type: string
+      - name: people
+        label: Office bearers
+        description: Leave a name blank to hide that role. Drag to reorder.
+        type: object
+        list: true
+        fields:
+          - name: role
+            label: Role
+            type: string
+            required: true
+          - name: name
+            label: Name
+            type: string
+          - name: photo
+            label: Photo (optional)
+            type: image
+          - name: contact
+            label: Contact email (optional)
+            type: string
+
   - name: settings
     label: Club details and logo
     type: file
