@@ -3,6 +3,7 @@ permalink: /
 ---
 {% assign comps = site.competitions | sort: "date" | reverse %}
 {% assign posts = site.camera_corner | sort: "date" | reverse %}
+{% include banner.html %}
 <section class="hero">
   <div class="wrap hero-inner">
     <div class="hero-text">
@@ -57,7 +58,18 @@ permalink: /
   </div>
   {% include gallery.html comp=latest %}
 </section>
-{% include lightbox.html %}
+{% endif %}
+
+{% assign candids = site.data.candids.photos | sort: "date", "first" | reverse %}
+{% if candids.size > 0 %}
+<section class="wrap home-section">
+  <div class="section-head">
+    <h2>Out and about</h2>
+    <a href="{{ '/out-and-about/' | relative_url }}">More photos →</a>
+  </div>
+  {% assign few = candids | slice: 0, 6 %}
+  {% include candid-gallery.html photos=few %}
+</section>
 {% endif %}
 
 {% if posts.size > 0 %}
@@ -79,6 +91,8 @@ permalink: /
   </div>
 </section>
 {% endif %}
+
+{% include lightbox.html %}
 
 {% assign events = site.data.syllabus.weeks | where_exp: "w", "w.week != ''" %}
 <script type="application/json" id="weekly-data">{{ site.data.weekly.weeks | jsonify }}</script>

@@ -18,7 +18,7 @@ content:
     fields:
       - name: title
         label: Competition name
-        description: For example "Weekly competition: Leading lines" or "Autumn Competition: Markets"
+        description: 'For example "Weekly competition: Leading lines" or "Autumn Competition: Markets"'
         type: string
         required: true
       - name: date
@@ -133,6 +133,68 @@ content:
       - name: body
         label: Article
         type: rich-text
+
+  - name: banner
+    label: Home page banner (rotating photos)
+    type: file
+    path: _data/banner.yml
+    fields:
+      - name: seconds_per_slide
+        label: Seconds per photo
+        type: number
+        default: 6
+      - name: slides
+        label: Banner photos
+        description: Add one photo per genre. Landscape-shaped photos fill the banner best; others are shown whole with a soft blurred border.
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Photo
+            type: image
+            required: true
+          - name: genre
+            label: Genre
+            type: select
+            options:
+              values: [ Landscape, Portrait, Macro, Wildlife, Street, Architecture, Still life, Night, Black and white, Abstract, Sport ]
+          - name: photographer
+            label: Photographer's name
+            type: string
+          - name: title
+            label: Photo title (optional)
+            type: string
+
+  - name: candids
+    label: Out and about (candid shots)
+    type: file
+    path: _data/candids.yml
+    fields:
+      - name: intro
+        label: Intro text
+        type: string
+      - name: photos
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Photo
+            type: image
+            required: true
+          - name: caption
+            label: Caption (optional)
+            description: e.g. "Setting up for sunrise at Loch Lomond"
+            type: string
+          - name: place
+            label: Where (optional)
+            type: string
+          - name: date
+            label: Date (optional)
+            type: date
+          - name: photographer
+            label: Taken by (optional)
+            type: string
 
   - name: settings
     label: Club details and logo

@@ -1,0 +1,22 @@
+{% assign photos = include.photos %}
+<div class="gallery candid">
+  {% for c in photos %}{% if c.image and c.image != "" %}
+  {% capture when %}{% if c.place and c.place != "" %}{{ c.place }}{% endif %}{% if c.date and c.date != "" %}{% if c.place and c.place != "" %} · {% endif %}{{ c.date | date: "%B %Y" }}{% endif %}{% endcapture %}
+  <figure class="photo">
+    <button type="button" class="photo-open"
+      data-src="{{ c.image | relative_url }}"
+      data-title="{{ c.caption | escape }}"
+      data-photographer="{% if c.photographer and c.photographer != '' %}Photo: {{ c.photographer | escape }}{% endif %}"
+      data-competition="{{ when | strip | escape }}"
+      aria-label="View {{ c.caption | default: 'photo' | escape }} full size">
+      <img src="{{ c.image | relative_url }}" alt="{{ c.caption | default: 'Club members on a shoot' | escape }}" loading="lazy" decoding="async">
+    </button>
+    {% if c.caption and c.caption != "" or when != "" %}
+    <figcaption>
+      {% if c.caption and c.caption != "" %}<span>{{ c.caption }}</span>{% endif %}
+      {% if when != "" %}<span class="meta">{{ when | strip }}</span>{% endif %}
+    </figcaption>
+    {% endif %}
+  </figure>
+  {% endif %}{% endfor %}
+</div>

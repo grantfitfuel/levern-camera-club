@@ -1,0 +1,20 @@
+---
+title: Out and about
+permalink: /out-and-about/
+---
+{% assign photos = site.data.candids.photos | sort: "date", "first" | reverse %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Out and about</p>
+    <h1>The club on location</h1>
+    <p class="lede">{{ site.data.candids.intro }}</p>
+  </div>
+</section>
+<div class="wrap results">
+  {% if photos.size == 0 %}
+    <div class="empty"><p>Photos from our outings will appear here soon.</p></div>
+  {% else %}
+    {% include candid-gallery.html photos=photos %}
+  {% endif %}
+</div>
+{% include lightbox.html %}

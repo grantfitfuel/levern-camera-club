@@ -1,0 +1,23 @@
+{% assign slides = site.data.banner.slides | where_exp: "s", "s.image" %}
+{% if slides.size > 0 %}
+<section class="banner" aria-roledescription="carousel" aria-label="Members' photographs" data-interval="{{ site.data.banner.seconds_per_slide | default: 6 }}">
+  {% for s in slides %}
+  <figure class="slide{% if forloop.first %} is-active{% endif %}" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ slides.size }}"{% unless forloop.first %} aria-hidden="true"{% endunless %}>
+    <div class="slide-backdrop" style="background-image:url('{{ s.image | relative_url }}')"></div>
+    <img src="{{ s.image | relative_url }}" alt="{{ s.genre | default: 'Photograph' | escape }}{% if s.photographer %} by {{ s.photographer | escape }}{% endif %}"{% unless forloop.first %} loading="lazy"{% endunless %} decoding="async">
+    <figcaption>
+      {% if s.genre and s.genre != "" %}<span class="slide-genre">{{ s.genre }}</span>{% endif %}
+      {% if s.title and s.title != "" %}<span class="slide-title">{{ s.title }}</span>{% endif %}
+      {% if s.photographer and s.photographer != "" %}<span class="slide-by">{{ s.photographer }}</span>{% endif %}
+    </figcaption>
+  </figure>
+  {% endfor %}
+  {% if slides.size > 1 %}
+  <button type="button" class="banner-btn banner-prev" aria-label="Previous photo">‹</button>
+  <button type="button" class="banner-btn banner-next" aria-label="Next photo">›</button>
+  <div class="banner-dots">
+    {% for s in slides %}<button type="button" aria-label="Show photo {{ forloop.index }}"{% if forloop.first %} aria-current="true"{% endif %}></button>{% endfor %}
+  </div>
+  {% endif %}
+</section>
+{% endif %}

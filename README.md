@@ -30,6 +30,18 @@ Tip: phone and camera photos are often 5 to 15 MB. Exporting at around
 Same steps, under **Camera Corner articles**. Write the article in the editor,
 add a header photo if you like, and save.
 
+## Home page banner and "Out and about"
+
+- **Home page banner (rotating photos):** add a photo for each genre (landscape,
+  portrait, macro and so on), with the photographer's name. They rotate every
+  few seconds at the top of the home page. Wide, landscape-shaped photos fill
+  it best; taller ones are shown whole with a soft blurred border.
+- **Out and about (candid shots):** add behind-the-scenes photos from club
+  outings, with an optional caption, place and date. The newest six also
+  appear on the home page.
+
+Both stay hidden on the site until the first photo is added.
+
 ## Logo and club details
 
 Under **Club details and logo**, upload the logo and (optionally) add a
