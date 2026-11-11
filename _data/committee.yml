@@ -3,5 +3,5 @@ people:
   - { role: Chair, name: "", photo: "", contact: "" }
   - { role: Secretary, name: "Jim Clark", photo: "", contact: "" }
   - { role: Treasurer, name: "James Pyke", photo: "", contact: "" }
-  - { role: Competition Secretary, name: "", photo: "", contact: "" }
+  - { role: Competition Secretary, name: "Jacquie Sweeney", photo: "", contact: "" }
   - { role: Social Media Secretary, name: "", photo: "", contact: "" }
