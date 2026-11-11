@@ -2,7 +2,7 @@
 title: About the club
 permalink: /about/
 ---
-{% assign bearers = site.data.committee.people | where_exp: "p", "p.name and p.name != ''" %}
+{% assign named = site.data.committee.people | where_exp: "p", "p.name" %}{% assign bearers = named | where_exp: "p", "p.name != ''" %}
 <section class="page-head">
   <div class="wrap">
     <p class="eyebrow">About the club</p>
