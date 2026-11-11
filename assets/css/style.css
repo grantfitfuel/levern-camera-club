@@ -381,6 +381,6 @@ h1 em, h2 em, .statement em, .footer-name em {
 .person-photo { width: 150px; height: 150px; margin: 0 auto 16px; border-radius: 50%; padding: 4px; background: var(--sunset); box-shadow: 0 14px 40px rgba(0,0,0,.5); transition: transform .5s var(--ease); }
 .person:hover .person-photo { transform: translateY(-4px) rotate(-2deg); }
 .person-photo img, .person-photo span { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: grid; place-items: center; background: var(--surface-2); }
-.person-photo span { font-family: var(--display); font-weight: 800; font-size: 2.6rem; color: var(--gold-2); text-transform: uppercase; }
+.person-photo span { color: var(--gold); opacity: .7; }
 .person-name { font-family: var(--display); font-weight: 700; font-size: 1.3rem; margin: 0 0 4px; }
 .person .label { margin-bottom: .3em; }
