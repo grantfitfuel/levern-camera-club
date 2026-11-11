@@ -9,14 +9,14 @@ permalink: /
       <p class="eyebrow">Barrhead · Non-profit · All welcome</p>
       <h1>Levern Camera Club</h1>
       <p class="lede">We are an open, friendly group of photographers who are happy to share their knowledge with others.</p>
-      <p>If you have an interest in photography and would like to get involved, feel free to come along to The Fereneze Golf Club any Wednesday evening at 7.30pm and see if our club is for you.</p>
+      <p>If you have an interest in photography and would like to get involved, feel free to come along to Fereneze Golf Club any Wednesday evening at 7.30pm and see if our club is for you.</p>
       <div class="hero-actions">
         <a class="btn" href="{{ '/programme/' | relative_url }}">See the programme</a>
         <a class="btn btn-ghost" href="{{ '/results/' | relative_url }}">Members' winning photos</a>
       </div>
     </div>
     <div class="hero-logo">
-      {% if site.data.settings.logo != "" %}
+      {% if site.data.settings.logo and site.data.settings.logo != "" %}
         <img src="{{ site.data.settings.logo | relative_url }}" alt="Levern Camera Club logo">
       {% else %}
         <div class="logo-slot"><span>Club logo<br><small>coming soon</small></span></div>
@@ -33,7 +33,7 @@ permalink: /
   </div>
   <div class="card">
     <p class="label">Where</p>
-    <p class="big">The Fereneze Golf Club</p>
+    <p class="big">Fereneze Golf Club</p>
     <p><a href="https://www.google.com/maps/search/?api=1&query=Fereneze+Golf+Club+Barrhead">Barrhead · Map</a></p>
   </div>
   <div class="card" data-next-event hidden>

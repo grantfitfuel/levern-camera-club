@@ -224,3 +224,11 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); }
 .social a:hover { text-decoration: underline; }
 .lb-social .social { justify-content: center; }
 .lb-social a { color: #f0a27c; }
+
+/* Let a logo with a white background sit cleanly on the page */
+@media (prefers-color-scheme: light) {
+  .hero-logo img, img.logo { mix-blend-mode: multiply; }
+}
+@media (prefers-color-scheme: dark) {
+  .hero-logo img, img.logo { border-radius: 12px; }
+}

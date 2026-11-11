@@ -1,4 +1,4 @@
-{% if site.data.settings.logo != "" %}
+{% if site.data.settings.logo and site.data.settings.logo != "" %}
 <img class="logo" src="{{ site.data.settings.logo | relative_url }}" alt="Levern Camera Club logo">
 {% else %}
 <span class="logo logo-placeholder" aria-hidden="true">
