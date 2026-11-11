@@ -8,7 +8,7 @@
     <figcaption>
       {% if s.genre and s.genre != "" %}<span class="slide-genre">{{ s.genre }}</span>{% endif %}
       {% if s.title and s.title != "" %}<span class="slide-title">{{ s.title }}</span>{% endif %}
-      {% if s.photographer and s.photographer != "" %}<span class="slide-by">{{ s.photographer }}</span>{% endif %}
+      {% if s.photographer and s.photographer != "" %}<span class="slide-by">© {{ s.photographer }}</span>{% endif %}
     </figcaption>
   </figure>
   {% endfor %}

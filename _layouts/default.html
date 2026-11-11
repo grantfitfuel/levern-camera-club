@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.summary | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  <meta name="robots" content="noai, noimageai">
+  <meta name="tdm-reservation" content="1">
+  <meta name="copyright" content="Photographs © their respective photographers">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -49,6 +52,7 @@
         {% if site.data.settings.email and site.data.settings.email != "" %}<a href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>{% endif %}
         <span>A non-profit organisation</span>
       </div>
+      <p class="copyright">© {{ site.time | date: "%Y" }} Levern Camera Club. All photographs are © their photographers and may not be copied, reused or used to train AI without permission.</p>
     </div>
   </footer>
   <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>

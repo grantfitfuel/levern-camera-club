@@ -26,7 +26,7 @@
       <figcaption>
         {% if e.award and e.award != "" %}{% assign slug = e.award | slugify %}<span class="award award-{{ slug }}">{{ e.award }}</span>{% endif %}
         {% if e.title and e.title != "" %}<span class="photo-title">{{ e.title }}</span>{% endif %}
-        <span class="photographer">{{ e.photographer }}</span>
+        <span class="photographer">© {{ e.photographer }}</span>
         {% include social.html e=e %}
       </figcaption>
     </figure>

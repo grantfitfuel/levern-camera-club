@@ -126,12 +126,12 @@
     index = (i + items.length) % items.length;
     var b = items[index], d = b.dataset;
     img.src = d.src;
-    img.alt = (d.title || 'Photo') + ' by ' + d.photographer;
+    img.alt = (d.title || 'Photo') + (d.photographer ? ' by ' + d.photographer.replace('© ', '') : '');
     var award = box.querySelector('.lb-award');
     award.textContent = d.award || '';
     award.className = 'award lb-award' + (d.award ? ' award-' + d.award.toLowerCase().replace(/[^a-z0-9]+/g, '-') : '');
     set('.lb-title', d.title);
-    set('.lb-photographer', d.photographer);
+    set('.lb-photographer', d.photographer ? (d.photographer.charAt(0) === '©' ? d.photographer : '© ' + d.photographer) : '');
     set('.lb-gear', d.gear);
     set('.lb-settings', d.settings);
     set('.lb-comp', d.competition);

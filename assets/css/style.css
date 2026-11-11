@@ -253,3 +253,6 @@ h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); }
 @media (prefers-reduced-motion: reduce) { .slide { transition: none; } }
 .candid .photo-open img { height: 220px; }
 @media (max-width: 600px) { .candid .photo-open img { height: auto; } }
+
+.copyright { flex-basis: 100%; margin: 12px 0 0; font-size: .82rem; }
+.photo-open img, .slide img, .lb-img { -webkit-user-drag: none; -webkit-touch-callout: none; }
