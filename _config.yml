@@ -1,0 +1,29 @@
+title: Levern Camera Club
+description: An open, friendly camera club in Barrhead. We meet at The Fereneze Golf Club at 7.30pm on Wednesdays, September to May.
+# The site lives at grantfitfuel.github.io/levern-camera-club.
+# If the club later gets its own web address, set baseurl to "".
+baseurl: /levern-camera-club
+url: https://grantfitfuel.github.io
+
+collections:
+  competitions:
+    output: false
+  camera_corner:
+    output: true
+    permalink: /camera-corner/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: camera_corner
+    values:
+      layout: article
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - SETUP-GUIDE.md
+  - .pages.yml

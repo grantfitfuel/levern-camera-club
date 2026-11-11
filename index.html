@@ -1,0 +1,85 @@
+---
+permalink: /
+---
+{% assign comps = site.competitions | sort: "date" | reverse %}
+{% assign posts = site.camera_corner | sort: "date" | reverse %}
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Barrhead · Non-profit · All welcome</p>
+      <h1>Levern Camera Club</h1>
+      <p class="lede">We are an open, friendly group of photographers who are happy to share their knowledge with others.</p>
+      <p>If you have an interest in photography and would like to get involved, feel free to come along to The Fereneze Golf Club any Wednesday evening at 7.30pm and see if our club is for you.</p>
+      <div class="hero-actions">
+        <a class="btn" href="{{ '/programme/' | relative_url }}">See the programme</a>
+        <a class="btn btn-ghost" href="{{ '/results/' | relative_url }}">Members' winning photos</a>
+      </div>
+    </div>
+    <div class="hero-logo">
+      {% if site.data.settings.logo != "" %}
+        <img src="{{ site.data.settings.logo | relative_url }}" alt="Levern Camera Club logo">
+      {% else %}
+        <div class="logo-slot"><span>Club logo<br><small>coming soon</small></span></div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap info-grid">
+  <div class="card">
+    <p class="label">When</p>
+    <p class="big">Wednesdays, 7.30pm</p>
+    <p>September until the end of May</p>
+  </div>
+  <div class="card">
+    <p class="label">Where</p>
+    <p class="big">The Fereneze Golf Club</p>
+    <p><a href="https://www.google.com/maps/search/?api=1&query=Fereneze+Golf+Club+Barrhead">Barrhead · Map</a></p>
+  </div>
+  <div class="card" data-next-event hidden>
+    <p class="label">Next club night</p>
+    <p class="big" data-when></p>
+    <p data-what></p>
+  </div>
+  <div class="card" data-this-week hidden>
+    <p class="label">This week's competition theme</p>
+    <p class="big" data-theme></p>
+    <p><a href="{{ '/weekly-competition/' | relative_url }}">How to enter →</a></p>
+  </div>
+</section>
+
+{% if comps.size > 0 %}
+{% assign latest = comps.first %}
+<section class="wrap home-section">
+  <div class="section-head">
+    <h2>Latest results: {{ latest.title }}</h2>
+    <a href="{{ '/results/' | relative_url }}">All results →</a>
+  </div>
+  {% include gallery.html comp=latest %}
+</section>
+{% include lightbox.html %}
+{% endif %}
+
+{% if posts.size > 0 %}
+<section class="wrap home-section">
+  <div class="section-head">
+    <h2>From Camera Corner</h2>
+    <a href="{{ '/camera-corner/' | relative_url }}">All articles →</a>
+  </div>
+  <div class="cards">
+    {% for p in posts limit: 3 %}
+    <a class="card article-card" href="{{ p.url | relative_url }}">
+      <div class="card-body">
+        {% if p.topic and p.topic != "" %}<span class="tag">{{ p.topic }}</span>{% endif %}
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.summary | default: p.excerpt | strip_html | truncate: 140 }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% assign events = site.data.syllabus.weeks | where_exp: "w", "w.week != ''" %}
+<script type="application/json" id="weekly-data">{{ site.data.weekly.weeks | jsonify }}</script>
+<script type="application/json" id="syllabus-data">{{ events | jsonify }}</script>

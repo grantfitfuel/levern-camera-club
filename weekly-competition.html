@@ -1,0 +1,46 @@
+---
+title: Weekly competition
+permalink: /weekly-competition/
+---
+{% assign w = site.data.weekly %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">{{ w.season }} weekly competition</p>
+    <h1>A new theme every week</h1>
+    <div class="this-week card" data-this-week hidden>
+      <p class="label">This week's theme</p>
+      <p class="theme" data-theme></p>
+      <p class="meta" data-when></p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap two-col">
+  <aside class="rules card">
+    <h2>How it works</h2>
+    <ul>
+      {% assign lines = w.rules | split: "
+" %}
+      {% for line in lines %}<li>{{ line }}</li>{% endfor %}
+    </ul>
+    <p><a href="{{ '/results/' | relative_url }}">See past winners →</a></p>
+  </aside>
+
+  <div>
+    <h2 class="sr-only">All themes</h2>
+    <table class="themes" data-dated-list>
+      <thead><tr><th>Week</th><th>Date</th><th>Theme</th></tr></thead>
+      <tbody>
+      {% for t in w.weeks %}
+        <tr data-date="{{ t.date | date: '%Y-%m-%d' }}">
+          <td>{{ t.week }}</td>
+          <td class="nowrap">{{ t.date | date: "%-d %b %Y" }}</td>
+          <td>{{ t.theme }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script type="application/json" id="weekly-data">{{ w.weeks | jsonify }}</script>

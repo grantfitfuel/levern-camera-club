@@ -1,0 +1,46 @@
+season: 2026/27
+rules: |-
+  Photos can be taken using either a camera or a mobile phone camera.
+  Entries (with details of which camera was used) must be submitted before 4pm on Tuesday, when voting starts.
+  Voting ends on Wednesday at 4pm. Up to 3 votes are allowed per person.
+  The photographer with the most points at the end of the season wins the trophy for the summer.
+weeks:
+  - { week: 1, date: 2026-09-02, theme: Welcome back }
+  - { week: 2, date: 2026-09-09, theme: Two matching objects }
+  - { week: 3, date: 2026-09-16, theme: Something newly opened }
+  - { week: 4, date: 2026-09-23, theme: Something positioned in the middle }
+  - { week: 5, date: 2026-09-30, theme: Somewhere that you visited this week }
+  - { week: 6, date: 2026-10-07, theme: An outdoor activity }
+  - { week: 7, date: 2026-10-14, theme: Atmospheric }
+  - { week: 8, date: 2026-10-21, theme: Hills or glens }
+  - { week: 9, date: 2026-10-28, theme: "Tell a story with an old key, a handwritten letter and a faded photograph" }
+  - { week: 10, date: 2026-11-04, theme: "Bottle: try reflections or backlit" }
+  - { week: 11, date: 2026-11-11, theme: "Brickwork: look at patterns and textures" }
+  - { week: 12, date: 2026-11-18, theme: "Cobwebs: try to capture the dew on them" }
+  - { week: 13, date: 2026-11-25, theme: "Find a pair in nature; think of two flowers, two birds" }
+  - { week: 14, date: 2026-12-02, theme: Photograph something that makes you smile }
+  - { week: 15, date: 2026-12-09, theme: Arrange everyday objects to make a number }
+  - { week: 16, date: 2026-12-16, theme: Christmas dinner }
+  - { week: 17, date: 2026-12-23, theme: Christmas holiday }
+  - { week: 18, date: 2026-12-30, theme: Christmas holiday }
+  - { week: 19, date: 2027-01-06, theme: "Tell a story with a paintbrush, sketchbook and a coffee mug" }
+  - { week: 20, date: 2027-01-13, theme: "Capture the texture in the garden, e.g. frost, water droplets, snow" }
+  - { week: 21, date: 2027-01-20, theme: "Photograph 7 natural objects, such as stones, flowers, leaves" }
+  - { week: 22, date: 2027-01-27, theme: Photograph the number 4 without showing any written digits }
+  - { week: 23, date: 2027-02-03, theme: Photograph something connected to the number 10 }
+  - { week: 24, date: 2027-02-10, theme: Leading lines }
+  - { week: 25, date: 2027-02-17, theme: Dramatic clouds / skies }
+  - { week: 26, date: 2027-02-24, theme: "Tell a story with a toy car, miniature figure and a road map" }
+  - { week: 27, date: 2027-03-03, theme: Miniature photography }
+  - { week: 28, date: 2027-03-10, theme: Capture a half-finished task }
+  - { week: 29, date: 2027-03-17, theme: "Balance: take a photo showing balance" }
+  - { week: 30, date: 2027-03-24, theme: Water droplets }
+  - { week: 31, date: 2027-03-31, theme: Recreate a famous photograph or painting }
+  - { week: 32, date: 2027-04-07, theme: 5 second exposure }
+  - { week: 33, date: 2027-04-14, theme: Camera movement }
+  - { week: 34, date: 2027-04-21, theme: Shallow depth of field }
+  - { week: 35, date: 2027-04-28, theme: Negative space }
+  - { week: 36, date: 2027-05-05, theme: "Tell a story with reading glasses, a paperback book and a knitted blanket" }
+  - { week: 37, date: 2027-05-12, theme: "Try a different viewpoint, e.g. take from high up or low down" }
+  - { week: 38, date: 2027-05-19, theme: Your favourite photo that you have taken during the year }
+  - { week: 39, date: 2027-05-26, theme: Final evening; winner announced for the most points collected during the year }

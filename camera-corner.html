@@ -1,0 +1,32 @@
+---
+title: Camera Corner
+permalink: /camera-corner/
+---
+{% assign posts = site.camera_corner | sort: "date" | reverse %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Camera Corner</p>
+    <h1>Tips, advice and how-tos</h1>
+    <p class="lede">Advice and teaching from club members, whether you shoot on a camera or a phone.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  {% if posts.size == 0 %}
+    <div class="empty"><p>Articles will appear here soon.</p></div>
+  {% else %}
+  <div class="cards">
+    {% for p in posts %}
+    <a class="card article-card" href="{{ p.url | relative_url }}">
+      {% if p.image and p.image != "" %}<img src="{{ p.image | relative_url }}" alt="" loading="lazy">{% endif %}
+      <div class="card-body">
+        {% if p.topic and p.topic != "" %}<span class="tag">{{ p.topic }}</span>{% endif %}
+        <h2>{{ p.title }}</h2>
+        <p>{{ p.summary | default: p.excerpt | strip_html | truncate: 160 }}</p>
+        <span class="meta">{% if p.author and p.author != "" %}{{ p.author }} · {% endif %}{{ p.date | date: "%-d %b %Y" }}</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

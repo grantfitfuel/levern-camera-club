@@ -1,0 +1,204 @@
+# Pages CMS settings: this file builds the upload forms at https://app.pagescms.org
+media:
+  input: images
+  output: /images
+
+content:
+  - name: competitions
+    label: Competition results
+    type: collection
+    path: _competitions
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [ title, date, category ]
+      sort: [ date ]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Competition name
+        description: For example "Weekly competition: Leading lines" or "Autumn Competition: Markets"
+        type: string
+        required: true
+      - name: date
+        label: Date judged
+        type: date
+        required: true
+      - name: category
+        label: Type of competition
+        type: select
+        default: Weekly
+        options:
+          values: [ Weekly, Seasonal, Inter-club ]
+      - name: judge
+        label: Judge (optional)
+        type: string
+      - name: entries
+        label: Photos
+        description: Add one item per photo. Drag to reorder; the first photo shows first.
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Photo
+            type: image
+            required: true
+          - name: photographer
+            label: Photographer's name
+            type: string
+            required: true
+          - name: award
+            label: Placing
+            type: select
+            default: Winner
+            options:
+              values: [ Winner, Runner-up, Third place, Highly commended ]
+          - name: title
+            label: Photo title (optional)
+            type: string
+          - name: instagram
+            label: Photographer's Instagram (optional)
+            description: Just the handle, e.g. @levernphotos
+            type: string
+          - name: facebook
+            label: Photographer's Facebook (optional)
+            description: Page name or the full link to their page
+            type: string
+          - name: website
+            label: Photographer's website or Flickr (optional)
+            type: string
+          - name: camera
+            label: Camera or phone (optional)
+            description: e.g. Nikon Z6 II, iPhone 15 Pro
+            type: string
+          - name: lens
+            label: Lens (optional)
+            type: string
+          - name: focal_length
+            label: Focal length (optional)
+            description: e.g. 50mm
+            type: string
+          - name: aperture
+            label: Aperture (optional)
+            description: e.g. f/2.8
+            type: string
+          - name: shutter_speed
+            label: Shutter speed (optional)
+            description: e.g. 1/250s
+            type: string
+          - name: iso
+            label: ISO (optional)
+            description: e.g. 400
+            type: string
+      - name: body
+        label: Notes (optional)
+        description: Anything to say about this competition, shown above the photos
+        type: text
+
+  - name: camera_corner
+    label: Camera Corner articles
+    type: collection
+    path: _camera_corner
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [ title, author, date ]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: author
+        label: Written by
+        type: string
+      - name: topic
+        label: Topic
+        type: select
+        options:
+          values: [ Getting started, Camera settings, Composition, Lighting, Editing, Phone photography, Gear, Competitions ]
+      - name: summary
+        label: Short summary
+        description: One or two sentences shown on the article list
+        type: text
+      - name: image
+        label: Header photo (optional)
+        type: image
+      - name: body
+        label: Article
+        type: rich-text
+
+  - name: settings
+    label: Club details and logo
+    type: file
+    path: _data/settings.yml
+    fields:
+      - name: logo
+        label: Club logo
+        description: A square or round logo works best (PNG with a transparent background is ideal)
+        type: image
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: venue
+        label: Venue
+        type: string
+      - name: meeting_time
+        label: Meeting times
+        type: string
+      - name: email
+        label: Contact email (optional)
+        type: string
+      - name: facebook
+        label: Club Facebook page link (optional)
+        type: string
+
+  - name: weekly
+    label: Weekly competition themes
+    type: file
+    path: _data/weekly.yml
+    fields:
+      - name: season
+        label: Season
+        type: string
+      - name: rules
+        label: Rules
+        description: One rule per line
+        type: text
+      - name: weeks
+        label: Weeks
+        type: object
+        list: true
+        fields:
+          - { name: week, label: Week, type: number }
+          - { name: date, label: Date, type: date }
+          - { name: theme, label: Theme, type: string }
+
+  - name: syllabus
+    label: Club programme (syllabus)
+    type: file
+    path: _data/syllabus.yml
+    fields:
+      - name: season
+        label: Season
+        type: string
+      - name: note
+        label: Note shown under the programme
+        type: text
+      - name: weeks
+        label: Club nights and events
+        type: object
+        list: true
+        fields:
+          - name: week
+            label: Week number
+            description: Leave empty for special events outside the weekly programme
+            type: string
+          - { name: date, label: Date, type: date }
+          - { name: description, label: What's on, type: text }

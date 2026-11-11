@@ -1,0 +1,37 @@
+---
+title: Programme
+permalink: /programme/
+---
+{% assign s = site.data.syllabus %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">{{ s.season }} syllabus</p>
+    <h1>What's on at the club</h1>
+    <p class="lede">We meet every Wednesday at 7.30pm at {{ site.data.settings.venue }}. Visitors and new members are welcome any week.</p>
+    <p><a href="#next" data-jump-next>Jump to the next club night ↓</a></p>
+  </div>
+</section>
+
+<div class="wrap">
+  <ol class="timeline" data-dated-list>
+    {% for w in s.weeks %}
+    {% assign month = w.date | date: "%B %Y" %}
+    {% if month != last_month %}
+      <li class="month-head" aria-hidden="true">{{ w.date | date: "%B" }}</li>
+      {% assign last_month = month %}
+    {% endif %}
+    <li class="event{% if w.week == '' %} event-extra{% endif %}{% if w.description contains 'Competition' %} event-comp{% endif %}" data-date="{{ w.date | date: '%Y-%m-%d' }}">
+      <div class="event-date">
+        <span class="day">{{ w.date | date: "%a" }}</span>
+        <span class="num">{{ w.date | date: "%-d" }}</span>
+        <span class="mon">{{ w.date | date: "%b" }}</span>
+      </div>
+      <div class="event-body">
+        {% if w.week != "" %}<span class="week">Week {{ w.week }}</span>{% else %}<span class="week">Special event</span>{% endif %}
+        <p>{{ w.description | escape | newline_to_br }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+  <p class="note">{{ s.note }}</p>
+</div>

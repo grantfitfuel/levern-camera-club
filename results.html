@@ -1,0 +1,53 @@
+---
+title: Competition results
+permalink: /results/
+---
+{% assign comps = site.competitions | sort: "date" | reverse %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Competition results</p>
+    <h1>Winners and runners-up</h1>
+    <p class="lede">The winning photographs from our weekly and seasonal competitions. Tap any photo to see it full size.</p>
+    {% if comps.size > 0 %}
+    <div class="filters" role="group" aria-label="Show competitions">
+      <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="chip" data-filter="weekly" aria-pressed="false">Weekly</button>
+      <button type="button" class="chip" data-filter="seasonal" aria-pressed="false">Seasonal</button>
+      <button type="button" class="chip" data-filter="inter-club" aria-pressed="false">Inter-club</button>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<div class="wrap results">
+  {% if comps.size == 0 %}
+    <div class="empty">
+      <p><strong>No results yet.</strong></p>
+      <p>Winning photos will appear here as each competition is judged.</p>
+    </div>
+  {% endif %}
+  {% assign last_season = "" %}
+  {% for comp in comps %}
+    {% assign y = comp.date | date: "%Y" | plus: 0 %}
+    {% assign m = comp.date | date: "%m" | plus: 0 %}
+    {% if m >= 8 %}{% assign y2 = y | plus: 1 %}{% capture season %}{{ y }}/{{ y2 | slice: 2, 2 }}{% endcapture %}{% else %}{% assign y0 = y | minus: 1 %}{% assign y1s = y | append: "" %}{% capture season %}{{ y0 }}/{{ y1s | slice: 2, 2 }}{% endcapture %}{% endif %}
+    {% if season != last_season %}
+      <h2 class="season-head">{{ season }} season</h2>
+      {% assign last_season = season %}
+    {% endif %}
+    <section class="competition" data-category="{{ comp.category | default: 'weekly' | slugify }}">
+      <header class="comp-head">
+        <h3>{{ comp.title }}</h3>
+        <p class="meta">
+          {{ comp.date | date: "%-d %B %Y" }}
+          {% if comp.category and comp.category != "" %} · {{ comp.category | capitalize }}{% endif %}
+          {% if comp.judge and comp.judge != "" %} · Judged by {{ comp.judge }}{% endif %}
+        </p>
+        {% if comp.content and comp.content != "" %}<div class="comp-notes">{{ comp.content | markdownify }}</div>{% endif %}
+      </header>
+      {% include gallery.html comp=comp %}
+    </section>
+  {% endfor %}
+</div>
+
+{% include lightbox.html %}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.summary | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% if site.data.settings.logo != "" %}<link rel="icon" href="{{ site.data.settings.logo | relative_url }}">{% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        {% include logo.html %}
+        <span class="brand-name">Levern Camera Club</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        {% assign here = page.url %}
+        <a href="{{ '/' | relative_url }}" {% if here == '/' %}aria-current="page"{% endif %}>Home</a>
+        <a href="{{ '/programme/' | relative_url }}" {% if here == '/programme/' %}aria-current="page"{% endif %}>Programme</a>
+        <a href="{{ '/weekly-competition/' | relative_url }}" {% if here == '/weekly-competition/' %}aria-current="page"{% endif %}>Weekly competition</a>
+        <a href="{{ '/results/' | relative_url }}" {% if here == '/results/' %}aria-current="page"{% endif %}>Results</a>
+        <a href="{{ '/camera-corner/' | relative_url }}" {% if here contains '/camera-corner/' %}aria-current="page"{% endif %}>Camera Corner</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Levern Camera Club</strong><br>
+        {{ site.data.settings.venue }}<br>
+        {{ site.data.settings.meeting_time }}
+      </div>
+      <div class="footer-links">
+        {% if site.data.settings.facebook != "" %}<a href="{{ site.data.settings.facebook }}">Facebook</a>{% endif %}
+        {% if site.data.settings.email != "" %}<a href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>{% endif %}
+        <span>A non-profit organisation</span>
+      </div>
+    </div>
+  </footer>
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</body>
+</html>

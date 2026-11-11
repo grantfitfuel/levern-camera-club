@@ -1,0 +1,35 @@
+{% comment %} Renders one competition's photos. Pass comp=the competition document. {% endcomment %}
+{% assign comp = include.comp %}
+<div class="gallery" data-gallery="{{ comp.title | escape }}">
+  {% for e in comp.entries %}
+    {% if e.image and e.image != "" %}
+    {% assign parts = "" | split: "" %}
+    {% if e.focal_length and e.focal_length != "" %}{% assign parts = parts | push: e.focal_length %}{% endif %}
+    {% if e.aperture and e.aperture != "" %}{% assign parts = parts | push: e.aperture %}{% endif %}
+    {% if e.shutter_speed and e.shutter_speed != "" %}{% assign parts = parts | push: e.shutter_speed %}{% endif %}
+    {% if e.iso and e.iso != "" %}{% assign iso = e.iso | append: "" | remove: "ISO" | remove: "iso" | strip | prepend: "ISO " %}{% assign parts = parts | push: iso %}{% endif %}
+    {% assign settings = parts | join: " · " %}
+    {% assign gear = "" %}
+    {% if e.camera and e.camera != "" %}{% assign gear = e.camera %}{% endif %}
+    {% if e.lens and e.lens != "" %}{% if gear != "" %}{% assign gear = gear | append: ", " | append: e.lens %}{% else %}{% assign gear = e.lens %}{% endif %}{% endif %}
+    <figure class="photo">
+      <button type="button" class="photo-open"
+        data-src="{{ e.image | relative_url }}"
+        data-title="{{ e.title | escape }}"
+        data-photographer="{{ e.photographer | escape }}"
+        data-award="{{ e.award | escape }}"
+        data-gear="{{ gear | escape }}"
+        data-settings="{{ settings | escape }}"
+        data-competition="{{ comp.title | escape }}"        aria-label="View {{ e.title | default: 'photo' | escape }} by {{ e.photographer | escape }} full size">
+        <img src="{{ e.image | relative_url }}" alt="{{ e.title | default: 'Competition photo' | escape }} by {{ e.photographer | escape }}" loading="lazy" decoding="async">
+      </button>
+      <figcaption>
+        {% if e.award and e.award != "" %}{% assign slug = e.award | slugify %}<span class="award award-{{ slug }}">{{ e.award }}</span>{% endif %}
+        {% if e.title and e.title != "" %}<span class="photo-title">{{ e.title }}</span>{% endif %}
+        <span class="photographer">{{ e.photographer }}</span>
+        {% include social.html e=e %}
+      </figcaption>
+    </figure>
+    {% endif %}
+  {% endfor %}
+</div>

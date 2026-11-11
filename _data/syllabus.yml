@@ -1,0 +1,159 @@
+season: 2026/27
+note: When the camera club runs activity evenings, we will endeavour to have a second studio/workshop set-up to maximise opportunities so that all our members may get to develop their skills during the course of the evening.
+weeks:
+  - week: "1"
+    date: 2026-09-02
+    description: |-
+      Welcome evening for current and new members.
+      Presentation: "About our club" and discuss syllabus and plans for the new session.
+      Discussion: What makes a good image? What do judges look for?
+  - week: "2"
+    date: 2026-09-09
+    description: Abstract work. Reflected light, crumpled plastic bag with coloured light source within.
+  - week: "3"
+    date: 2026-09-16
+    description: Macro photography. Water and glycerin spray droplets on fishing wire, with coloured backgrounds.
+  - week: "4"
+    date: 2026-09-23
+    description: |-
+      Reflections photography using a small mirror, plastic or glass sheet.
+      Summer Competition hand-in of entries (3 max.). Theme: Seascapes
+  - week: "5"
+    date: 2026-09-30
+    description: |-
+      Chess match photography. Portrait of players, close-up of characters.
+      Alternative task for the evening: Eye photography
+  - week: "6"
+    date: 2026-10-07
+    description: |-
+      Judging of Summer Competition (electronic images only). Theme: Seascapes
+      Followed by discussion on images submitted
+  - week: "7"
+    date: 2026-10-14
+    description: Portrait studio. Shadow photography with beauty dish lighting set-up.
+  - week: ""
+    date: 2026-10-16
+    description: Preview evening of Exhibition of Work with Barrhead Artists, St Andrews Church Community Hall, 7pm
+  - week: ""
+    date: 2026-10-17
+    description: Joint Exhibition of Work with Barrhead Artists, St Andrews Church Community Hall, 10am to 4pm
+  - week: "8"
+    date: 2026-10-21
+    description: Diorama photography with model train tracks and scaled model figures; introduce movement where possible.
+  - week: "9"
+    date: 2026-10-28
+    description: "Portrait studio with model. Theme: Halloween"
+  - week: "10"
+    date: 2026-11-04
+    description: Macro studio. Close-up images on the theme of textures.
+  - week: "11"
+    date: 2026-11-11
+    description: Annual General Meeting
+  - week: "12"
+    date: 2026-11-18
+    description: |-
+      Levitating food photography. Set-up and editing process.
+      Autumn Competition hand-in of entries (3 max.). Theme: Markets
+  - week: "13"
+    date: 2026-11-25
+    description: Presentation and discussion on members' editing processes, handouts supplied.
+  - week: "14"
+    date: 2026-12-02
+    description: |-
+      Judging of Autumn Competition (electronic images only). Theme: Markets
+      Followed by discussion on images submitted
+  - week: "15"
+    date: 2026-12-09
+    description: Working with prisms, rainbow lights, glass balls and mirrors.
+  - week: ""
+    date: 2026-12-10
+    description: |-
+      Three Club Comp at Beith CC, Kings Road, Beith, North Ayrshire, KA15 2BQ
+      Beith, Gryffe and Levern Camera Clubs. Subjects are Atmospheric, Seascapes, Glens, Markets and Textures.
+  - week: "16"
+    date: 2026-12-16
+    description: Christmas Dinner at the Golf Club
+  - week: "17"
+    date: 2026-12-23
+    description: Christmas holiday
+  - week: "18"
+    date: 2026-12-30
+    description: Christmas holiday
+  - week: "19"
+    date: 2027-01-06
+    description: Still life photography with flowers, incorporating background screen movement.
+  - week: "20"
+    date: 2027-01-13
+    description: Portrait studio. High-key photography.
+  - week: "21"
+    date: 2027-01-20
+    description: |-
+      Macro studio. Food landscapes with cake, fruit and scaled model figures.
+      Black and White Competition hand-in of entries (3 max.). Theme: Atmospheric
+  - week: "22"
+    date: 2027-01-27
+    description: Creating backlit images (white backdrop with light source behind).
+  - week: "23"
+    date: 2027-02-03
+    description: |-
+      Judging of Black and White Photography Competition (electronic images only). Theme: Atmospheric
+      Followed by discussion on photo stacking
+  - week: "24"
+    date: 2027-02-10
+    description: Portrait studio. Double exposure photography (in camera).
+  - week: "25"
+    date: 2027-02-17
+    description: Competition with Kilmarnock Camera Club, held at Fereneze Golf Club
+  - week: ""
+    date: 2027-02-23
+    description: Image Knock-out Competition with Irvine Camera Club (final date and format to be confirmed)
+  - week: "26"
+    date: 2027-02-24
+    description: Out of focus photography
+  - week: "27"
+    date: 2027-03-03
+    description: |-
+      Presentation and discussion on members' editing processes, handouts supplied.
+      Winter Competition hand-in of entries (3 max.). Theme: Textures
+  - week: "28"
+    date: 2027-03-10
+    description: Portrait studio. Longer exposures to capture a little movement in the model.
+  - week: "29"
+    date: 2027-03-17
+    description: |-
+      Judging of Winter Competition (electronic images only). Theme: Textures
+      Followed by discussion on the histogram
+  - week: "30"
+    date: 2027-03-24
+    description: Intentional camera movement. Create abstract images (e.g. long exposure and move or rotate camera).
+  - week: "31"
+    date: 2027-03-31
+    description: Product advertising photography (telephoto lens, reflective material and coloured backdrop).
+  - week: "32"
+    date: 2027-04-07
+    description: Portrait studio. Speed photography with a pack of cards or banknotes, low f-stop, focus on cards and notes.
+  - week: "33"
+    date: 2027-04-14
+    description: Talk by visiting photographer (final date to be confirmed)
+  - week: "34"
+    date: 2027-04-21
+    description: Still life photography. A two-part evening; the first part is classic food composition and the second part either playing with different lighting, or creating compositions with fruit, using cocktail sticks to create more abstract shapes (e.g. several kitchen forks in a macro studio, lit for shadows).
+  - week: "35"
+    date: 2027-04-28
+    description: |-
+      Optical illusion photography. Make normal scenes look impossible.
+      Spring Competition hand-in of entries (3 max.). Theme: Glens
+  - week: "36"
+    date: 2027-05-05
+    description: Portrait studio. Shutter drag, flash photography with slow shutter speed and camera movement.
+  - week: "37"
+    date: 2027-05-12
+    description: |-
+      Judging of Spring Competition (electronic images only). Theme: Glens. Judge: Marty McNaughton.
+      Followed by discussion on images submitted
+  - week: "38"
+    date: 2027-05-19
+    description: Members display and discuss their favourite photography work from this session.
+  - week: "39"
+    date: 2027-05-26
+    description: End of season Dinner and Competition Trophy Presentations
