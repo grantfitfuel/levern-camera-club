@@ -10,11 +10,13 @@
   <meta name="copyright" content="Photographs © their respective photographers">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
+  <meta name="theme-color" content="#0c0c0f">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% if site.data.settings.logo and site.data.settings.logo != "" %}<link rel="icon" href="{{ site.data.settings.logo | relative_url }}">{% endif %}
 </head>
-<body>
+<body class="{{ page.body_class }}">
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="{{ '/' | relative_url }}">
@@ -41,17 +43,35 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-inner">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        {% if site.data.settings.logo and site.data.settings.logo != "" %}<img src="{{ site.data.settings.logo | relative_url }}" alt="" class="footer-logo">{% endif %}
+        <p class="footer-name">Levern<br><em>Camera Club</em></p>
+      </div>
       <div>
-        <strong>Levern Camera Club</strong><br>
-        {{ site.data.settings.venue }}<br>
-        {{ site.data.settings.meeting_time }}
+        <p class="label">Visit us</p>
+        <p>{{ site.data.settings.venue }}<br>{{ site.data.settings.meeting_time }}</p>
+        <p>A non-profit organisation. Newcomers always welcome.</p>
       </div>
-      <div class="footer-links">
-        {% if site.data.settings.facebook and site.data.settings.facebook != "" %}<a href="{{ site.data.settings.facebook }}">Facebook</a>{% endif %}
-        {% if site.data.settings.email and site.data.settings.email != "" %}<a href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a>{% endif %}
-        <span>A non-profit organisation</span>
+      <div>
+        <p class="label">Explore</p>
+        <ul class="footer-nav">
+          <li><a href="{{ '/programme/' | relative_url }}">Programme</a></li>
+          <li><a href="{{ '/weekly-competition/' | relative_url }}">Weekly competition</a></li>
+          <li><a href="{{ '/results/' | relative_url }}">Results</a></li>
+          <li><a href="{{ '/camera-corner/' | relative_url }}">Camera Corner</a></li>
+          <li><a href="{{ '/out-and-about/' | relative_url }}">Out and about</a></li>
+        </ul>
       </div>
+      <div>
+        <p class="label">Follow</p>
+        <ul class="footer-nav">
+          {% if site.data.settings.facebook and site.data.settings.facebook != "" %}<li><a href="{{ site.data.settings.facebook }}">Facebook</a></li>{% endif %}
+          {% if site.data.settings.email and site.data.settings.email != "" %}<li><a href="mailto:{{ site.data.settings.email }}">{{ site.data.settings.email }}</a></li>{% endif %}
+        </ul>
+      </div>
+    </div>
+    <div class="wrap">
       <p class="copyright">© {{ site.time | date: "%Y" }} Levern Camera Club. All photographs are © their photographers and may not be copied, reused or used to train AI without permission.</p>
     </div>
   </footer>

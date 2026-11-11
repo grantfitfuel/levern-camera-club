@@ -6,8 +6,35 @@
     toggle.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      header.classList.toggle('menu-open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
     });
   }
+
+  // Header turns solid once you scroll past the top
+  var header = document.querySelector('.site-header');
+  var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 40); };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Fade sections in as they scroll into view
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  // Tall banner photos are shown whole rather than cropped
+  document.querySelectorAll('.slide img').forEach(function (im) {
+    var check = function () { if (im.naturalHeight > im.naturalWidth * 0.95) im.closest('.slide').classList.add('is-tall'); };
+    if (im.complete && im.naturalWidth) check(); else im.addEventListener('load', check);
+  });
 
   // Dates
   function pad(n) { return n < 10 ? '0' + n : '' + n; }
@@ -94,6 +121,8 @@
         s.classList.toggle('is-active', k === cur);
         if (k === cur) s.removeAttribute('aria-hidden'); else s.setAttribute('aria-hidden', 'true');
       });
+      var cap = banner.querySelector('.slide-caption'), fc = slides[cur].querySelector('figcaption');
+      if (cap) cap.innerHTML = fc ? fc.innerHTML : '';
       dots.forEach(function (d, k) { if (k === cur) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current'); });
     };
     var start = function () { if (!still && slides.length > 1) { clearInterval(timer); timer = setInterval(function () { go(cur + 1); }, wait); } };
@@ -112,6 +141,7 @@
       if (Math.abs(dx) > 50) { go(dx < 0 ? cur + 1 : cur - 1); start(); }
       bx = null;
     });
+    go(0);
     start();
   }
 

@@ -1,49 +1,73 @@
 ---
 permalink: /
+body_class: home
 ---
 {% assign comps = site.competitions | sort: "date" | reverse %}
 {% assign posts = site.camera_corner | sort: "date" | reverse %}
-{% include banner.html %}
-<section class="hero">
-  <div class="wrap hero-inner">
-    <div class="hero-text">
-      <p class="eyebrow">Barrhead · Non-profit · All welcome</p>
-      <h1>Levern Camera Club</h1>
-      <p class="lede">We are an open, friendly group of photographers who are happy to share their knowledge with others.</p>
-      <p>If you have an interest in photography and would like to get involved, feel free to come along to Fereneze Golf Club any Wednesday evening at 7.30pm and see if our club is for you.</p>
-      <div class="hero-actions">
-        <a class="btn" href="{{ '/programme/' | relative_url }}">See the programme</a>
-        <a class="btn btn-ghost" href="{{ '/results/' | relative_url }}">Members' winning photos</a>
-      </div>
+{% assign slides = site.data.banner.slides | where_exp: "s", "s.image" %}
+
+<section class="hero{% if slides.size > 0 %} banner has-slides{% endif %}"{% if slides.size > 0 %} aria-roledescription="carousel" aria-label="Members' photographs" data-interval="{{ site.data.banner.seconds_per_slide | default: 6 }}"{% endif %}>
+  {% if slides.size > 0 %}
+    {% include banner.html slides=slides %}
+  {% else %}
+    <div class="hero-art" aria-hidden="true">
+      <div class="sun"></div>
+      <svg class="hills" viewBox="0 0 1440 320" preserveAspectRatio="none"><path d="M0 230 L120 190 L240 215 L380 150 L520 205 L640 170 L760 210 L900 140 L1040 200 L1180 165 L1320 210 L1440 180 L1440 320 L0 320Z" fill="#1d2740"/><path d="M0 260 L160 225 L300 250 L460 205 L620 245 L780 215 L960 255 L1120 220 L1280 250 L1440 230 L1440 320 L0 320Z" fill="#121a2c"/><rect y="275" width="1440" height="45" fill="#0b1120"/></svg>
+      <svg class="aperture" viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width=".8" stroke-dasharray="2 6"/><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M100 4 L135 100"/><path d="M183 52 L100 135"/><path d="M183 148 L65 135"/><path d="M100 196 L65 100"/><path d="M17 148 L100 65"/><path d="M17 52 L135 65"/></g></svg>
     </div>
-    <div class="hero-logo">
-      {% if site.data.settings.logo and site.data.settings.logo != "" %}
-        <img src="{{ site.data.settings.logo | relative_url }}" alt="Levern Camera Club logo">
-      {% else %}
-        <div class="logo-slot"><span>Club logo<br><small>coming soon</small></span></div>
-      {% endif %}
+  {% endif %}
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="wrap hero-content">
+    <p class="eyebrow reveal">Barrhead · Wednesdays 7.30pm · All welcome</p>
+    <h1 class="hero-title reveal"><span>Levern</span> <em>Camera Club</em></h1>
+    <p class="hero-tag reveal">People <i>✦</i> Places <i>✦</i> Perspectives</p>
+    <div class="hero-actions reveal">
+      <a class="btn" href="{{ '/programme/' | relative_url }}">See what's on</a>
+      <a class="btn btn-ghost" href="{{ '/results/' | relative_url }}">Members' winning photos</a>
     </div>
+  </div>
+  <a class="scroll-cue" href="#intro" aria-label="Scroll down"><span></span></a>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    {% for i in (1..2) %}
+    <span>Capture</span><i>✦</i><span>Share</span><i>✦</i><span>Learn</span><i>✦</i><span>Explore</span><i>✦</i><span>Landscape</span><i>✦</i><span>Portrait</span><i>✦</i><span>Macro</span><i>✦</i><span>Street</span><i>✦</i><span>Wildlife</span><i>✦</i><span>Still life</span><i>✦</i>
+    {% endfor %}
+  </div>
+</div>
+
+<section id="intro" class="wrap intro">
+  <div class="intro-text reveal">
+    <p class="eyebrow">Who we are</p>
+    <p class="statement">An open, friendly group of photographers who are <em>happy to share</em> their knowledge with others.</p>
+    <p class="lede">If you have an interest in photography and would like to get involved, come along to Fereneze Golf Club any Wednesday evening at 7.30pm and see if our club is for you. Camera or phone, beginner or seasoned, you'll fit right in.</p>
+  </div>
+  <div class="intro-logo reveal">
+    {% if site.data.settings.logo and site.data.settings.logo != "" %}
+      <img src="{{ site.data.settings.logo | relative_url }}" alt="Levern Camera Club logo">
+    {% endif %}
   </div>
 </section>
 
 <section class="wrap info-grid">
-  <div class="card">
+  <div class="card info reveal">
     <p class="label">When</p>
-    <p class="big">Wednesdays, 7.30pm</p>
+    <p class="big">Wednesdays<br>7.30pm</p>
     <p>September until the end of May</p>
   </div>
-  <div class="card">
+  <div class="card info reveal">
     <p class="label">Where</p>
-    <p class="big">Fereneze Golf Club</p>
-    <p><a href="https://www.google.com/maps/search/?api=1&query=Fereneze+Golf+Club+Barrhead">Barrhead · Map</a></p>
+    <p class="big">Fereneze<br>Golf Club</p>
+    <p><a href="https://www.google.com/maps/search/?api=1&query=Fereneze+Golf+Club+Barrhead">Barrhead · Open map →</a></p>
   </div>
-  <div class="card" data-next-event hidden>
+  <div class="card info reveal" data-next-event hidden>
     <p class="label">Next club night</p>
     <p class="big" data-when></p>
     <p data-what></p>
   </div>
-  <div class="card" data-this-week hidden>
-    <p class="label">This week's competition theme</p>
+  <div class="card info info-accent reveal" data-this-week hidden>
+    <p class="label">This week's theme</p>
     <p class="big" data-theme></p>
     <p><a href="{{ '/weekly-competition/' | relative_url }}">How to enter →</a></p>
   </div>
@@ -51,10 +75,10 @@ permalink: /
 
 {% if comps.size > 0 %}
 {% assign latest = comps.first %}
-<section class="wrap home-section">
+<section class="wrap home-section reveal">
   <div class="section-head">
-    <h2>Latest results: {{ latest.title }}</h2>
-    <a href="{{ '/results/' | relative_url }}">All results →</a>
+    <div><p class="eyebrow">Latest results</p><h2>{{ latest.title }}</h2></div>
+    <a class="more" href="{{ '/results/' | relative_url }}">All results →</a>
   </div>
   {% include gallery.html comp=latest %}
 </section>
@@ -62,10 +86,10 @@ permalink: /
 
 {% assign candids = site.data.candids.photos | sort: "date", "first" | reverse %}
 {% if candids.size > 0 %}
-<section class="wrap home-section">
+<section class="wrap home-section reveal">
   <div class="section-head">
-    <h2>Out and about</h2>
-    <a href="{{ '/out-and-about/' | relative_url }}">More photos →</a>
+    <div><p class="eyebrow">Out and about</p><h2>The club on location</h2></div>
+    <a class="more" href="{{ '/out-and-about/' | relative_url }}">More photos →</a>
   </div>
   {% assign few = candids | slice: 0, 6 %}
   {% include candid-gallery.html photos=few %}
@@ -73,24 +97,34 @@ permalink: /
 {% endif %}
 
 {% if posts.size > 0 %}
-<section class="wrap home-section">
+<section class="wrap home-section reveal">
   <div class="section-head">
-    <h2>From Camera Corner</h2>
-    <a href="{{ '/camera-corner/' | relative_url }}">All articles →</a>
+    <div><p class="eyebrow">Camera Corner</p><h2>Tips, advice and how-tos</h2></div>
+    <a class="more" href="{{ '/camera-corner/' | relative_url }}">All articles →</a>
   </div>
   <div class="cards">
     {% for p in posts limit: 3 %}
     <a class="card article-card" href="{{ p.url | relative_url }}">
+      {% if p.image and p.image != "" %}<img src="{{ p.image | relative_url }}" alt="" loading="lazy">{% endif %}
       <div class="card-body">
         {% if p.topic and p.topic != "" %}<span class="tag">{{ p.topic }}</span>{% endif %}
         <h3>{{ p.title }}</h3>
         <p>{{ p.summary | default: p.excerpt | strip_html | truncate: 140 }}</p>
+        <span class="read">Read →</span>
       </div>
     </a>
     {% endfor %}
   </div>
 </section>
 {% endif %}
+
+<section class="cta reveal">
+  <div class="wrap cta-inner">
+    <h2>Pick up your camera.<br><em>Come along on Wednesday.</em></h2>
+    <p>No need to book. Just turn up at Fereneze Golf Club at 7.30pm and say hello.</p>
+    <a class="btn" href="{{ '/programme/' | relative_url }}">See this season's programme</a>
+  </div>
+</section>
 
 {% include lightbox.html %}
 
