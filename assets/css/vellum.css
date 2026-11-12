@@ -146,3 +146,7 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
   .topbar-inner { justify-content: center; }
 }
 @media (max-width: 700px) { .banner-dots { left: auto; right: 24px; transform: none; bottom: 26px; } .slide-caption { right: 110px; bottom: 20px; } }
+/* Arrows sit at the bottom beside the dots so they never cover the welcome text */
+.banner-btn { top: auto; bottom: 12px; transform: none; width: 40px; height: 40px; font-size: 24px; }
+.banner-prev { left: calc(50% - 96px); }
+.banner-next { right: auto; left: calc(50% + 56px); }
