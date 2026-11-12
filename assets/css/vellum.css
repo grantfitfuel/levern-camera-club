@@ -150,3 +150,14 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
 .banner-btn { top: auto; bottom: 12px; transform: none; width: 40px; height: 40px; font-size: 24px; }
 .banner-prev { left: calc(50% - 96px); }
 .banner-next { right: auto; left: calc(50% + 56px); }
+
+/* ---------- Taller banner, slimmer buttons (Grant, 12 Nov) ---------- */
+.hero { height: clamp(540px, 82vh, 860px); }
+.btn-outline { padding: 9px 18px; font-size: .92rem; border-width: 1.5px; gap: 8px; }
+.feature { flex-direction: row; justify-content: center; gap: 10px; padding: 14px 10px; font-size: .95rem; }
+.feature svg { width: 26px; height: 26px; }
+@media (max-width: 760px) {
+  .hero { height: auto; min-height: 76svh; }
+  .feature { flex-direction: column; gap: 5px; padding: 10px 2px; font-size: .74rem; }
+  .feature svg { width: 22px; height: 22px; }
+}
