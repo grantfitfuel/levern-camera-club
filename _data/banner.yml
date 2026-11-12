@@ -3,9 +3,6 @@ slides:
   - image: /images/banner/bedruthan-steps.jpg
     photographer: Grant Anthony
     position: Top
-  - image: /images/banner/office-lobby.jpg
-    photographer: Grant Anthony
-    position: Centre
   - image: /images/Devils Point and Corrour Bothy.jpeg
     photographer: Brian Welsh
     position: Top
@@ -15,3 +12,9 @@ slides:
   - image: /images/Infinity Room.jpeg
     photographer: Deborah McPhail
     position: Centre
+  - image: /images/banner/office-lobby.jpg
+    photographer: Grant Anthony
+    position: Centre
+  - image: /images/Pastel Tide.jpeg
+    photographer: Deborah McPhail
+    position: Top
