@@ -5,6 +5,8 @@ description: An open, friendly camera club in Barrhead. We meet at Fereneze Golf
 baseurl: /levern-camera-club
 url: https://grantfitfuel.github.io
 show_camera_corner: false
+# look: dark (original) or vellum (light paper)
+look: vellum
 
 collections:
   competitions:

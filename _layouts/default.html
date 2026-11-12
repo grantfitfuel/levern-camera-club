@@ -12,8 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <script>document.documentElement.classList.add("js")</script>
-  <meta name="theme-color" content="#0c0c0f">
+  <meta name="theme-color" content="{% if site.look == "vellum" %}#ece0c6{% else %}#0c0c0f{% endif %}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  {% if site.look == "vellum" %}<link rel="stylesheet" href="{{ '/assets/css/vellum.css' | relative_url }}?v={{ site.time | date: '%s' }}">{% endif %}
   {% if site.data.settings.logo and site.data.settings.logo != "" %}<link rel="icon" href="{{ site.data.settings.logo | relative_url }}">{% endif %}
 </head>
 <body class="{{ page.body_class }}">
