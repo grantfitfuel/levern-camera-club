@@ -161,3 +161,6 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
   .feature { flex-direction: column; gap: 5px; padding: 10px 2px; font-size: .74rem; }
   .feature svg { width: 22px; height: 22px; }
 }
+/* Banner photos: keep the top of the picture (the sky) in view when cropping */
+.slide img { object-position: 50% 0%; transform-origin: 50% 0%; }
+@keyframes kenburns { from { transform: scale(1.08); } to { transform: scale(1); } }

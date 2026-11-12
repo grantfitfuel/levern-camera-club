@@ -183,6 +183,13 @@ content:
           - name: photographer
             label: Photographer's name
             type: string
+          - name: position
+            label: Which part to keep when cropping
+            description: Top keeps more sky (best for landscapes). Centre suits most other photos.
+            type: select
+            default: Top
+            options:
+              values: [ Top, Centre, Bottom ]
 
   - name: candids
     label: Out and about (candid shots)

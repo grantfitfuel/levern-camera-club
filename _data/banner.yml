@@ -4,11 +4,14 @@ slides:
     genre: Landscape
     title: Bedruthan Steps, Cornwall
     photographer: Grant Anthony
+    position: Top
   - image: /images/banner/office-lobby.jpg
     genre: Architecture
     title: Office lobby
     photographer: Grant Anthony
+    position: Centre
   - image: /images/banner/car-park.jpg
     genre: Abstract
     title: Car park
     photographer: Grant Anthony
+    position: Centre
