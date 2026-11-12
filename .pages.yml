@@ -272,6 +272,9 @@ content:
       - name: facebook
         label: Club Facebook page link (optional)
         type: string
+      - name: instagram
+        label: Club Instagram link (optional)
+        type: string
 
   - name: weekly
     label: Weekly competition themes

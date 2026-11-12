@@ -18,6 +18,15 @@
   {% if site.data.settings.logo and site.data.settings.logo != "" %}<link rel="icon" href="{{ site.data.settings.logo | relative_url }}">{% endif %}
 </head>
 <body class="{{ page.body_class }}">
+  {% capture social %}{% include club-social.html %}{% endcapture %}
+  {% if social contains "soc" %}
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <p class="topbar-info">{{ site.data.settings.venue | default: "Barrhead" }} <span aria-hidden="true">·</span> <span class="nowrap">Wednesdays 7.30pm</span></p>
+      <div class="topbar-social"><span class="topbar-follow">Follow us</span>{{ social }}</div>
+    </div>
+  </div>
+  {% endif %}
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="{{ '/' | relative_url }}">

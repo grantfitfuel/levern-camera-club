@@ -129,3 +129,19 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
   .feature svg { width: 30px; height: 30px; }
   .feature + .feature { border-left: 1px solid rgba(246,238,220,.18); }
 }
+
+/* ---------- Top bar with the club's social links ---------- */
+.topbar { background: #2a241c; color: #d9ccb2; font-size: .86rem; }
+.topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; }
+.topbar-info { margin: 0; }
+.topbar-social { display: flex; align-items: center; gap: 8px; }
+.topbar-follow { text-transform: uppercase; letter-spacing: .16em; font-size: .7rem; font-weight: 600; color: #f0c977; margin-right: 4px; }
+.soc { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 10px; border-radius: 999px; background: rgba(246,238,220,.08); border: 1px solid rgba(246,238,220,.2); color: #f6eedc; text-decoration: none; font-weight: 600; transition: background .25s, color .25s, border-color .25s; }
+.soc svg { width: 18px; height: 18px; }
+.soc-fb svg { color: #6ea2ff; }
+.soc:hover { background: #f0c977; border-color: #f0c977; color: #1d1810; }
+.soc:hover svg { color: inherit; }
+@media (max-width: 560px) {
+  .topbar-info { display: none; }
+  .topbar-inner { justify-content: center; }
+}
