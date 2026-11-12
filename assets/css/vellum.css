@@ -122,11 +122,10 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
   .has-slides .hero-content { padding-bottom: 110px; }
 }
 @media (max-width: 760px) { .hero-art .sun { left: 76%; bottom: 66%; width: 58vw; } .feature { flex-basis: 25%; padding-left: 4px; padding-right: 4px; } }
-/* Phones: four items in a 2 x 2 grid */
+/* Phones: all four in one row */
 @media (max-width: 760px) {
-  .features-row { display: grid; grid-template-columns: 1fr 1fr; overflow: visible; }
-  .feature { padding: 20px 8px; }
-  .feature + .feature { border-left: 0; }
-  .feature:nth-child(even) { border-left: 1px solid rgba(246,238,220,.18); }
-  .feature:nth-child(n+3) { border-top: 1px solid rgba(246,238,220,.18); }
+  .features-row { display: grid; grid-template-columns: repeat(4, 1fr); overflow: visible; padding: 0 4px; }
+  .feature { padding: 16px 2px 14px; gap: 8px; font-size: .78rem; line-height: 1.25; }
+  .feature svg { width: 30px; height: 30px; }
+  .feature + .feature { border-left: 1px solid rgba(246,238,220,.18); }
 }
