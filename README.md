@@ -12,7 +12,7 @@ weekly themes and the programme) is edited through a simple web form at
 1. Go to [app.pagescms.org](https://app.pagescms.org) and sign in with GitHub.
 2. Open **levern-camera-club**, then **Competition results**.
 3. Tap **Add an entry**. Fill in the competition name, the date and the type
-   (Weekly, Seasonal or Inter-club).
+   (Seasonal or Inter-club; weekly competition winners are not shown).
 4. Under **Photos**, tap **Add an entry** for each photo:
    upload the photo, type the photographer's name and choose the placing.
    Photo title, social media and camera settings are all optional;

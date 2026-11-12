@@ -2,16 +2,15 @@
 title: Competition results
 permalink: /results/
 ---
-{% assign comps = site.competitions | sort: "date" | reverse %}
+{% assign comps = site.competitions | where_exp: "c", "c.category != 'Weekly'" | sort: "date" | reverse %}
 <section class="page-head">
   <div class="wrap">
     <p class="eyebrow">Competition results</p>
     <h1>Winners &amp; <span class="nowrap">runners-up</span></h1>
-    <p class="lede">The winning photographs from our weekly and seasonal competitions. Tap any photo to see it full size.</p>
+    <p class="lede">The winning photographs from our seasonal and inter-club competitions. Tap any photo to see it full size.</p>
     {% if comps.size > 0 %}
     <div class="filters" role="group" aria-label="Show competitions">
       <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
-      <button type="button" class="chip" data-filter="weekly" aria-pressed="false">Weekly</button>
       <button type="button" class="chip" data-filter="seasonal" aria-pressed="false">Seasonal</button>
       <button type="button" class="chip" data-filter="inter-club" aria-pressed="false">Inter-club</button>
     </div>
@@ -35,7 +34,7 @@ permalink: /results/
       <h2 class="season-head">{{ season }} season</h2>
       {% assign last_season = season %}
     {% endif %}
-    <section class="competition" data-category="{{ comp.category | default: 'weekly' | slugify }}">
+    <section class="competition" data-category="{{ comp.category | default: 'seasonal' | slugify }}">
       <header class="comp-head">
         <h3>{{ comp.title }}</h3>
         <p class="meta">

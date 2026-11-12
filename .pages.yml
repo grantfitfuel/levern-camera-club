@@ -28,9 +28,9 @@ content:
       - name: category
         label: Type of competition
         type: select
-        default: Weekly
+        default: Seasonal
         options:
-          values: [ Weekly, Seasonal, Inter-club ]
+          values: [ Seasonal, Inter-club ]
       - name: judge
         label: Judge (optional)
         type: string

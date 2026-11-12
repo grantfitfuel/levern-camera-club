@@ -63,3 +63,24 @@ a:hover { color: var(--ember); }
 .site-footer { --ink: #f6eedc; --muted: #c9bb9f; --line: #4a4033; --gold: #e0a93f; --gold-2: #f6cf74; background: #2a241c; color: var(--muted); border-top: 0; }
 /* The hero and call-to-action stay photographic, so keep light text there */
 .hero, .cta { --ink: #f4efe6; --muted: #d8d1c5; --gold: #e0a93f; --gold-2: #f6cf74; color: var(--ink); }
+
+/* ---------- Typography: two families only ----------
+   Fraunces (a classic serif) for every heading and the LEVERN title,
+   with its own italic for accents; Inter for all reading text and labels. */
+:root { --display: "Fraunces", Georgia, serif; --serif: "Fraunces", Georgia, serif; }
+h1, h2, h3, .big, .statement, .this-week .theme, .person-name, .lt-title, .empty strong, .quiz-score, .lesson-nav a { font-weight: 600; letter-spacing: 0; font-variation-settings: "opsz" 72; }
+h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400; }
+.brand-name { font-weight: 600; font-size: 1.2rem; letter-spacing: 0; }
+@media (max-width: 1040px) { .site-nav a { font-weight: 600; } }
+.hero-tag { font-family: var(--sans); font-weight: 500; }
+
+/* The LEVERN title: engraved-style capitals */
+.hero-title { font-weight: 600; letter-spacing: .06em; line-height: .95; font-variation-settings: "opsz" 144; }
+.hero-title em { letter-spacing: 0; font-size: .5em; margin-top: .1em; }
+.footer-name { font-weight: 600; letter-spacing: .06em; }
+
+/* Section headings: solid serif instead of outlined capitals */
+.ticker span { font-weight: 500; font-style: italic; text-transform: none; letter-spacing: 0; color: var(--muted); -webkit-text-stroke: 0; }
+.ticker span:nth-of-type(3n+1) { color: var(--ink); font-style: normal; font-weight: 600; }
+.month-head, .season-head { font-family: var(--display); font-weight: 600; text-transform: none; letter-spacing: -0.01em; color: var(--ink); -webkit-text-stroke: 0; }
+.ln { font-family: var(--display); color: var(--muted); -webkit-text-stroke: 0; }

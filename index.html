@@ -2,7 +2,7 @@
 permalink: /
 body_class: home
 ---
-{% assign comps = site.competitions | sort: "date" | reverse %}
+{% assign comps = site.competitions | where_exp: "c", "c.category != 'Weekly'" | sort: "date" | reverse %}
 {% assign posts = site.camera_corner | sort: "date" | reverse %}
 {% assign slides = site.data.banner.slides | where_exp: "s", "s.image" %}
 
