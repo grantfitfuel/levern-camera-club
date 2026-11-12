@@ -1,7 +1,7 @@
 # Levern Camera Club website
 
 The club website, published free with GitHub Pages at
-**https://grantfitfuel.github.io/levern-camera-club/**
+**https://leverncameraclub.com/**
 
 Everything day to day (competition results, Camera Corner articles, the logo,
 weekly themes and the syllabus) is edited through a simple web form at
@@ -69,4 +69,4 @@ grouped by season.
 A plain [Jekyll](https://jekyllrb.com) site built by GitHub Pages.
 `_competitions/` and `_camera_corner/` hold the content, `_data/` holds the
 syllabus, themes and settings, and `.pages.yml` defines the Pages CMS forms.
-If the club moves to its own web address, set `baseurl: ""` in `_config.yml`.
+The site uses its own address, leverncameraclub.com (set by the `CNAME` file; DNS at Namecheap).
