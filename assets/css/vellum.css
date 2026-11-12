@@ -80,7 +80,7 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
 .footer-name { font-weight: 600; letter-spacing: .06em; }
 
 /* Section headings: solid serif instead of outlined capitals */
-.ticker span { font-weight: 500; font-style: italic; text-transform: none; letter-spacing: 0; color: var(--muted); -webkit-text-stroke: 0; }
-.ticker span:nth-of-type(3n+1) { color: var(--ink); font-style: normal; font-weight: 600; }
+.ticker span { font-weight: 400; font-style: italic; text-transform: none; letter-spacing: 0; color: var(--muted); -webkit-text-stroke: 0; }
+.ticker span:nth-of-type(3n+1) { color: var(--muted); font-style: italic; font-weight: 400; }
 .month-head, .season-head { font-family: var(--display); font-weight: 600; text-transform: none; letter-spacing: -0.01em; color: var(--ink); -webkit-text-stroke: 0; }
 .ln { font-family: var(--display); color: var(--muted); -webkit-text-stroke: 0; }
