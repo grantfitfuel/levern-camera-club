@@ -363,7 +363,7 @@
   var NS = 'http://www.w3.org/2000/svg';
   var FLIP = { a: [1, 1], b: [-1, 1], c: [1, -1], d: [-1, -1] };
   var HARMONY = { comp: [0, 6], ana: [11, 0, 1], tri: [0, 4, 8] };
-  function show(el, on) { if (el) { if (on) el.removeAttribute('hidden'); else el.setAttribute('hidden', ''); } }
+  function show(el, on) { if (el) { if (on) el.removeAttribute('display'); else el.setAttribute('display', 'none'); } }
   function apply(fig, v) {
     var kind = fig.getAttribute('data-dg');
     if (kind === 'thirds') {

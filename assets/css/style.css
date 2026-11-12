@@ -482,7 +482,6 @@ h1 em, h2 em, .statement em, .footer-name em {
 .dg-light { fill: #fff4cc; }
 .dg-dark { fill: #14141a; stroke: none; }
 .g-spiral, .g-thirds, .g-phi { transition: opacity .35s; }
-.dg [hidden] { display: none; }
 .cw-seg { transition: opacity .3s; }
 .cw-legend text { display: none; }
 .cw-legend text.on { display: inline; }
