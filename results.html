@@ -1,11 +1,11 @@
 ---
-title: Winning images
+title: Competition showcase
 permalink: /results/
 ---
 {% assign comps = site.competitions | where_exp: "c", "c.category != 'Weekly'" | sort: "date" | reverse %}
 <section class="page-head">
   <div class="wrap">
-    <p class="eyebrow">Winning images</p>
+    <p class="eyebrow">Competition showcase</p>
     <h1>Winners &amp; <span class="nowrap">runners-up</span></h1>
     <p class="lede">The winning photographs from our seasonal and inter-club competitions. Tap any photo to see it full size.</p>
     {% if comps.size > 0 %}
