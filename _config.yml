@@ -4,12 +4,16 @@ description: An open, friendly camera club in Barrhead. We meet at Fereneze Golf
 # If the club later gets its own web address, set baseurl to "".
 baseurl: /levern-camera-club
 url: https://grantfitfuel.github.io
+show_camera_corner: false
 
 collections:
   competitions:
     output: false
+  # Camera Corner is hidden for now (Grant, Nov 2026). To bring it back:
+  # set output: true here, show_camera_corner: true below, and remove
+  # "published: false" from camera-corner.html.
   camera_corner:
-    output: true
+    output: false
     permalink: /camera-corner/:title/
 
 defaults:
