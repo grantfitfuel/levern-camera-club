@@ -157,10 +157,8 @@ h1 em, h2 em, .statement em, .footer-name em {
   .hero-art .sun { left: 72%; width: 64vw; bottom: 22%; }
   .hero-art .aperture { width: 120vw; right: -50vw; top: 10vh; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .slide.is-active img, .hero-art .sun, .hero-art .aperture, .scroll-cue span { animation: none; }
-  .slide { transition: none; }
-}
+/* The banner keeps moving even when the phone asks for reduced motion (Grant asked for this). */
+@media (prefers-reduced-motion: reduce) { .scroll-cue span { animation: none; } }
 
 /* Ticker */
 .ticker { overflow: hidden; border-block: 1px solid var(--line); background: var(--bg-2); padding: 18px 0; }

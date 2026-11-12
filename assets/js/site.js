@@ -114,7 +114,7 @@
     var dots = banner.querySelectorAll('.banner-dots button');
     var cur = 0, timer = null;
     var wait = (parseFloat(banner.getAttribute('data-interval')) || 6) * 1000;
-    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var still = false; // banner rotates even with Reduce Motion on (Grant asked for this)
     var go = function (i) {
       cur = (i + slides.length) % slides.length;
       slides.forEach(function (s, k) {
