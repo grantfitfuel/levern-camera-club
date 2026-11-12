@@ -384,3 +384,5 @@ h1 em, h2 em, .statement em, .footer-name em {
 .person-photo span { color: var(--gold); opacity: .7; }
 .person-name { font-family: var(--display); font-weight: 700; font-size: 1.3rem; margin: 0 0 4px; }
 .person .label { margin-bottom: .3em; }
+.person { padding: 22px 16px; border-top: 2px solid; border-image: var(--sunset) 1; }
+.person-name { font-size: 1.2rem; line-height: 1.2; }
