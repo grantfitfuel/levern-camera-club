@@ -1,23 +1,23 @@
 seconds_per_slide: 6
 slides:
-  - image: /images/banner/bedruthan-steps.jpg
-    photographer: Grant Anthony
-    position: Top
+  - image: /images/2 Still waters-2.jpeg
+    photographer: James Pyke
+    position: Centre
   - image: /images/Devils Point and Corrour Bothy.jpeg
     photographer: Brian Welsh
     position: Top
-  - image: /images/2 Still waters-2.jpeg
-    photographer: James Pyke
+  - image: /images/Glen Rosa in the morning light - Jim Clark.jpeg
+    photographer: Jim Clark
     position: Centre
   - image: /images/Infinity Room.jpeg
     photographer: Deborah McPhail
     position: Centre
-  - image: /images/banner/office-lobby.jpg
+  - image: /images/banner/bedruthan-steps.jpg
     photographer: Grant Anthony
-    position: Centre
+    position: Top
   - image: /images/Pastel Tide.jpeg
     photographer: Deborah McPhail
     position: Top
-  - image: /images/Glen Rosa in the morning light - Jim Clark.jpeg
-    photographer: Jim Clark
+  - image: /images/banner/office-lobby.jpg
+    photographer: Grant Anthony
     position: Centre
