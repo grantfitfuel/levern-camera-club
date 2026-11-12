@@ -1,7 +1,7 @@
 intro: Our club is run by volunteers elected at the Annual General Meeting each November.
 people:
-  - { role: Chair, name: "Cliff Lockyer", photo: "", contact: "" }
-  - { role: Secretary, name: "Jim Clark", photo: "", contact: "" }
-  - { role: Treasurer, name: "James Pyke", photo: "", contact: "" }
-  - { role: Competition Secretary, name: "Jacquie Sweeney", photo: "", contact: "" }
-  - { role: Social Media Secretary, name: "Deborah Robinson", photo: "", contact: "" }
+  - { role: Chair, name: "Cliff Lockyer", contact: "" }
+  - { role: Secretary, name: "Jim Clark", contact: "" }
+  - { role: Treasurer, name: "James Pyke", contact: "" }
+  - { role: Competition Secretary, name: "Jacquie Sweeney", contact: "" }
+  - { role: Social Media Secretary, name: "Deborah Robinson", contact: "" }

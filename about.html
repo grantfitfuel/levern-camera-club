@@ -47,9 +47,6 @@ permalink: /about/
   <div class="people">
     {% for p in bearers %}
     <div class="person reveal">
-      {% if p.photo and p.photo != "" %}
-      <div class="person-photo"><img src="{{ p.photo | relative_url }}" alt="{{ p.name | escape }}" loading="lazy"></div>
-      {% endif %}
       <p class="label">{{ p.role }}</p>
       <p class="person-name">{{ p.name }}</p>
       {% if p.contact and p.contact != "" %}

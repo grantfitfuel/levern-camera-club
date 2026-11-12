@@ -217,9 +217,6 @@ content:
           - name: name
             label: Name
             type: string
-          - name: photo
-            label: Photo (optional)
-            type: image
           - name: contact
             label: Contact email (optional)
             type: string
