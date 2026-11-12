@@ -1,5 +1,5 @@
 ---
-title: "Seasonal Competition: Seascapes"
+title: "Summer Competition: Seascapes"
 date: 2026-10-07
 category: Seasonal
 entries:
