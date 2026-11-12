@@ -4,7 +4,7 @@ The club website, published free with GitHub Pages at
 **https://grantfitfuel.github.io/levern-camera-club/**
 
 Everything day to day (competition results, Camera Corner articles, the logo,
-weekly themes and the programme) is edited through a simple web form at
+weekly themes and the syllabus) is edited through a simple web form at
 **[app.pagescms.org](https://app.pagescms.org)**. You never need to touch the files here.
 
 ## Adding competition results
@@ -60,7 +60,7 @@ They need a free GitHub account. You can remove someone at any time from the sam
 
 ## New season
 
-Update **Weekly competition themes** and **Club programme (syllabus)** in
+Update **Weekly competition themes** and **Club syllabus** in
 Pages CMS with the new dates. Results from earlier seasons stay on the site,
 grouped by season.
 
@@ -68,5 +68,5 @@ grouped by season.
 
 A plain [Jekyll](https://jekyllrb.com) site built by GitHub Pages.
 `_competitions/` and `_camera_corner/` hold the content, `_data/` holds the
-programme, themes and settings, and `.pages.yml` defines the Pages CMS forms.
+syllabus, themes and settings, and `.pages.yml` defines the Pages CMS forms.
 If the club moves to its own web address, set `baseurl: ""` in `_config.yml`.

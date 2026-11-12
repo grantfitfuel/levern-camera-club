@@ -290,7 +290,7 @@ content:
           - { name: theme, label: Theme, type: string }
 
   - name: syllabus
-    label: Club programme (syllabus)
+    label: Club syllabus
     type: file
     path: _data/syllabus.yml
     fields:
@@ -298,7 +298,7 @@ content:
         label: Season
         type: string
       - name: note
-        label: Note shown under the programme
+        label: Note shown under the syllabus
         type: text
       - name: weeks
         label: Club nights and events
@@ -307,7 +307,7 @@ content:
         fields:
           - name: week
             label: Week number
-            description: Leave empty for special events outside the weekly programme
+            description: Leave empty for special events outside the weekly syllabus
             type: string
           - { name: date, label: Date, type: date }
           - { name: description, label: What's on, type: text }
