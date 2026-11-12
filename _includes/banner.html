@@ -6,8 +6,6 @@
     <div class="slide-backdrop" style="background-image:url('{{ s.image | relative_url }}')"></div>
     <img src="{{ s.image | relative_url }}" alt="{{ s.genre | default: 'Photograph' | escape }}{% if s.photographer %} by {{ s.photographer | escape }}{% endif %}"{% unless forloop.first %} loading="lazy"{% endunless %} decoding="async">
     <figcaption>
-      {% if s.genre and s.genre != "" %}<span class="slide-genre">{{ s.genre }}</span>{% endif %}
-      {% if s.title and s.title != "" %}<span class="slide-title">{{ s.title }}</span>{% endif %}
       {% if s.photographer and s.photographer != "" %}<span class="slide-by">© {{ s.photographer }}</span>{% endif %}
     </figcaption>
   </figure>

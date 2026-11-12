@@ -172,7 +172,7 @@ content:
         default: 6
       - name: slides
         label: Banner photos
-        description: Add one photo per genre. Landscape-shaped photos fill the banner best; others are shown whole with a soft blurred border.
+        description: Only the photographer's name is shown on the banner. Landscape-shaped photos fill the banner best; others are shown whole with a soft blurred border.
         type: object
         list: true
         fields:
@@ -180,16 +180,8 @@ content:
             label: Photo
             type: image
             required: true
-          - name: genre
-            label: Genre
-            type: select
-            options:
-              values: [ Landscape, Portrait, Macro, Wildlife, Street, Architecture, Still life, Night, Black and white, Abstract, Sport ]
           - name: photographer
             label: Photographer's name
-            type: string
-          - name: title
-            label: Photo title (optional)
             type: string
 
   - name: candids
