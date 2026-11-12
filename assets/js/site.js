@@ -110,6 +110,15 @@
   // Rotating banner
   var banner = document.querySelector('.banner');
   if (banner) {
+    // Shuffle the photos so each visit shows them in a different order (Grant asked to mix them up)
+    var box = banner.querySelector('.slides');
+    if (box) {
+      var arr = Array.prototype.slice.call(box.querySelectorAll('.slide'));
+      for (var j = arr.length - 1; j > 0; j--) { var r = Math.floor(Math.random() * (j + 1)), t = arr[j]; arr[j] = arr[r]; arr[r] = t; }
+      arr.forEach(function (s) { box.appendChild(s); });
+      var firstImg = arr.length && arr[0].querySelector('img');
+      if (firstImg) firstImg.removeAttribute('loading');
+    }
     var slides = banner.querySelectorAll('.slide');
     var dots = banner.querySelectorAll('.banner-dots button');
     var cur = 0, timer = null;
