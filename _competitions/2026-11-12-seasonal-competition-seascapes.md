@@ -9,7 +9,7 @@ entries:
     title: Still Waters
   - image: /images/Sentinels of the Sea-1.jpeg
     photographer: Deborah McPhail
-    award: Runner-up
+    award: Second place
     title: Sentinels of the Sea
   - image: /images/Ice on the Edge-1.jpeg
     photographer: "Deborah McPhail "

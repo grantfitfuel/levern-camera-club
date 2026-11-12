@@ -53,7 +53,7 @@ content:
             type: select
             default: Winner
             options:
-              values: [ Winner, Runner-up, Third place, Highly commended ]
+              values: [ Winner, Second place, Third place, Highly commended ]
           - name: title
             label: Photo title (optional)
             type: string
