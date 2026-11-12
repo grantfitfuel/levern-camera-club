@@ -5,6 +5,7 @@ author: Grant Anthony
 topic: Light
 order: 3
 start_here: 3
+diagram: lightdir
 summary: "The same hill looks completely different at seven in the morning and two in the afternoon. Learn to see the light before you look for a subject."
 challenge: "Pick one view near home. Photograph it at sunrise, at midday and at sunset on the same day, from the same spot. Each time, note the direction of the light and the length of the shadows, then compare the three pictures."
 quiz: |-

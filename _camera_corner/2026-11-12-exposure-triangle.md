@@ -5,6 +5,7 @@ author: Grant Anthony
 topic: Light
 order: 2
 start_here: 2
+diagram: triangle
 summary: "Aperture, shutter speed and ISO decide how bright a photograph is, and each one changes how it looks. Learn how to trade one against another."
 challenge: "Put the camera in manual at ISO 100. Photograph the same scene at f/4, f/8 and f/16, adjusting the shutter speed each time to keep the meter at zero. Write down each shutter speed and check it changed by two stops each time. Compare what is sharp in each."
 quiz: |-

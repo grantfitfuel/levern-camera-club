@@ -6,6 +6,7 @@ topic: Composition
 level: Beginner
 order: 1
 start_here: 1
+diagram: colourwheel
 summary: Why some colours sing together and others clash. The colour wheel, the four harmonies worth knowing, and how to use warm and cool colours to lead the eye.
 challenge: Go out with one colour harmony in mind, say complementary orange and blue. Take ten frames where those two colours do the work, and nothing else competes. Then pick your best one and ask yourself where your eye lands first.
 quiz: |-

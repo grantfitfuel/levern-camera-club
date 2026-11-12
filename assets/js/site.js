@@ -357,3 +357,57 @@
     wrap.appendChild(ol); body.appendChild(wrap);
   });
 })();
+
+/* Camera Corner diagrams */
+(function () {
+  var NS = 'http://www.w3.org/2000/svg';
+  var FLIP = { a: [1, 1], b: [-1, 1], c: [1, -1], d: [-1, -1] };
+  var HARMONY = { comp: [0, 6], ana: [11, 0, 1], tri: [0, 4, 8] };
+  function show(el, on) { if (el) { if (on) el.removeAttribute('hidden'); else el.setAttribute('hidden', ''); } }
+  function apply(fig, v) {
+    var kind = fig.getAttribute('data-dg');
+    if (kind === 'thirds') {
+      show(fig.querySelector('.g-thirds'), v === 'thirds');
+      show(fig.querySelector('.g-phi'), v === 'phi');
+    } else if (kind === 'golden') {
+      var sp = fig.querySelector('.g-spiral'), f = FLIP[v];
+      show(sp, !!f);
+      show(fig.querySelector('.g-phi'), v === 'phi');
+      if (f) sp.setAttribute('transform', 'translate(' + (f[0] < 0 ? 600 : 0) + ' ' + (f[1] < 0 ? 400 : 0) + ') scale(' + f[0] + ' ' + f[1] + ')');
+    } else if (kind === 'colourwheel') {
+      var pick = HARMONY[v] || [];
+      fig.querySelectorAll('.cw-seg').forEach(function (s) {
+        s.style.opacity = pick.indexOf(+s.getAttribute('data-i')) > -1 ? 1 : 0.22;
+      });
+      fig.querySelectorAll('.cw-legend text').forEach(function (t) {
+        t.classList.toggle('on', t.getAttribute('data-for') === v);
+      });
+      var marks = fig.querySelector('.cw-marks');
+      while (marks.firstChild) marks.removeChild(marks.firstChild);
+      var pts = pick.map(function (i) {
+        var a = (-90 + 30 * i) * Math.PI / 180;
+        return (210 + 117 * Math.cos(a)).toFixed(1) + ',' + (200 + 117 * Math.sin(a)).toFixed(1);
+      });
+      var shape = document.createElementNS(NS, pick.length > 2 && v === 'tri' ? 'polygon' : 'polyline');
+      shape.setAttribute('points', pts.join(' '));
+      marks.appendChild(shape);
+      pts.forEach(function (p) {
+        var c = document.createElementNS(NS, 'circle'), xy = p.split(',');
+        c.setAttribute('cx', xy[0]); c.setAttribute('cy', xy[1]); c.setAttribute('r', 7);
+        c.setAttribute('fill', '#fff');
+        marks.appendChild(c);
+      });
+    }
+  }
+  document.querySelectorAll('.dg[data-dg]').forEach(function (fig) {
+    var btns = fig.querySelectorAll('.dg-chips button');
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        btns.forEach(function (o) { o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); });
+        apply(fig, b.getAttribute('data-v'));
+      });
+    });
+    var on = fig.querySelector('.dg-chips button[aria-pressed="true"]');
+    if (on) apply(fig, on.getAttribute('data-v'));
+  });
+})();

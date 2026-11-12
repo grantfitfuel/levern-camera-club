@@ -5,6 +5,7 @@ author: Grant Anthony
 topic: Light
 order: 4
 start_here: 4
+diagram: kelvin
 summary: "Light has a colour, even when it looks white. What white balance does, which setting to use when, and the kelvin values behind them."
 challenge: "Find a scene with something white or grey in it. Take the same frame at Auto, Daylight, Cloudy, Shade and Tungsten, without moving. Compare them side by side at home, and notice which setting kept the light as you remember it. Then, on the RAW file, click the white or grey area with Lightroom's White Balance Selector and see which preset it lands closest to."
 quiz: |-

@@ -143,6 +143,12 @@ content:
       - name: image
         label: Header photo (optional)
         type: image
+      - name: diagram
+        label: Diagram (optional)
+        description: A teaching diagram shown after the first paragraph
+        type: select
+        options:
+          values: [ colourwheel, triangle, lightdir, kelvin, thirds, golden, horizon, lines, frame, symmetry, space, reflect ]
       - name: body
         label: Lesson
         type: rich-text

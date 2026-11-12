@@ -19,8 +19,9 @@ layout: default
     <img src="{{ page.image | relative_url }}" alt="">
   </figure>
   {% endif %}
+  {% assign dg_names = "colourwheel,frame,golden,horizon,kelvin,lightdir,lines,reflect,space,symmetry,thirds,triangle" | split: "," %}
   <div class="prose">
-    {{ content }}
+    {% if page.diagram and dg_names contains page.diagram %}{% assign parts = content | split: "</p>" %}{% capture dg %}{% include diagrams/{{ page.diagram }}.html %}{% endcapture %}{% for part in parts %}{{ part }}{% unless forloop.last %}</p>{% endunless %}{% if forloop.first %}{{ dg }}{% endif %}{% endfor %}{% else %}{{ content }}{% endif %}
   </div>
 
   {% if page.challenge and page.challenge != "" %}

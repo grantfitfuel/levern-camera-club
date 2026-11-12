@@ -5,6 +5,7 @@ author: Grant Anthony
 topic: Composition
 order: 7
 start_here: 7
+diagram: golden
 summary: "The spiral and the phi grid, where they come from, and how much weight to give them."
 challenge: "Take five photographs you already like. Crop each with a thirds overlay and then a golden spiral or phi grid, and note which ones each guide improves. Note also how far the subject moved between the two crops."
 quiz: |-
