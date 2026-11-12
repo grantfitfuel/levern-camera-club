@@ -97,15 +97,15 @@ content:
         type: text
 
   - name: camera_corner
-    label: Camera Corner articles
+    label: Camera Corner lessons
     type: collection
     path: _camera_corner
     filename: "{year}-{month}-{day}-{primary}.md"
     view:
-      fields: [ title, author, date ]
+      fields: [ title, topic, order ]
       default:
-        sort: date
-        order: desc
+        sort: order
+        order: asc
     fields:
       - name: title
         label: Title
@@ -122,17 +122,38 @@ content:
         label: Topic
         type: select
         options:
-          values: [ Getting started, Camera settings, Composition, Lighting, Editing, Phone photography, Gear, Competitions ]
+          values: [ Light, Composition, Technique, Editing, Genres, Behind the shot, Phone photography, Competitions ]
+      - name: level
+        label: Level (optional)
+        type: select
+        options:
+          values: [ Beginner, Intermediate, Advanced ]
+      - name: order
+        label: Position in the list
+        description: Lower numbers show first. Leave blank to put it at the end.
+        type: number
+      - name: start_here
+        label: Position on the "Start here" path (optional)
+        description: 1 for the first lesson a newcomer should read, 2 for the next, and so on. Leave blank to keep it off the path.
+        type: number
       - name: summary
         label: Short summary
-        description: One or two sentences shown on the article list
+        description: One or two sentences shown in the lesson list
         type: text
       - name: image
         label: Header photo (optional)
         type: image
       - name: body
-        label: Article
+        label: Lesson
         type: rich-text
+      - name: challenge
+        label: "Try this (optional)"
+        description: A practical exercise shown at the end of the lesson
+        type: text
+      - name: quiz
+        label: Quiz (optional)
+        description: 'Start each question with "Q:" then put the right answer on a line starting with "*" and wrong answers on lines starting with "-". Leave a blank line between questions.'
+        type: text
 
   - name: banner
     label: Home page banner (rotating photos)

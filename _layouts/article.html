@@ -1,10 +1,19 @@
 ---
 layout: default
 ---
-<article class="wrap narrow article">
-  <p class="eyebrow"><a href="{{ '/camera-corner/' | relative_url }}">Camera Corner</a></p>
+{% assign all = site.camera_corner | sort: "order", "last" %}
+{% for l in all %}{% if l.url == page.url %}{% assign i = forloop.index0 %}{% endif %}{% endfor %}
+{% assign prev_i = i | minus: 1 %}{% assign next_i = i | plus: 1 %}
+{% if i > 0 %}{% assign prev = all[prev_i] %}{% endif %}
+{% assign next = all[next_i] %}
+{% assign words = content | strip_html | number_of_words %}
+{% assign mins = words | divided_by: 200 | plus: 1 %}
+<div class="rd-progress" data-read-progress aria-hidden="true"><span></span></div>
+<article class="wrap narrow article" data-lesson="{{ page.url | relative_url }}">
+  <p class="eyebrow"><a href="{{ '/camera-corner/' | relative_url }}">Camera Corner</a>{% if page.topic and page.topic != "" %} · {{ page.topic }}{% endif %}</p>
   <h1>{{ page.title }}</h1>
-  <p class="meta">{% if page.author and page.author != "" %}By {{ page.author }} · {% endif %}{{ page.date | date: "%-d %B %Y" }}</p>
+  {% if page.summary and page.summary != "" %}<p class="rd-sum">{{ page.summary }}</p>{% endif %}
+  <p class="meta">{% if page.author and page.author != "" %}By {{ page.author }} · {% endif %}{% if page.level and page.level != "" %}{{ page.level }} · {% endif %}{{ mins }} min read</p>
   {% if page.image and page.image != "" %}
   <figure class="article-image">
     <img src="{{ page.image | relative_url }}" alt="">
@@ -13,5 +22,28 @@ layout: default
   <div class="prose">
     {{ content }}
   </div>
-  <p class="back"><a href="{{ '/camera-corner/' | relative_url }}">← More from Camera Corner</a></p>
+
+  {% if page.challenge and page.challenge != "" %}
+  <aside class="challenge">
+    <p class="label">Try this</p>
+    <p>{{ page.challenge }}</p>
+  </aside>
+  {% endif %}
+
+  {% if page.quiz and page.quiz != "" %}
+  <section class="quiz" data-quiz>
+    <p class="label">Check what you've learned</p>
+    <h2>Quick quiz</h2>
+    <div class="quiz-body"></div>
+    <p class="quiz-score" aria-live="polite"></p>
+  </section>
+  <script type="application/json" id="quiz-data">{{ page.quiz | jsonify }}</script>
+  {% endif %}
+
+  <div class="read-end" data-read-end></div>
+  <nav class="lesson-nav" aria-label="More lessons">
+    {% if prev %}<a class="ln-prev" href="{{ prev.url | relative_url }}"><span class="label">← Previous</span><span>{{ prev.title }}</span></a>{% else %}<span></span>{% endif %}
+    {% if next %}<a class="ln-next" href="{{ next.url | relative_url }}"><span class="label">Next →</span><span>{{ next.title }}</span></a>{% endif %}
+  </nav>
+  <p class="back"><a href="{{ '/camera-corner/' | relative_url }}">← All lessons</a></p>
 </article>

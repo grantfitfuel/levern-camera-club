@@ -204,3 +204,156 @@
     startX = null;
   });
 })();
+
+/* Camera Corner: topics, search, reading progress and quizzes */
+(function () {
+  var KEY = 'lccLearn';
+  var prog = { read: {}, quiz: {} };
+  try { var v = JSON.parse(localStorage.getItem(KEY) || 'null'); if (v) prog = { read: v.read || {}, quiz: v.quiz || {} }; } catch (e) {}
+  var save = function () { try { localStorage.setItem(KEY, JSON.stringify(prog)); } catch (e) {} };
+  var pad = function (n) { return n < 10 ? '0' + n : '' + n; };
+
+  /* ----- lesson list ----- */
+  var learn = document.querySelector('[data-learn]');
+  if (learn && learn.querySelector('[data-list]')) {
+    var items = Array.prototype.slice.call(learn.querySelectorAll('.lesson'));
+    var tabs = learn.querySelectorAll('.ltopics button');
+    var input = learn.querySelector('[data-search]');
+    var note = learn.querySelector('[data-note]');
+    var list = learn.querySelector('[data-list]');
+    var idx = [];
+    try { idx = JSON.parse(document.getElementById('learn-index').textContent); } catch (e) {}
+    var byUrl = {}; idx.forEach(function (x) { x.t = x.title.toLowerCase(); x.s = (x.summary || '').toLowerCase(); x.b = (x.body || '').toLowerCase(); byUrl[x.url] = x; });
+    var sel = learn.querySelector('.ltopics [aria-selected="true"]');
+    var topic = sel ? sel.getAttribute('data-topic') : 'all';
+    var original = items.slice();
+
+    items.forEach(function (li) {
+      var id = li.getAttribute('data-id');
+      if (prog.read[id]) { li.classList.add('is-read'); li.querySelector('.done').hidden = false; }
+      if (prog.quiz[id]) { var q = li.querySelector('.qdone'); q.textContent = 'Quiz ' + prog.quiz[id]; q.hidden = false; }
+    });
+    var readCount = items.filter(function (li) { return prog.read[li.getAttribute('data-id')]; }).length;
+    var pl = learn.querySelector('[data-progress]');
+    if (readCount) { pl.innerHTML = 'You have read <b>' + readCount + '</b> of ' + items.length + ' lessons'; pl.hidden = false; }
+
+    var esc = function (s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
+    var terms = function (q) { return q.toLowerCase().replace(/[^a-z0-9/.\s-]/g, ' ').split(/\s+/).filter(function (w) { return w.length > 1; }); };
+
+    function render() {
+      var q = input ? input.value.trim() : '';
+      var ws = terms(q);
+      learn.querySelector('.ltopics').classList.toggle('muted', ws.length > 0);
+      var shown;
+      if (ws.length) {
+        shown = original.map(function (li) {
+          var x = byUrl[li.getAttribute('data-id')]; if (!x) return null;
+          var score = 0;
+          for (var k = 0; k < ws.length; k++) {
+            var w = ws[k], t = x.t.indexOf(w) > -1, s = x.s.indexOf(w) > -1, n = x.b.split(w).length - 1;
+            if (!t && !s && !n) return null;
+            score += (t ? 20 : 0) + (s ? 6 : 0) + Math.min(n, 12);
+          }
+          return { li: li, x: x, score: score };
+        }).filter(Boolean).sort(function (a, b) { return b.score - a.score; });
+        note.hidden = false;
+        note.textContent = shown.length ? shown.length + (shown.length === 1 ? ' lesson matches' : ' lessons match') + ' \u201c' + q + '\u201d' : 'No lessons match \u201c' + q + '\u201d. Try another word, such as tripod, sunset or editing.';
+        shown.forEach(function (r) {
+          var sn = r.li.querySelector('.lsnip');
+          var inHead = ws.some(function (w) { return r.x.t.indexOf(w) > -1 || r.x.s.indexOf(w) > -1; });
+          var i = r.x.b.indexOf(ws[0]);
+          if (!inHead && i > -1) {
+            var a = Math.max(0, i - 60), b = Math.min(r.x.body.length, i + 110);
+            var text = (a ? '\u2026' : '') + r.x.body.slice(a, b).trim() + (b < r.x.body.length ? '\u2026' : '');
+            var re = new RegExp('(' + ws.map(function (w) { return w.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&'); }).join('|') + ')', 'gi');
+            sn.innerHTML = esc(text).replace(re, '<mark>$1</mark>'); sn.hidden = false;
+          } else { sn.hidden = true; }
+        });
+        shown = shown.map(function (r) { return r.li; });
+      } else {
+        note.hidden = true;
+        original.forEach(function (li) { li.querySelector('.lsnip').hidden = true; });
+        if (topic === 'start') {
+          shown = original.filter(function (li) { return li.hasAttribute('data-start'); })
+            .sort(function (a, b) { return a.getAttribute('data-start') - b.getAttribute('data-start'); });
+        } else {
+          shown = original.filter(function (li) { return topic === 'all' || li.getAttribute('data-topic') === topic; });
+        }
+      }
+      original.forEach(function (li) { li.hidden = true; });
+      shown.forEach(function (li, i) { li.hidden = false; li.querySelector('.ln').textContent = pad(i + 1); list.appendChild(li); });
+    }
+
+    tabs.forEach(function (b) {
+      b.addEventListener('click', function () {
+        topic = b.getAttribute('data-topic');
+        tabs.forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+        if (input) input.value = '';
+        try { history.replaceState(null, '', '#' + topic); } catch (e) {}
+        render();
+      });
+    });
+    if (input) input.addEventListener('input', render);
+    var h = location.hash.slice(1);
+    if (h) { var t = learn.querySelector('.ltopics [data-topic="' + h + '"]'); if (t) { topic = h; tabs.forEach(function (x) { x.setAttribute('aria-selected', x === t ? 'true' : 'false'); }); } }
+    render();
+  }
+
+  /* ----- lesson page ----- */
+  var art = document.querySelector('[data-lesson]');
+  if (!art) return;
+  var id = art.getAttribute('data-lesson');
+  var bar = document.querySelector('[data-read-progress] span');
+  var end = art.querySelector('[data-read-end]');
+  var onScroll = function () {
+    var r = art.getBoundingClientRect();
+    var total = r.height - window.innerHeight;
+    var p = total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 1;
+    if (bar) bar.style.width = (p * 100) + '%';
+  };
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  if (end && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (en) {
+      if (en[0].isIntersecting) { prog.read[id] = 1; save(); io.disconnect(); }
+    });
+    io.observe(end);
+  }
+
+  /* quiz: "Q: question" then "* right answer" and "- wrong answer" lines */
+  var qd = document.getElementById('quiz-data');
+  var box = art.querySelector('[data-quiz]');
+  if (!qd || !box) return;
+  var raw = ''; try { raw = JSON.parse(qd.textContent) || ''; } catch (e) {}
+  var qs = [];
+  raw.replace(/\r/g, '').split('\n').forEach(function (line) {
+    line = line.trim(); if (!line) return;
+    if (/^Q:\s*/.test(line)) qs.push({ q: line.replace(/^Q:\s*/, ''), opts: [] });
+    else if (/^[*-]\s+/.test(line) && qs.length) qs[qs.length - 1].opts.push({ t: line.replace(/^[*-]\s+/, ''), ok: line.charAt(0) === '*' });
+  });
+  qs = qs.filter(function (q) { return q.opts.length > 1; });
+  if (!qs.length) { box.hidden = true; return; }
+  var body = box.querySelector('.quiz-body'), score = box.querySelector('.quiz-score'), answered = 0, right = 0;
+  qs.forEach(function (q, n) {
+    var wrap = document.createElement('div'); wrap.className = 'quiz-q';
+    var p = document.createElement('p'); p.textContent = (n + 1) + '. ' + q.q; wrap.appendChild(p);
+    var ol = document.createElement('ol');
+    var opts = q.opts.slice().sort(function () { return Math.random() - 0.5; });
+    var btns = [];
+    opts.forEach(function (o) {
+      var li = document.createElement('li'), b = document.createElement('button');
+      b.type = 'button'; b.textContent = o.t; btns.push(b);
+      b.addEventListener('click', function () {
+        btns.forEach(function (x, k) { x.disabled = true; if (opts[k].ok) x.classList.add('right'); });
+        if (!o.ok) b.classList.add('wrong'); else right++;
+        answered++;
+        if (answered === qs.length) {
+          score.textContent = 'You scored ' + right + ' out of ' + qs.length + (right === qs.length ? '. Perfect!' : '.');
+          var prev = prog.quiz[id]; var best = prev ? Math.max(+prev.split('/')[0], right) : right;
+          prog.quiz[id] = best + '/' + qs.length; prog.read[id] = 1; save();
+        }
+      });
+      li.appendChild(b); ol.appendChild(li);
+    });
+    wrap.appendChild(ol); body.appendChild(wrap);
+  });
+})();

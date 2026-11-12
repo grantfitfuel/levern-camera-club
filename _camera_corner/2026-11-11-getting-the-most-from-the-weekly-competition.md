@@ -3,6 +3,7 @@ title: Five tips for the weekly competition
 date: 2026-11-11
 author: Levern Camera Club
 topic: Competitions
+order: 900
 summary: A few simple habits that make a big difference to your weekly entries, whether you use a camera or a phone.
 ---
 Our weekly competition is open to everyone, and a phone is every bit as welcome as a camera. Here are five habits that help any entry stand out.

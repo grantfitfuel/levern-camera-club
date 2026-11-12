@@ -27,8 +27,11 @@ Tip: phone and camera photos are often 5 to 15 MB. Exporting at around
 
 ## Camera Corner
 
-Same steps, under **Camera Corner articles**. Write the article in the editor,
-add a header photo if you like, and save.
+Under **Camera Corner lessons**, add a lesson: title, topic, a short summary and the lesson
+itself. Optional extras: a level, a "Try this" exercise, and a quiz. To put a lesson on the
+**Start here** path, give it a position (1 for the first lesson a newcomer should read).
+Quiz format: start each question with `Q:`, put the right answer on a line starting with `*`
+and wrong answers on lines starting with `-`, with a blank line between questions.
 
 ## Home page banner and "Out and about"
 
