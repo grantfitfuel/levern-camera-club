@@ -18,30 +18,30 @@ body_class: home
   {% endif %}
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="wrap hero-content">
-    <p class="eyebrow reveal">Barrhead · Wednesdays 7.30pm · All welcome</p>
-    <h1 class="hero-title reveal"><span>Levern</span> <em>Camera Club</em></h1>
-    <p class="hero-tag reveal">People <i>✦</i> Places <i>✦</i> Perspectives</p>
+    <h1 class="hero-title reveal"><span>Welcome to our</span> <strong>Camera Club</strong></h1>
+    <p class="hero-rule reveal" aria-hidden="true"></p>
+    <p class="hero-lede reveal">A friendly, welcoming group of photographers who enjoy sharing our knowledge, experiences and passion for photography.</p>
     <div class="hero-actions reveal">
-      <a class="btn" href="{{ '/programme/' | relative_url }}">See what's on</a>
-      <a class="btn btn-ghost" href="{{ '/results/' | relative_url }}">Members' winning photos</a>
+      <a class="btn-outline" href="{{ '/about/' | relative_url }}">Come along on a Wednesday <span aria-hidden="true">›</span></a>
     </div>
   </div>
-  <a class="scroll-cue" href="#intro" aria-label="Scroll down"><span></span></a>
 </section>
 
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-track">
-    {% for i in (1..2) %}
-    <span>Capture</span><i>✦</i><span>Share</span><i>✦</i><span>Learn</span><i>✦</i><span>Explore</span><i>✦</i><span>Landscape</span><i>✦</i><span>Portrait</span><i>✦</i><span>Macro</span><i>✦</i><span>Street</span><i>✦</i><span>Wildlife</span><i>✦</i><span>Still life</span><i>✦</i>
-    {% endfor %}
+<nav class="features" aria-label="What we do">
+  <div class="wrap features-row">
+    <a class="feature" href="{{ '/about/' | relative_url }}"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="6"/><circle cx="32" cy="16" r="6"/><path d="M5 38c1-7 6-11 12-11s11 4 12 11"/><path d="M27 28c1.5-.7 3.2-1 5-1 6 0 11 4 12 11"/></svg><span>Meet &amp; learn</span></a>
+    <a class="feature" href="{{ '/out-and-about/' | relative_url }}"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="13" width="38" height="27" rx="5"/><path d="M16 13l3-5h10l3 5"/><circle cx="24" cy="26" r="7.5"/></svg><span>Share &amp; improve</span></a>
+    <a class="feature" href="{{ '/weekly-competition/' | relative_url }}"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="38" height="32" rx="4"/><circle cx="16" cy="18" r="3.5"/><path d="M5 34l11-10 8 7 6-5 13 10"/></svg><span>Weekly themes</span></a>
+    <a class="feature" href="{{ '/programme/' | relative_url }}"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="31" rx="4"/><path d="M6 19h36M15 6v8M33 6v8"/><path d="M15 27h.01M24 27h.01M33 27h.01M15 34h.01M24 34h.01"/></svg><span>Club nights</span></a>
+    <a class="feature" href="{{ '/results/' | relative_url }}"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h18v10a9 9 0 0 1-18 0z"/><path d="M15 10H8c0 6 3 9 7 9M33 10h7c0 6-3 9-7 9"/><path d="M24 26v7M17 41h14M19 41l1-8h8l1 8"/></svg><span>Competitions</span></a>
   </div>
-</div>
+</nav>
 
 <section id="intro" class="wrap intro">
   <div class="intro-text reveal">
     <p class="eyebrow">Who we are</p>
-    <p class="statement">We are a friendly, welcoming group of photographers who enjoy <em>sharing</em> our knowledge, experiences and passion for photography.</p>
-    <p class="lede">If you have an interest in photography and would like to get involved, come along to Fereneze Golf Club any Wednesday evening at 7.30pm and see if our club is for you. Camera or phone, beginner or seasoned, you'll fit right in.</p>
+    <p class="statement">Camera or phone, beginner or seasoned, <em>you'll fit right in.</em></p>
+    <p class="lede">If you have an interest in photography and would like to get involved, come along to Fereneze Golf Club any Wednesday evening at 7.30pm and see if our club is for you.</p>
     <p><a class="more" href="{{ '/about/' | relative_url }}">About the club and who runs it →</a></p>
   </div>
   <div class="intro-logo reveal">
