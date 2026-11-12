@@ -145,3 +145,4 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
   .topbar-info { display: none; }
   .topbar-inner { justify-content: center; }
 }
+@media (max-width: 700px) { .banner-dots { left: auto; right: 24px; transform: none; bottom: 26px; } .slide-caption { right: 110px; bottom: 20px; } }
