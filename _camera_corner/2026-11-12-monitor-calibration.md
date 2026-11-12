@@ -3,8 +3,8 @@ title: "Monitor calibration"
 date: 2026-11-12
 author: Grant Anthony
 topic: Editing
-order: 4
-start_here: 4
+order: 6
+start_here: 6
 summary: "If your screen is too bright or too blue, every edit corrects a fault that is not in the photograph. Set the screen right before you trust it."
 challenge: "Turn off automatic brightness and any night mode, set your screen to about half brightness and a plain grey desktop background, and leave it for a day. Then open three photographs you edited before the change. Note whether each now looks too dark, too light or right, and compare the histogram for each with what you see. If you have a printer or a lab you use, print one and hold it beside the screen in daylight."
 quiz: |-

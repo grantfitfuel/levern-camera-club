@@ -3,8 +3,8 @@ title: "The rule of thirds"
 date: 2026-11-12
 author: Grant Anthony
 topic: Composition
-order: 3
-start_here: 3
+order: 5
+start_here: 5
 summary: "Split the frame into nine and put what matters where the lines cross. The simplest way to stop every picture looking like a snapshot."
 challenge: "Turn on the grid in your camera or phone and leave it on for a week. Take every photograph with the main subject on one of the four crossing points. For three of those scenes, also take one frame with the subject on the opposite third and one with it centred, then compare all three at home."
 quiz: |-

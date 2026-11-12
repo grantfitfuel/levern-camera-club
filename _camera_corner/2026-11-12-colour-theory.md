@@ -77,4 +77,4 @@ One small patch of strong colour in an otherwise muted scene pulls the eye insta
 3. If something distracts, move, change your angle or zoom in until it is gone
 4. In editing, adjust the colours you want rather than raising saturation across the whole picture
 
-Next, white balance, which decides whether those colours come out the way you saw them.
+Later on the path, the white balance lesson shows how to make sure those colours come out the way you saw them.
