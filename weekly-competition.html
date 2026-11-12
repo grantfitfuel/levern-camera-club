@@ -15,18 +15,7 @@ permalink: /weekly-competition/
   </div>
 </section>
 
-<div class="wrap two-col">
-  <aside class="rules card">
-    <h2>How it works</h2>
-    <ul>
-      {% assign lines = w.rules | split: "
-" %}
-      {% for line in lines %}<li>{{ line }}</li>{% endfor %}
-    </ul>
-    <p><a href="{{ '/results/' | relative_url }}">See past winners →</a></p>
-  </aside>
-
-  <div>
+<div class="wrap themes-wrap">
     <h2 class="sr-only">All themes</h2>
     <table class="themes" data-dated-list>
       <thead><tr><th>Week</th><th>Date</th><th>Theme</th></tr></thead>
@@ -40,7 +29,6 @@ permalink: /weekly-competition/
       {% endfor %}
       </tbody>
     </table>
-  </div>
 </div>
 
 <script type="application/json" id="weekly-data">{{ w.weeks | jsonify }}</script>

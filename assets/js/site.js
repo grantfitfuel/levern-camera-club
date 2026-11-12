@@ -74,7 +74,7 @@
     if (!weekly) return;
     card.querySelector('[data-theme]').textContent = weekly.theme;
     var when = card.querySelector('[data-when]');
-    if (when) when.textContent = 'Week ' + weekly.week + ' · enter by 4pm on the Tuesday, voting closes 4pm ' + niceDate(String(weekly.date).slice(0, 10));
+    if (when) when.textContent = 'Week ' + weekly.week + ' · ' + niceDate(String(weekly.date).slice(0, 10));
     card.hidden = false;
   });
 
