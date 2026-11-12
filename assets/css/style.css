@@ -164,12 +164,12 @@ h1 em, h2 em, .statement em, .footer-name em {
 
 /* Ticker */
 .ticker { overflow: hidden; border-block: 1px solid var(--line); background: var(--bg-2); padding: 18px 0; }
-.ticker-track { display: flex; width: max-content; align-items: center; gap: 28px; animation: ticker 45s linear infinite; }
+.ticker-track { display: flex; width: max-content; align-items: center; gap: 28px; animation: ticker 45s linear infinite; will-change: transform; }
 .ticker span { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(1.3rem, 3vw, 2.1rem); letter-spacing: .02em; color: transparent; -webkit-text-stroke: 1px rgba(244,239,230,.5); white-space: nowrap; }
 .ticker span:nth-of-type(3n+1) { color: var(--ink); -webkit-text-stroke: 0; }
 .ticker i { color: var(--gold); font-style: normal; font-size: 1.1rem; }
-@keyframes ticker { to { transform: translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
+@keyframes ticker { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
+/* The ticker keeps moving even when the phone asks for reduced motion (Grant asked for this). */
 
 /* Intro */
 .intro { display: grid; grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: center; padding-top: 104px; padding-bottom: 72px; }
