@@ -8,9 +8,9 @@
   <meta name="robots" content="noai, noimageai">
   <meta name="tdm-reservation" content="1">
   <meta name="copyright" content="Photographs © their respective photographers">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="{{ '/assets/fonts/inter-latin-wght-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/fraunces-latin-opsz-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
   <script>document.documentElement.classList.add("js")</script>
   <meta name="theme-color" content="{% if site.look == "vellum" %}#ece0c6{% else %}#0c0c0f{% endif %}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
@@ -83,7 +83,7 @@
       </div>
     </div>
     <div class="wrap">
-      <p class="copyright">© {{ site.time | date: "%Y" }} Levern Camera Club. All photographs remain the © of their respective photographers and may not be copied, reused or used to train AI without permission.</p>
+      <p class="copyright">© {{ site.time | date: "%Y" }} Levern Camera Club. All photographs remain the © of their respective photographers and may not be copied, reused or used to train AI without permission. <a href="{{ '/privacy/' | relative_url }}">Privacy</a></p>
     </div>
   </footer>
   <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
