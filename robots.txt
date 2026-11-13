@@ -2,7 +2,7 @@
 layout: null
 permalink: /robots.txt
 ---
-# Photographs on this site are © their photographers and may not be used for AI training.
+# Photographs on this site remain the © of their respective photographers and may not be used for AI training.
 User-agent: GPTBot
 Disallow: /
 User-agent: ChatGPT-User
