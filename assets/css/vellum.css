@@ -130,21 +130,15 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
   .feature + .feature { border-left: 1px solid rgba(246,238,220,.18); }
 }
 
-/* ---------- Top bar with the club's social links ---------- */
-.topbar { background: #2a241c; color: #d9ccb2; font-size: .86rem; }
-.topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; }
-.topbar-info { margin: 0; }
-.topbar-social { display: flex; align-items: center; gap: 8px; }
-.topbar-follow { text-transform: uppercase; letter-spacing: .16em; font-size: .7rem; font-weight: 600; color: #f0c977; margin-right: 4px; }
-.soc { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 10px; border-radius: 999px; background: rgba(246,238,220,.08); border: 1px solid rgba(246,238,220,.2); color: #f6eedc; text-decoration: none; font-weight: 600; transition: background .25s, color .25s, border-color .25s; }
+/* ---------- Club social links in the paper header ---------- */
+.header-inner .brand { margin-right: auto; }
+.header-social { order: 3; display: flex; align-items: center; gap: 8px; }
+.nav-toggle { order: 4; }
+.soc { display: inline-flex; align-items: center; gap: 7px; padding: 6px 14px 6px 10px; border-radius: 999px; background: rgba(255,255,255,.35); border: 1px solid rgba(90,66,28,.22); color: var(--ink); text-decoration: none; font-weight: 600; font-size: .86rem; transition: background .25s, color .25s, border-color .25s; }
 .soc svg { width: 18px; height: 18px; }
-.soc-fb svg { color: #6ea2ff; }
-.soc:hover { background: #f0c977; border-color: #f0c977; color: #1d1810; }
-.soc:hover svg { color: inherit; }
-@media (max-width: 560px) {
-  .topbar-info { display: none; }
-  .topbar-inner { justify-content: center; }
-}
+.soc-fb svg { color: #1877f2; }
+.soc:hover { background: #f0c977; border-color: #d9a94a; color: #1d1810; }
+@media (max-width: 1240px) { .soc { padding: 8px; } .soc span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } }
 @media (max-width: 700px) { .banner-dots { left: auto; right: 24px; transform: none; bottom: 26px; } .slide-caption { right: 110px; bottom: 20px; } }
 /* Arrows sit at the bottom beside the dots so they never cover the welcome text */
 .banner-btn { top: auto; bottom: 12px; transform: none; width: 40px; height: 40px; font-size: 24px; }
@@ -173,3 +167,4 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
 @media (max-width: 760px) {
   .hero-shade { background: linear-gradient(180deg, rgba(10,12,20,0) 30%, rgba(10,12,20,.42) 62%, rgba(10,12,20,.5) 100%); }
 }
+@media (max-width: 480px) { .header-inner { gap: 8px; } .brand { gap: 10px; } .brand-name { white-space: nowrap; font-size: clamp(.95rem, 4.4vw, 1.2rem); } .nav-toggle { padding: 10px 4px 10px 8px; } }
