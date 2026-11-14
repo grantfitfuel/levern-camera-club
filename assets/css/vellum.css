@@ -159,12 +159,8 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
 .slide img { object-position: 50% 0%; transform-origin: 50% 0%; }
 @keyframes kenburns { from { transform: scale(1.08); } to { transform: scale(1); } }
 
-/* ---------- Brighter banner: light shading only behind the text ---------- */
-.hero-shade { background: linear-gradient(90deg, rgba(10,12,20,.5) 0%, rgba(10,12,20,.28) 32%, rgba(10,12,20,0) 58%), linear-gradient(180deg, rgba(10,12,20,0) 80%, rgba(10,12,20,.3) 100%); }
+/* ---------- Banner: no dark shading over the photos (Grant asked 2026-11-14); a soft text shadow keeps the words readable ---------- */
+.hero-shade, .hero-art + .hero-shade { background: none; }
 .hero-card { background: none; padding: 0; box-shadow: none; }
-.hero-title, .hero-lede { text-shadow: 0 1px 2px rgba(0,0,0,.45), 0 2px 18px rgba(0,0,0,.45); }
-.hero-art + .hero-shade { background: linear-gradient(90deg, rgba(10,12,20,.35), rgba(10,12,20,0) 55%); }
-@media (max-width: 760px) {
-  .hero-shade { background: linear-gradient(180deg, rgba(10,12,20,0) 30%, rgba(10,12,20,.42) 62%, rgba(10,12,20,.5) 100%); }
-}
+.hero-title, .hero-lede { text-shadow: 0 1px 2px rgba(0,0,0,.5), 0 2px 18px rgba(0,0,0,.45); }
 @media (max-width: 480px) { .header-inner { gap: 8px; } .brand { gap: 10px; } .brand-name { white-space: nowrap; font-size: clamp(.95rem, 4.4vw, 1.2rem); } .nav-toggle { padding: 10px 4px 10px 8px; } }
