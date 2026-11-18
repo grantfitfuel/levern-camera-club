@@ -1,0 +1,113 @@
+---
+layout: null
+permalink: /tools/resize-8k3p/
+sitemap: false
+---
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noai, noimageai">
+<title>Resize photos · Levern Camera Club</title>
+<link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
+{% if site.data.settings.logo %}<link rel="icon" href="{{ site.data.settings.logo | relative_url }}">{% endif %}
+<style>
+  :root { --paper: #ece0c6; --ink: #2a241c; --muted: #6b5d48; --gold: #c98f2a; --line: rgba(90,66,28,.2); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 "Inter", system-ui, sans-serif; }
+  main { max-width: 560px; margin: 0 auto; padding: 28px 16px 60px; }
+  h1 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 2rem; line-height: 1.15; margin: 0 0 8px; }
+  p { margin: 0 0 14px; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  .pick { display: block; text-align: center; padding: 18px; border-radius: 14px; background: var(--ink); color: #f6eedc; font-weight: 600; font-size: 1.1rem; cursor: pointer; margin: 22px 0; }
+  .pick input { display: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 18px; border-radius: 999px; border: 0; background: var(--gold); color: #1d1810; font: inherit; font-weight: 600; text-decoration: none; cursor: pointer; }
+  .btn.ghost { background: rgba(255,255,255,.5); border: 1px solid var(--line); }
+  #all { width: 100%; margin-bottom: 18px; font-size: 1.05rem; padding: 16px; }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  li { display: grid; grid-template-columns: 72px 1fr; gap: 12px; align-items: center; background: rgba(255,255,255,.45); border: 1px solid var(--line); border-radius: 12px; padding: 10px; }
+  li img { width: 72px; height: 72px; object-fit: cover; border-radius: 8px; }
+  li b { display: block; font-weight: 600; word-break: break-word; }
+  li .acts { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+  li .acts .btn { padding: 7px 14px; font-size: .9rem; }
+  .err { color: #9b2c1c; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Resize photos for the website</h1>
+  <p>Pick one or more photos. Each one is shrunk to 2000 pixels on its longest side, which is the size the website uses, so it uploads to Pages CMS without an error.</p>
+  <p class="muted">Everything happens on your own phone or computer. Your photos are not sent anywhere.</p>
+
+  <label class="pick">Choose photos<input id="files" type="file" accept="image/*" multiple></label>
+
+  <p class="muted">On iPhone, tap <b>Save</b> and then <b>Save Image</b>: the smaller copy goes into your Photos, ready to upload. On a computer it goes to your Downloads folder.</p>
+  <button id="all" class="btn" type="button" hidden>Save all</button>
+  <ul id="out"></ul>
+</main>
+<script>
+(function () {
+  var MAX = 2000, QUALITY = 0.86;
+  var input = document.getElementById('files'), out = document.getElementById('out'), allBtn = document.getElementById('all');
+  var done = [];
+  var canShareFiles = function (files) { try { return !!(navigator.canShare && navigator.canShare({ files: files })); } catch (e) { return false; } };
+
+  function load(file) {
+    if (window.createImageBitmap) {
+      return createImageBitmap(file, { imageOrientation: 'from-image' }).catch(function () { return viaImg(file); });
+    }
+    return viaImg(file);
+  }
+  function viaImg(file) {
+    return new Promise(function (res, rej) {
+      var img = new Image(); img.onload = function () { res(img); }; img.onerror = function () { rej(new Error('Could not read this photo')); };
+      img.src = URL.createObjectURL(file);
+    });
+  }
+  function resize(file) {
+    return load(file).then(function (bmp) {
+      var w = bmp.width || bmp.naturalWidth, h = bmp.height || bmp.naturalHeight;
+      var s = Math.min(1, MAX / Math.max(w, h));
+      var c = document.createElement('canvas'); c.width = Math.round(w * s); c.height = Math.round(h * s);
+      var ctx = c.getContext('2d'); ctx.imageSmoothingQuality = 'high'; ctx.drawImage(bmp, 0, 0, c.width, c.height);
+      return new Promise(function (res) { c.toBlob(function (b) { res({ blob: b, w: c.width, h: c.height }); }, 'image/jpeg', QUALITY); });
+    }).then(function (r) {
+      var name = file.name.replace(/\.[^.]+$/, '') || 'photo';
+      return { file: new File([r.blob], name + '.jpg', { type: 'image/jpeg' }), w: r.w, h: r.h };
+    });
+  }
+  function mb(n) { return (n / 1048576).toFixed(1) + ' MB'; }
+  function save(files) {
+    if (canShareFiles(files)) return navigator.share({ files: files }).catch(function () {});
+    files.forEach(function (f) { var a = document.createElement('a'); a.href = URL.createObjectURL(f); a.download = f.name; document.body.appendChild(a); a.click(); a.remove(); });
+  }
+
+  input.addEventListener('change', function () {
+    var list = Array.prototype.slice.call(input.files || []);
+    out.innerHTML = ''; done = []; allBtn.hidden = true;
+    list.reduce(function (p, file) {
+      var li = document.createElement('li');
+      li.innerHTML = '<span></span><div><b></b><span class="muted">Resizing…</span><div class="acts"></div></div>';
+      li.querySelector('b').textContent = file.name;
+      out.appendChild(li);
+      return p.then(function () { return resize(file); }).then(function (r) {
+        done.push(r.file);
+        var img = document.createElement('img'); img.alt = ''; img.src = URL.createObjectURL(r.file); li.firstChild.replaceWith(img);
+        li.querySelector('b').textContent = r.file.name;
+        li.querySelector('.muted').textContent = r.w + ' × ' + r.h + ' · ' + mb(file.size) + ' → ' + mb(r.file.size);
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'btn ghost'; b.textContent = 'Save';
+        b.addEventListener('click', function () { save([r.file]); });
+        li.querySelector('.acts').appendChild(b);
+        if (done.length > 1) { allBtn.hidden = false; allBtn.textContent = 'Save all ' + done.length; }
+      }).catch(function (e) {
+        var m = li.querySelector('.muted'); m.className = 'err'; m.textContent = 'Sorry, this photo couldn\'t be read. Try exporting it as a JPEG first.';
+      });
+    }, Promise.resolve());
+    input.value = '';
+  });
+  allBtn.addEventListener('click', function () { save(done.slice()); });
+})();
+</script>
+</body>
+</html>
