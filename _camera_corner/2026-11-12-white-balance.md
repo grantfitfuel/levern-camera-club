@@ -95,7 +95,7 @@ Many cameras also have a choice inside Auto: one that keeps some warmth under bu
 ## Which to use when
 
 - **Golden hour and sunsets.** Daylight. Auto often sees the orange as a mistake and cools it, which drains the sunset
-- **Blue hour.** Daylight keeps the blue sky and warm lights. Tungsten deepens the blue and makes the lights more neutral; see Night and blue hour in cities
+- **Blue hour.** Daylight keeps the blue sky and warm lights. Tungsten deepens the blue and makes the lights more neutral
 - **Overcast days.** Cloudy, or Daylight and warm it a few hundred kelvin later
 - **People in shade.** Shade, or skin turns slightly blue and lifeless
 - **Snow.** Snow in shade turns blue. Shade or Cloudy brings it back to white; Daylight keeps a cold mood

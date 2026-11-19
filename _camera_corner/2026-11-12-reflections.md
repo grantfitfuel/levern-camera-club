@@ -84,7 +84,7 @@ The smallest breeze breaks a reflection into ripples. Wind is often lightest aro
 
 Wind comes in gusts, and the water can settle for a few seconds between them. Compose, then wait with your finger on the button. On wet sand, shoot just after a wave draws back.
 
-If the water will not settle, a long exposure of several seconds averages the ripples into a smooth surface, and the reflection returns as a soft glow. See the Long exposure lesson.
+If the water will not settle, a long exposure of several seconds averages the ripples into a smooth surface, and the reflection returns as a soft glow.
 
 ## Polarisers
 
@@ -93,8 +93,6 @@ A polariser removes reflections, so it can ruin a reflection picture.
 - Light reflected off water and glass is partly polarised, so a polariser cuts it. The effect is strongest when you look at the surface at roughly 35 to 40 degrees
 - Rotate the filter while you watch the screen. One position kills the reflection; a quarter turn from it keeps it at full strength. Or take the filter off
 - Reflections in bare metal are barely polarised, so a polariser does little to them
-
-See the Filters lesson for how a polariser works.
 
 ## Focusing on the reflection
 
@@ -121,7 +119,7 @@ If the puddle edge is nearer than that, you will have to choose. A soft puddle e
 
 ## Turn it upside down
 
-A reflection on its own, with ripples breaking straight lines into wobbling shapes, makes a strong abstract. Flip it upside down afterwards (Lightroom's Flip Vertical does it) and it reads the right way up but strangely painted. See the Abstract lesson.
+A reflection on its own, with ripples breaking straight lines into wobbling shapes, makes a strong abstract. Flip it upside down afterwards (Lightroom's Flip Vertical does it) and it reads the right way up but strangely painted.
 
 ## Common mistakes
 

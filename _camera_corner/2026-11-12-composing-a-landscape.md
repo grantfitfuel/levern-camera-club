@@ -96,7 +96,7 @@ A sea horizon near the top or bottom of a wide-angle frame can bow from lens dis
 
 Composition and light work together. Low side light, early and late in the day, picks out the shape of the land and gives texture to rock, grass and sand. Light from high overhead flattens it.
 
-Use the planner to find when the sun will be low, then arrive early enough to settle on a composition before the light arrives. That is when the same view gives a different picture every few minutes, so keep looking rather than taking one frame and leaving.
+Use a sun-position app, such as PhotoPills or The Photographer's Ephemeris, to find when the sun will be low, then arrive early enough to settle on a composition before the light arrives. That is when the same view gives a different picture every few minutes, so keep looking rather than taking one frame and leaving.
 
 ## The method in the field
 

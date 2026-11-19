@@ -30,7 +30,7 @@ quiz: |-
 ---
 Good landscape photographs are mostly about light. The subject matters less than you think: the same view can be flat at noon and extraordinary an hour after sunrise.
 
-The light is also why I go out at all. Watching it build and change is when I lose track of time completely, and for me that is half the point of photography.
+Watching the light build and change is half the point of being out with a camera, and it is easy to lose track of time doing it.
 
 ## Four things to read
 

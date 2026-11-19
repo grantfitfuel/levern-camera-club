@@ -54,7 +54,7 @@ The phi grid places its lines at about 38% and 62% of the frame, instead of the 
 
 ## A worked example
 
-My camera, a Canon EOS R5, makes files 8192 pixels wide and 5464 pixels tall. Here is where the lines fall across the width, measured from the left edge.
+Take a Canon EOS R5, which makes files 8192 pixels wide and 5464 pixels tall. Here is where the lines fall across the width, measured from the left edge.
 
 - **Thirds:** 8192 ÷ 3 = about 2731 pixels, and 8192 × 2 ÷ 3 = about 5461 pixels
 - **Phi grid:** 8192 × 0.382 = about 3129 pixels, and 8192 × 0.618 = about 5063 pixels

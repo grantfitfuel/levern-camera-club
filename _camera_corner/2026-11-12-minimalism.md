@@ -81,7 +81,7 @@ Limit the palette. Two or three tones, or one colour against neutral grey, works
 
 A single strong colour against muted surroundings becomes a subject on its own, even when it is small.
 
-Black and white is another way to reduce a picture to tone. The Black and white lesson covers how to judge it.
+Black and white is another way to reduce a picture to tone.
 
 ## Exposing bright, plain scenes
 

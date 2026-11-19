@@ -122,6 +122,6 @@ The screen on the back is a poor judge of brightness, especially in bright sun o
 - **Trusting the meter on snow and sand.** It turns white to grey. Add exposure
 - **Changing two settings at once while learning.** Change one, see what it does, then balance it
 
-## My one tip
+## One last tip
 
-I shoot in full manual nearly all the time. Don't be afraid of it. Out in the field, there is no better way to learn how the exposure triangle works. Every change you make, you see straight away.
+Don't be afraid of full manual. Out in the field, there is no better way to learn how the exposure triangle works, because every change you make, you see straight away.

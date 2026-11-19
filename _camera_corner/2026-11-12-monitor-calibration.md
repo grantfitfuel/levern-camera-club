@@ -111,7 +111,7 @@ If a photograph looks right in Lightroom and oversaturated somewhere else on the
 
 A print is the most honest test of a calibrated screen. Hold it beside the screen under good, daylight-balanced light. Print viewing standards use about 5000 K. Daylight from a window, out of direct sun, is a fair substitute.
 
-The print will never glow like the screen, because paper reflects light rather than giving it out. But the overall brightness, the depth of the shadows and the colour of the whites should be close. If prints keep coming back darker, lower the screen brightness rather than brightening every photograph. Exporting for screen and print covers soft proofing, which shows the effect of the paper before you print.
+The print will never glow like the screen, because paper reflects light rather than giving it out. But the overall brightness, the depth of the shadows and the colour of the whites should be close. If prints keep coming back darker, lower the screen brightness rather than brightening every photograph. Lightroom's soft proofing (press S in the Develop module) shows the effect of the paper before you print.
 
 ## Worked scenarios
 

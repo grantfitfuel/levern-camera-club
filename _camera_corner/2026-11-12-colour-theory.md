@@ -40,6 +40,8 @@ Picture the colours of a rainbow bent round into a circle: red, orange, yellow, 
 - **Warm colours** run from red through orange to yellow
 - **Cool colours** run from green through blue to violet
 
+This is the traditional artist's wheel. Editing software uses a light-based wheel built on red, green and blue, where the opposites shift a little: red sits opposite cyan, and yellow opposite blue. Orange and blue are close to opposite on both, which is one reason the pairing is so popular.
+
 ## Four harmonies worth knowing
 
 **Complementary.** Two colours directly opposite each other, such as orange and blue, or red and green. They give the strongest contrast and make each other look more intense. A sunset over blue water, or a red door on a green hedge, is complementary.
