@@ -14,7 +14,8 @@ layout: default
   <h1>{{ page.title }}</h1>
   {% if page.summary and page.summary != "" %}<p class="rd-sum">{{ page.summary }}</p>{% endif %}
   <p class="meta">{% if page.author and page.author != "" %}By {{ page.author }} · {% endif %}{% if page.level and page.level != "" %}{{ page.level }} · {% endif %}{{ mins }} min read</p>
-  {% if page.image and page.image != "" %}
+  {% comment %}The club logo is only the default share image for search and social previews, so it is not shown here.{% endcomment %}
+  {% if page.image and page.image != "" and page.image != "/images/site/levern-logo.png" %}
   <figure class="article-image">
     <img src="{{ page.image | relative_url }}" alt="">
   </figure>
