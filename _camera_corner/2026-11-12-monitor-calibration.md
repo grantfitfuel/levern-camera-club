@@ -1,7 +1,6 @@
 ---
 title: "Monitor calibration"
 date: 2026-11-12
-author: Grant Anthony
 topic: Editing
 order: 6
 start_here: 6

@@ -1,7 +1,6 @@
 ---
 title: "Where to put the horizon"
 date: 2026-11-12
-author: Grant Anthony
 topic: Composition
 order: 8
 diagram: horizon

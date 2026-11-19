@@ -1,7 +1,6 @@
 ---
 title: "The golden ratio"
 date: 2026-11-12
-author: Grant Anthony
 topic: Composition
 order: 7
 start_here: 7

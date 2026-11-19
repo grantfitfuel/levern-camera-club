@@ -1,7 +1,6 @@
 ---
 title: "Reflections"
 date: 2026-11-12
-author: Grant Anthony
 topic: Composition
 order: 14
 diagram: reflect

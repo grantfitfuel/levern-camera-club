@@ -1,7 +1,6 @@
 ---
 title: "White balance"
 date: 2026-11-12
-author: Grant Anthony
 topic: Light
 order: 4
 start_here: 4

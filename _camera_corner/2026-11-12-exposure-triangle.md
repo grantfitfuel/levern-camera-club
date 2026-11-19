@@ -1,7 +1,6 @@
 ---
 title: "The exposure triangle"
 date: 2026-11-12
-author: Grant Anthony
 topic: Light
 order: 2
 start_here: 2

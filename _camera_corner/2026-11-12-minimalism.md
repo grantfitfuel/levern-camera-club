@@ -1,7 +1,6 @@
 ---
 title: "Minimalism"
 date: 2026-11-12
-author: Grant Anthony
 topic: Composition
 order: 12
 diagram: space

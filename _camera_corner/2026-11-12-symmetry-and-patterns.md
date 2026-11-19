@@ -1,7 +1,6 @@
 ---
 title: "Symmetry and patterns"
 date: 2026-11-12
-author: Grant Anthony
 topic: Composition
 order: 11
 diagram: symmetry

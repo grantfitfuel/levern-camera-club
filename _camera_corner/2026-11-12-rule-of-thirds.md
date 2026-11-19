@@ -1,7 +1,6 @@
 ---
 title: "The rule of thirds"
 date: 2026-11-12
-author: Grant Anthony
 topic: Composition
 order: 5
 start_here: 5

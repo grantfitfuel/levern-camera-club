@@ -1,7 +1,6 @@
 ---
 title: "Composing a landscape"
 date: 2026-11-12
-author: Grant Anthony
 topic: Composition
 order: 13
 summary: "A wide view rarely works on its own. Give the eye a way in, a place to rest and a reason to stay."

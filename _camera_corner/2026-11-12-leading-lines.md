@@ -1,7 +1,6 @@
 ---
 title: "Leading lines"
 date: 2026-11-12
-author: Grant Anthony
 topic: Composition
 order: 9
 diagram: lines

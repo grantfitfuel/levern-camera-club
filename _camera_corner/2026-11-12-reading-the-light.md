@@ -1,7 +1,6 @@
 ---
 title: "Reading the light"
 date: 2026-11-12
-author: Grant Anthony
 topic: Light
 order: 3
 start_here: 3
