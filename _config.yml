@@ -14,18 +14,21 @@ plugins:
 baseurl: ""
 url: https://leverncameraclub.com
 show_camera_corner: false
+camera_corner_url: /cc-preview-4m8x/
 # look: dark (original) or vellum (light paper)
 look: vellum
 
 collections:
   competitions:
     output: false
-  # Camera Corner is hidden for now (Grant, Nov 2026). To bring it back:
-  # set output: true here, show_camera_corner: true below, and remove
-  # "published: false" from camera-corner.html.
+  # Camera Corner is a hidden preview for now (Grant, Nov 2026): it works at
+  # camera_corner_url below but isn't linked, listed in the sitemap or indexed.
+  # To make it public: show_camera_corner: true, camera_corner_url: /camera-corner/,
+  # permalink below to /camera-corner/:title/, and in camera-corner.html set
+  # permalink: /camera-corner/ and remove the noindex/sitemap lines.
   camera_corner:
-    output: false
-    permalink: /camera-corner/:title/
+    output: true
+    permalink: /cc-preview-4m8x/:title/
 
 defaults:
   - scope:
@@ -33,6 +36,7 @@ defaults:
       type: camera_corner
     values:
       layout: article
+      noindex: true
   - scope:
       path: ""
     values:
