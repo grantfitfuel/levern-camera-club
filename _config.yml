@@ -1,5 +1,14 @@
 title: Levern Camera Club
-description: An open, friendly camera club in Barrhead. We meet at Fereneze Golf Club at 7.30pm on Wednesdays, September to May.
+description: Levern Camera Club is a friendly, non-profit photography club in Barrhead, East Renfrewshire. We meet at Fereneze Golf Club at 7.30pm on Wednesdays, September to May. Beginners welcome.
+locale: en_GB
+logo: /images/site/levern-logo.png
+social:
+  name: Levern Camera Club
+  links:
+    - https://www.facebook.com/LevernCameraClub
+# Search-engine tags (titles, descriptions, share previews) are added to every page automatically.
+plugins:
+  - jekyll-seo-tag
 # The site lives at leverncameraclub.com (CNAME file). Old address grantfitfuel.github.io/levern-camera-club forwards here.
 # To go back to the github.io address: delete CNAME, set baseurl /levern-camera-club and url https://grantfitfuel.github.io.
 baseurl: ""
@@ -28,6 +37,7 @@ defaults:
       path: ""
     values:
       layout: default
+      image: /images/site/levern-logo.png
 
 exclude:
   - README.md

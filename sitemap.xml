@@ -1,0 +1,11 @@
+---
+layout: null
+permalink: /sitemap.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{% comment %}Built automatically on every update: every public page is listed. Pages marked "sitemap: false" are left out, and Out and about only appears once it has photos.{% endcomment %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign pages = site.html_pages | sort: "url" %}{% for p in pages %}{% if p.sitemap == false %}{% continue %}{% endif %}{% if p.url contains "404" %}{% continue %}{% endif %}{% if p.url == "/out-and-about/" %}{% unless site.data.candids.photos.size > 0 %}{% continue %}{% endunless %}{% endif %}  <url><loc>{{ p.url | absolute_url }}</loc>{% if p.url == "/" %}<priority>1.0</priority>{% endif %}</url>
+{% endfor %}{% if site.show_camera_corner %}{% for d in site.camera_corner %}  <url><loc>{{ d.url | absolute_url }}</loc></url>
+{% endfor %}{% endif %}</urlset>
