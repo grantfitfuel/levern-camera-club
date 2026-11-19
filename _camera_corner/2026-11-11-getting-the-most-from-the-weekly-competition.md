@@ -6,7 +6,7 @@ topic: Competitions
 order: 900
 summary: A few simple habits that make a big difference to your weekly entries, whether you use a camera or a phone.
 ---
-Our weekly competition is open to everyone, and a phone is every bit as welcome as a camera. Here are five habits that help any entry stand out.
+Our weekly competition is open to all club members, and a phone is every bit as welcome as a camera. Here are five habits that help any entry stand out.
 
 ## 1. Read the theme twice
 
