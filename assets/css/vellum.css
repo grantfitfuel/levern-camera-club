@@ -164,3 +164,6 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
 .hero-card { background: none; padding: 0; box-shadow: none; }
 .hero-title, .hero-lede { text-shadow: 0 1px 2px rgba(0,0,0,.5), 0 2px 18px rgba(0,0,0,.45); }
 @media (max-width: 480px) { .header-inner { gap: 8px; } .brand { gap: 10px; } .brand-name { white-space: nowrap; font-size: clamp(.95rem, 4.4vw, 1.2rem); } .nav-toggle { padding: 10px 4px 10px 8px; } }
+/* Portrait banner photos: shown whole on a blurred copy of themselves. On wide screens the photo sits to the right so the welcome text has room on the left. */
+.slide.is-tall img { object-position: 50% 50% !important; }
+@media (min-width: 900px) { .slide.is-tall img { object-position: 82% 50% !important; } }
