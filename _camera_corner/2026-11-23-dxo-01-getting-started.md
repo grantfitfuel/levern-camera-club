@@ -9,7 +9,7 @@ level: Beginner
 summary: "DxO PhotoLab is a RAW editor known for its lens corrections and outstanding noise reduction. How it is laid out and how to start."
 challenge: "Point PhotoLab at a folder of RAW files and let it download the optics modules for your lenses. Compare one photograph with and without DxO's default corrections using the before and after button."
 ---
-DxO PhotoLab, from a French company, is bought outright rather than rented, with paid upgrades for new versions; check dxo.com for the current editions and a free trial. Its strengths are automatic lens corrections, made from DxO's own lab tests of each camera and lens, and its **DeepPRIME** noise reduction, which is among the best available. Many photographers use it alongside Lightroom just for those.
+DxO PhotoLab, from a French company, is bought outright rather than rented, with paid upgrades for new versions. Version 10 came out in September 2026. It comes in two editions: **Elite** and a cheaper **Essential**, which leaves out some features including DeepPRIME noise reduction and ClearView. There is a free 30-day trial at dxo.com. Recent versions need an up-to-date computer, so check the system requirements before buying. Its strengths are automatic lens corrections, made from DxO's own lab tests of each camera and lens, and its **DeepPRIME** noise reduction, which is among the best available. Many photographers use it alongside Lightroom just for those.
 
 ## No importing needed
 
@@ -32,7 +32,7 @@ Along the top of the window:
 ## Finding your way in Customize
 
 - **Right: the palettes,** grouped as **Light**, **Color**, **Detail**, **Geometry**, **Local Adjustments** and others. Click a palette's heading to open or close it. The small icons at the top of the panel filter the palettes by group, and there is a search box to find a tool by name
-- **Top toolbar:** **Compare** (before and after; press and hold), zoom, crop, horizon, repair, and **Local Adjustments**
+- **Top toolbar:** **Compare** (before and after; press and hold), zoom, crop, horizon and repair tools
 - **Bottom: the filmstrip.** Click to move between photographs. Stars and picks are set here too
 - Each correction has an **on/off switch** beside its name; click it to compare. A curved arrow resets it
 

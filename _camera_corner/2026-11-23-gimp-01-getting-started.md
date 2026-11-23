@@ -44,7 +44,7 @@ All are in the **Colors** menu:
 
 ### Changing them later (GIMP 3)
 
-In GIMP 3 most of these are applied as **non-destructive filters**. In the Layers panel an **fx** icon appears beside the layer. Click it to see the filters, switch them off with their eye icon, or double-click one to change its settings. If you want the old behaviour, tick **Merge filter** in the filter's window.
+In GIMP 3 most of these are applied as **non-destructive filters**. In the Layers panel an **Fx** icon appears beside the layer. Click it to see the filters, switch them off with their eye icon, or double-click one to change its settings. If you want the old behaviour, tick **Merge Filters** in the filter's window.
 
 ## Saving and exporting
 

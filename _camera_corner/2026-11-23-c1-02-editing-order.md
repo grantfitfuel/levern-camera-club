@@ -7,7 +7,7 @@ course_step: 2
 order: 81
 level: Beginner
 summary: "Work from the foundations up: profile and lens, crop, white balance, exposure, then colour and detail."
-challenge: "Edit one landscape using only the order in this lesson. Then create a variant (F2) and try a different white balance on the copy. Compare them side by side and keep the better one."
+challenge: "Edit one landscape using only the order in this lesson. Then make a new variant (Image menu, New Variant) and try a different white balance on the copy. Compare them side by side and keep the better one."
 ---
 Capture One's tools can be used in any order, but the order below avoids undoing your own work. Hover over any slider and its name appears; double-click a slider to reset it.
 
@@ -15,13 +15,13 @@ Capture One's tools can be used in any order, but the order below avoids undoing
 
 - **Base Characteristics** (in the Color tool tab): **ICC Profile** should be your camera model. **Curve** is Auto or Film Standard. Leave both unless you have a reason
 - **Lens Correction** (Lens tool tab): choose your lens in **Profile** if Capture One has not already. Tick or slide **Chromatic Aberration** and **Light Falloff** as needed
-- **Crop:** press **C**, drag over the photograph, then click the pointer tool to finish. Choose a ratio from the **Crop** tool in the Composition tool tab
-- **Straighten:** press **R** and draw a line along something that should be level
-- **Keystone:** press **K** to correct leaning buildings
+- **Crop:** choose the **crop** cursor tool, drag over the photograph, then click the pointer tool to finish. Choose a ratio from the **Crop** tool in the Composition tool tab
+- **Straighten:** choose the **straighten** (rotate) cursor tool and draw a line along something that should be level
+- **Keystone:** use the **keystone** cursor tool or the Keystone tool to correct leaning buildings
 
 ## 2. White balance
 
-In the **White Balance** tool, click the **picker** (or press **W**) and click on something neutral grey. Or use **Kelvin** and **Tint**. The White balance lesson explains why it matters.
+In the **White Balance** tool, click the **picker** and click on something neutral grey. Or use **Kelvin** and **Tint**. The White balance lesson explains why it matters.
 
 ## 3. Exposure and tone
 
@@ -47,7 +47,7 @@ Watch the **histogram** at the top of the tab. To see clipped areas, turn on the
 
 ## Variants and copying edits
 
-- **F2** makes a **variant**, an extra copy of the edit to try something different without losing the first. Press **F3** to clone the variant with its edits
-- To copy edits to other photographs: click the **up arrow** (copy) in the toolbar on the edited photograph, select the others, and click the **down arrow** (apply). Or use **Ctrl+Shift+C** and **Ctrl+Shift+V** (Cmd on a Mac)
+- A **variant** is an extra version of the photograph, to try something different without losing the first. In the **Image** menu, **New Variant** starts a fresh one and **Clone Variant** copies the current edits
+- To copy edits to other photographs: click the **up arrow** (copy) in the toolbar on the edited photograph, select the others, and click the **down arrow** (apply).
 
 > Fix it, then finish it.

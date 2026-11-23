@@ -1,41 +1,46 @@
 ---
-title: "Luminar Neo: getting started and editing"
+title: "Luminar: getting started and editing"
 date: 2026-11-23
-topic: Luminar Neo
-permalink: /camera-corner/editing-tips/luminar-neo/getting-started/
+topic: Luminar
+permalink: /camera-corner/editing-tips/luminar/getting-started/
 course_step: 1
 order: 90
 level: Beginner
-summary: "Luminar Neo leans on AI to do a lot with a few sliders. How to add photographs, where the tools are, and an editing order that keeps it natural."
+summary: "Luminar (formerly Luminar Neo) leans on AI to do a lot with a few sliders. How to add photographs, where the tools are, and an editing order that keeps it natural."
 challenge: "Edit one photograph twice: once with Enhance AI alone, once with Develop, Structure AI and Color done by hand. Which looks more natural? Use the before and after slider to compare."
 ---
-Luminar Neo, from Skylum, is designed to be quick and approachable. Many of its tools use AI to recognise the sky, faces and buildings, so a single slider can do what would take several masks elsewhere. It is sold as a subscription or a one-off licence; check skylum.com for the current options and a free trial. It runs on Windows and Mac, and as a plug-in for Lightroom and Photoshop.
+Luminar, from Skylum, is designed to be quick and approachable. Until August 2026 it was called **Luminar Neo**; the August update renamed it simply **Luminar** and simplified the screen layout. Many of its tools use AI to recognise the sky, faces and buildings, so a single slider can do what would take several masks elsewhere. Skylum sells it in several ways, including a one-off licence, with paid upgrades for some new features; check skylum.com for the current options and a free trial. It runs on Windows and Mac, and as a plug-in for Lightroom and Photoshop.
+
+These tips follow the 2026 layout. If you have an older Luminar Neo, the tools are the same but they sit in separate **Catalog**, **Presets** and **Edit** tabs along the top.
 
 ## Adding photographs
 
-1. Open Luminar Neo. The **Catalog** shows your photographs
-2. Click **+** (Add Photos) and choose **Add Folder with Photos**. Pick your Photographs folder. Luminar shows them without copying them
-3. Folders appear on the left. Albums (like collections) can be made with the **+** next to Albums
+1. Open Luminar. The **Catalog** opens first and shows your photographs
+2. Use **Add Folder** (in the panel on the left) and pick your Photographs folder. Luminar shows them without copying them
+3. Folders and albums (like collections) appear in the left panel
 
-## The three main tabs
+## Opening a photograph to edit
 
-Along the top:
+Double-click a photograph in the Catalog. The editing panel opens on the right, with buttons for:
 
-- **Catalog:** browse and choose photographs
-- **Presets:** ready-made looks, grouped by subject. Hover over one to preview it
-- **Edit:** the tools
+- **Tools:** the editing tools (shortcut **E**)
+- **Presets:** ready-made looks. Hover over one to preview it
+- **Edits:** the changes you have made to this photograph
+- **Extras:** the generative AI tools, plus HDR merge, focus stacking and panorama stitching
+
+A trail of links at the top takes you back to the Catalog.
 
 ## Finding the tools
 
-In **Edit**, the tools are listed on the right, grouped into sections such as **Essentials**, **Creative**, **Portrait** and **Professional**. Click a tool's name to open its sliders. A tool that has been used shows a dot or a highlight, so you can find it again.
+In **Tools**, the tools are listed on the right, grouped into sections (such as essentials, creative and portrait tools). Click a tool's name to open its sliders. The **Edits** button lists the tools you have used on this photograph, so you can find them again.
 
-- **Hover** over the photograph and use the **before and after** toggle (the eye or split icon at the top) to compare
-- **Ctrl+Z** (Cmd+Z on a Mac) undoes. The **History** button shows every step
+- Use the **before and after** toggle at the top to compare
+- **Ctrl+Z** (Cmd+Z on a Mac) undoes
 - Every tool has a **reset** option in its menu (the three dots)
 
 ## An editing order that works
 
-1. **Crop** (the crop icon at the top, or **C**): choose a ratio, drag the corners, straighten with the **Angle** slider or the auto button. Press **Enter** or **Done**
+1. **Crop** (the crop tool): choose a ratio, drag the corners, straighten with the **Angle** slider or the auto button. Press **Enter** or **Done**
 2. **Develop** (or **Raw Develop** for RAW files): **Exposure**, **Contrast**, **Highlights**, **Shadows**, **Whites**, **Blacks**, and **Temperature** and **Tint** for white balance (or the eyedropper). Also lens corrections under its Lens tab
 3. **Enhance AI:** the **Accent AI** slider adjusts many things at once based on what Luminar sees in the photograph. **Sky Enhancer** deepens just the sky. Start low, around 20 to 30
 4. **Structure AI:** adds detail and depth but avoids faces and smooth skies. Keep it modest
@@ -51,6 +56,6 @@ In **Edit**, the tools are listed on the right, grouped into sections such as **
 
 ## Saving your edits
 
-Luminar saves edits automatically in its catalog; there is no Save button. To make a file to share, see the next tip.
+Luminar saves edits automatically in its catalog as you work; there is no Save button. To make a file to share, see the next tip.
 
 > AI sliders are fast. Your eye still decides when to stop.

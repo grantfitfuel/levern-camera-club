@@ -23,7 +23,7 @@ The Pixel studio is where Affinity works like Photoshop. Everything here is done
 Adjustment layers have a built-in mask.
 
 1. Select the adjustment layer
-2. Choose **Layer, Invert** (Ctrl+I, Cmd+I on a Mac) so the adjustment is hidden everywhere
+2. Choose **Layer, Invert** so the adjustment is hidden everywhere
 3. Press **B** for the **Paint Brush**. In the context toolbar, set a soft brush with **Opacity** around 20%
 4. Paint in **white** to reveal the adjustment where you want it; paint in **black** to hide it again. Press **X** to swap colours
 
@@ -35,7 +35,7 @@ Make a new empty layer first (**Layer, New Pixel Layer**, or the + icon in the L
 
 - **Healing Brush (J):** hold **Alt** (Option on a Mac) and click to choose a clean area, then paint over the problem. It blends texture and colour
 - **Inpainting Brush:** paint over a distraction and Affinity fills it in. Good for wires, people in the distance and litter. It is in the same group as the Healing Brush
-- **Clone Brush (C):** copies exactly. Alt-click (Option-click) to set the source, then paint. Best near straight edges and patterns
+- **Clone Brush (K):** copies exactly. Alt-click (Option-click) to set the source, then paint. Best near straight edges and patterns
 
 Check the rules before entering a retouched photograph in a competition.
 
@@ -53,8 +53,8 @@ The **Filter Brush** in the toolbar paints effects such as clarity or blur onto 
 1. Choose **File, Export**
 2. Choose **JPEG**
 3. Set the size: type the long edge, such as **2000**, into the width or height box (keep the lock on so the other updates)
-4. **Quality:** around 90
-5. Check the colour profile is **sRGB** (in the advanced or more options section)
+4. **Quality:** High or Best
+5. If there is a colour profile setting (often under more or advanced options), choose **sRGB**
 6. Click **Export**, choose a folder and a file name
 
 Keep the .af file as well, so you can change the edit later.

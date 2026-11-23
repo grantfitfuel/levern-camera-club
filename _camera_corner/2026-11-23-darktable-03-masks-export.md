@@ -47,11 +47,11 @@ For larger removals, export a TIFF and use GIMP, Affinity or Photoshop.
 
 In the **lighttable**, find the **export** module on the right:
 
-1. **storage options:** **file on disk**. Set the folder and naming pattern. The default saves into a darktable_exported folder beside the originals
+1. **storage options:** **file on disk**. Set the folder and file name pattern
 2. **format options:** **JPEG**, quality around 90
-3. **global options:** **set size** in pixels. Enter the long edge in both boxes, such as 2000 × 2000, and darktable fits the photograph inside. Set **profile** to **sRGB (web-safe)**
+3. **global options:** set the size **in pixels**. Enter the long edge in both boxes, such as 2000 × 2000, and darktable fits the photograph inside. Set the **profile** to **sRGB**
 4. Select the photographs and click **export**
 
-Save the settings as a preset with the **presets** menu (the hamburger icon) at the module's top right. **Ctrl+E** exports the selected photographs with the current settings.
+Save the settings as a preset with the **presets** menu (the hamburger icon) at the module's top right.
 
 > Free software, professional results.

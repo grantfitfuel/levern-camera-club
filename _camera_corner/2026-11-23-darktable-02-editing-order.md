@@ -14,18 +14,18 @@ darktable applies a sensible starting point to every RAW file: lens and camera c
 ## 1. Framing
 
 - **crop:** drag the edges in the photograph, choose an **aspect** ratio in the module, then click into another module to apply
-- **rotate and perspective:** straighten the horizon (right-click and drag a line along it) and fix leaning buildings
+- **rotate and perspective:** straighten the horizon (right-click and drag a line along something that should be level) and fix leaning buildings
 - **lens correction:** usually already on; check it has found your lens
 
 ## 2. Exposure
 
 In the **exposure** module, drag **exposure** until the mid-tones, especially your subject, look right. Do not worry if the brightest parts look too bright; the tone mapper deals with that.
 
-The **clipping indicator** button below the photograph shows areas that are too bright or too dark.
+Click the **clipping** warning icon to show areas that are too bright or too dark.
 
 ## 3. Tone mapping
 
-darktable uses one of three tone mappers, depending on version and preference: **filmic rgb**, **sigmoid** or **AgX**. Whichever is switched on in your history:
+darktable can use one of three tone mappers: **sigmoid** (the default in recent versions), **filmic rgb** or **AgX**. The default is set in preferences, under processing. Whichever is switched on in your history:
 
 - Raise its **contrast** for more punch, lower it for softer light
 - If highlights look too bright, adjust its **white** (or range) setting so detail returns
@@ -38,7 +38,7 @@ Modern darktable does white balance in **color calibration**. In its **CAT** tab
 
 ## 5. Shadows and highlights
 
-**tone equalizer** brightens or darkens chosen tones without flattening the photograph. Use a preset such as **compress shadows/highlights**, or in the **simple** tab raise the sliders on the left (shadows) and lower those on the right (highlights).
+**tone equalizer** brightens or darkens chosen tones without flattening the photograph. Use one of its presets that compresses shadows and highlights, or in the **simple** tab raise the sliders on the left (shadows) and lower those on the right (highlights).
 
 ## 6. Colour
 
@@ -46,7 +46,7 @@ Modern darktable does white balance in **color calibration**. In its **CAT** tab
 
 - **vibrance** and **saturation** in the master tab
 - Its **4 ways** tab tints shadows, mid-tones and highlights
-- Its presets, such as **basic colorfulness**, are good starting points
+- Its presets are good starting points
 
 ## 7. Detail and noise
 
@@ -56,6 +56,6 @@ Modern darktable does white balance in **color calibration**. In its **CAT** tab
 
 ## Copying the edit
 
-In the lighttable, select the edited photograph and press **Ctrl+C** (copy the history stack), then select the others and press **Ctrl+V** (Cmd on a Mac). **Ctrl+Shift+C** lets you choose which modules to copy.
+In the lighttable, select the edited photograph and click **copy** in the **history stack** module (right side), then select the others and click **paste**. **selective copy…** lets you choose which modules to copy.
 
 > Exposure for the subject, tone mapping for the rest.

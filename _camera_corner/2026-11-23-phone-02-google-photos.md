@@ -17,12 +17,12 @@ Google changes the layout often, so if something is not exactly where described,
 
 1. Open **Google Photos** and tap a photograph
 2. Tap **Edit** (the sliders icon at the bottom)
-3. The tools appear in a row along the bottom, typically: **Suggestions**, **Crop**, **Tools**, **Adjust**, **Filters** and **Markup**. Swipe the row to see them all
+3. You may need to tap **Tools**. The editing sections are **Actions**, **Crop**, **Adjust**, **Filters** and **Markup**. Swipe the row to see them all
 
 ## Using a slider
 
 - Tap a tool, then slide the bar under the photograph
-- **Press and hold** the photograph to compare with the original
+- **Tap and hold** the photograph to compare with the original
 - Tap **Done** for each tool, then **Save** at the end
 
 ## An order that works
@@ -33,40 +33,34 @@ Tap **Crop**. Drag the corners, rotate with the dial, and tap the **ratio** icon
 
 ### 2. Adjust
 
-Work through the sliders roughly in this order:
+Work through the sliders roughly in this order. Names vary a little between phones and versions; swipe along the row to see them all:
 
 - **Brightness**
 - **Contrast**
-- **HDR:** balances bright and dark areas. Keep it low
-- **White point** and **Black point:** set the brightest and darkest tones
-- **Highlights** and **Shadows**
+- **HDR effect:** balances bright and dark areas. Keep it low
+- **Highlights**, **Shadows**, **White point** and **Black point**, where offered
 - **Saturation**
 - **Warmth** and **Tint**
-- **Pop:** adds clarity and a little colour. Modest amounts
-- **Sharpen** and **Denoise**
-- **Vignette:** optional
+- Clarity, sharpening, noise reduction and vignette controls, where offered. Modest amounts
 
-### 3. Suggestions and Filters
+**Portrait light** (on some phones) relights a face.
 
-**Suggestions** offers one-tap fixes such as Enhance or Warm. They are worth a look as a starting point. **Filters** set a mood; adjust their strength by tapping the filter again.
+### 3. Filters
 
-### 4. Tools
+**Filters** set a mood; adjust their strength by tapping the filter again. The **Sky** options, for changing the colour of a sky, are here too.
 
-The **Tools** section holds the clever extras, depending on your phone and subscription:
+### 4. Actions
+
+**Actions** holds the clever extras, depending on your phone and subscription:
 
 - **Magic Eraser:** circle or brush over a distraction and it is removed
-- **Blur** or **Portrait** for background blur
-- **Sky** for sky colour
-- **Magic Editor** (newer phones): moves or changes things with AI
+- Background blur for portraits
+- On some phones, AI tools that move or change things, or let you describe an edit in words (**Ask**)
 
 Most competitions do not allow content added by AI, and some do not allow removal either. Check the rules.
 
 ## Saving
 
-Tap **Save**. Choose **Save as copy** to keep the original untouched. If you saved over the original, open it, tap **Edit**, then **Revert** (or **Undo edits**) to go back.
-
-## Copying an edit
-
-Some versions let you **Copy edits** from the **•••** menu and paste them onto other photographs. If yours does not, Snapseed (also from Google) can save an edit as a Look to reuse.
+Tap **Save**. Choose **Save as copy** to keep the original untouched (note that a saved copy cannot be un-edited later; the original is still there). If you saved over the original, open it, tap **Edit**, then **Revert** to go back.
 
 > Simple tools, used well, beat clever tools used badly.

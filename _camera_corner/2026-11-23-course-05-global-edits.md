@@ -7,7 +7,7 @@ course_step: 5
 order: 64
 level: Beginner
 summary: "Work down the Develop panels in a sensible order: fix the foundations, set the tones, then the colour, and finish with detail."
-challenge: "Edit one photograph using only the order in this lesson, writing down each step as you go. Then press the backslash key to compare before and after. Did any step make it worse? Undo that one."
+challenge: "Edit one photograph using only the order in this lesson, writing down each step as you go. Then press the backslash key to see the before version, and again to return to your edit. Did any step make it worse? Undo that one."
 ---
 Lightroom lets you move any slider in any order, but some steps change what the later ones do. Working in a steady order gives better results and fewer second guesses.
 
@@ -79,8 +79,8 @@ Still in **Basic**, under the tone sliders:
 
 Then the panels below Basic:
 
-- **Tone Curve:** for finer contrast. Click the **Point Curve** button (the second of the small round buttons at the top of the panel), click on the line a quarter of the way up and drag down slightly, then three quarters of the way up and drag up slightly. That gentle S shape adds contrast
-- **Color Mixer:** change one colour at a time. Click **Luminance**, then the small **target icon** at the top left of the panel. Click on a blue sky in the photograph and drag downward to darken just the blues
+- **Tone Curve:** for finer contrast. Switch to the **point curve** (one of the small round buttons at the top of the panel; hover to see their names), click on the line a quarter of the way up and drag down slightly, then three quarters of the way up and drag up slightly. That gentle S shape adds contrast
+- **Color Mixer:** change one colour at a time. Choose the **Luminance** controls (in the HSL view), then click the small **target icon** (the Targeted Adjustment tool). Click on a blue sky in the photograph and drag downward to darken just the blues
 - **Color Grading:** tint the shadows, mid-tones and highlights. Drag the small dot in a colour wheel outward a little. A little goes a long way. The Colour theory lesson helps here
 
 ## 4. Detail and finishing
@@ -100,7 +100,7 @@ In the **Effects** panel, a **Post-Crop Vignetting** Amount of around −10 gent
 
 ## Checking your work
 
-- Press **\\** (backslash) to flick between before and after
+- Press **\\** (backslash) to see the before version; press it again to return to your edit
 - Press **Y** to see them side by side. Press **Y** again to go back
 - Step away for a few minutes, then look again with fresh eyes
 

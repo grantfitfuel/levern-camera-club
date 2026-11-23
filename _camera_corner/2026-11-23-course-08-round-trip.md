@@ -19,7 +19,7 @@ If the Photoshop screen is unfamiliar, the Finding your way around lesson (tip 2
 2. Right-click the photograph (in the grid or filmstrip) and choose **Edit In**, then **Edit in Adobe Photoshop**. The shortcut is **Ctrl+E** (Cmd+E on a Mac)
 3. For a RAW file, Photoshop opens with your Lightroom edits applied. For a JPEG or TIFF, Lightroom asks what to do: choose **Edit a Copy with Lightroom Adjustments** and click **Edit**
 
-The file type it creates is set in Lightroom's Preferences (Settings on newer Macs), on the **External Editing** tab. The defaults (TIFF, ProPhoto RGB, 16 bit) keep the most quality, so leave them unless you have a reason.
+The file type it creates is set in Lightroom's Preferences (Settings on newer Macs), on the **External Editing** tab. **TIFF** (or PSD), **ProPhoto RGB** and **16 bit** keep the most quality; Adobe recommends 16-bit ProPhoto RGB.
 
 ## Layers, in brief
 

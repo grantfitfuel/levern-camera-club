@@ -14,7 +14,7 @@ topics:
   - Affinity
   - Capture One
   - DxO PhotoLab
-  - Luminar Neo
+  - Luminar
   - darktable
   - GIMP
   - Phone photo apps
@@ -31,7 +31,7 @@ software:
     blurb: Google's free phone editor. Quick, capable and no adverts.
   - topic: Affinity
     name: Affinity
-    cost: Free · Windows and Mac
+    cost: Free · Windows, Mac and iPad
     blurb: Now owned by Canva and free. Layers, retouching and RAW development, like Photoshop.
   - topic: Capture One
     name: Capture One
@@ -41,8 +41,8 @@ software:
     name: DxO PhotoLab
     cost: One-off purchase · Windows and Mac
     blurb: Superb lens corrections and noise reduction, with U Point local adjustments.
-  - topic: Luminar Neo
-    name: Luminar Neo
+  - topic: Luminar
+    name: Luminar
     cost: Paid · Windows and Mac
     blurb: AI-led editing that does a lot with a few sliders.
   - topic: darktable

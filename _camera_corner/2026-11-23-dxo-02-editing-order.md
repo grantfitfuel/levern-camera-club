@@ -35,11 +35,11 @@ Open the **Light** palettes:
 - **Color Rendering:** chooses how colours are translated from the camera. The default (your camera body) is fine; film looks are here too
 - **HSL** or **Color Wheel:** change one colour at a time, such as calming a loud green or deepening a blue sky
 - **Vibrancy** and **Saturation:** modest amounts
-- **Style – Toning:** split-tone shadows and highlights
+- **Colour grading:** tint shadows, mid-tones and highlights. In version 10 this is a single colour wheel with dots for each range
 
 ## 4. Detail and noise
 
-- **Denoising:** choose the method. **HQ** is quick. **DeepPRIME** and **DeepPRIME XD** (the latest versions add more variants) are the AI methods: they take longer but give remarkable results on high ISO photographs. On older versions the effect only shows in a small preview window; it is always applied in full to the exported file
+- **Denoising:** choose the method. **HQ** is quick. **DeepPRIME** and **DeepPRIME XD3** (Elite edition) are the AI methods: they take longer but give remarkable results on high ISO photographs. The effect shows only in a small **Correction Preview** window while you edit; it is applied in full when you export
 - **Lens Sharpness:** sharpening matched to your lens. The default is good; raise **Global** slightly if needed
 
 ## Copying corrections

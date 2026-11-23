@@ -35,7 +35,7 @@ Most shoots have a handful of strong photographs and many that are nearly there.
 
 The flag and stars appear under the photograph in the grid, and on the toolbar under the photograph in loupe view. You can click them there too.
 
-Turn on **Caps Lock** and Lightroom moves to the next photograph each time you flag or rate. Culling becomes a rhythm: look, press a key, move on. Turn Caps Lock off when you are done, or it will keep jumping.
+Turn on **Caps Lock** (or tick **Auto Advance** in the **Photo** menu) and Lightroom moves to the next photograph each time you flag or rate. Culling becomes a rhythm: look, press a key, move on. Turn Caps Lock off when you are done, or it will keep jumping.
 
 ## A two-pass cull, step by step
 

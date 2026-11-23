@@ -13,7 +13,7 @@ darktable is free, made by volunteers, and runs on Windows, Mac and Linux. It or
 
 ## Getting it
 
-Download it from **darktable.org** (Install section) for your computer and install it as usual. It is updated a couple of times a year; the tips here follow version 5.
+Download it from **darktable.org** (Install section) for your computer and install it as usual. It is updated a couple of times a year; the tips here follow version 5.6.
 
 ## Views
 
@@ -23,7 +23,7 @@ darktable is split into **views**, chosen at the top right:
 - **darkroom:** edit one photograph. Like Lightroom's Develop
 - Others, such as **map**, **slideshow** and **print**
 
-Double-click a thumbnail in the lighttable to open it in the darkroom. Press **L** to go back to the lighttable and **D** for the darkroom.
+Double-click a thumbnail in the lighttable to open it in the darkroom. Click **lighttable** at the top right to go back. Press **H** in any view to see its keyboard shortcuts.
 
 ## Adding photographs
 

@@ -11,6 +11,8 @@ challenge: "Take a landscape and darken just the sky with the Brush tool's Expos
 ---
 The same order used in Lightroom works in Snapseed: fix the foundations, set the tones, then the colour, then the details.
 
+In Snapseed 4 the tools are sorted into the **Refine**, **Fix** and **Style** groups. If a tool named here is not where you expect, open **All** in the Tools tab.
+
 ## 1. Crop and straighten
 
 - **Crop:** choose a ratio at the bottom (Free, Original, 1:1, 4:3 and so on), then drag the corners
@@ -33,6 +35,8 @@ For a neutral colour cast, the **White Balance** tool has an eyedropper: tap the
 
 **Curves** gives finer control over contrast: drag a point on the line up to brighten or down to darken.
 
+**HSL** (new in version 4) changes one colour at a time, such as calming a loud green or deepening a blue sky. **Dehaze**, also new, cuts haze in distant views.
+
 ## 3. Detail
 
 - **Details:** **Structure** adds texture; **Sharpening** sharpens. Zoom in (pinch) to judge them. Keep both modest
@@ -52,6 +56,6 @@ This is where a phone edit starts to look considered.
 
 ## Using a Look on several photographs
 
-When an edit works, tap **Looks**, then **+** or **Save look** to save your steps as a Look. Open the next photograph and tap the saved Look to apply the same edit.
+When an edit works, you can save your steps as your own Look (from the **Looks** tab, or the edit stack menu, depending on version) and tap it on the next photograph to apply the same edit.
 
 > Edit for the subject, not for the app.

@@ -35,21 +35,21 @@ If Classic is your main library, Lightroom becomes a way to edit and show photog
 
 ### Turning on sync
 
-1. In Lightroom Classic, click the **cloud icon** at the top left, beside your name (or open Preferences, called Settings on newer Macs, and choose the **Lightroom Sync** tab)
-2. Sign in if asked, and click **Start** if sync is paused
+1. In Lightroom Classic, click the **sync icon** (a cloud) at the top right of the window and choose **Start Syncing**
+2. Sign in with your Adobe account if asked. The sync settings are also in Preferences (Settings on newer Macs), on the **Lightroom Sync** tab
 
 ### Choosing what to sync
 
 1. In the **Library** module, find your **Collections** in the left panels
-2. Hover over a collection; a faint **box** appears at its left. Click it so a **two-way arrow** icon shows. That collection is now syncing
+2. Right-click a collection and choose **Sync with Lightroom**, or tick **Sync with Lightroom** when you create a new collection. A sync icon appears beside its name
 3. On your phone it appears as an album with the same name
 
-The cloud receives Smart Previews, small editable copies, not your full files, so syncing from Classic does not use up your cloud storage.
+Classic sends small previews and your edits, not your full original files, so syncing uses far less cloud space than uploading the photographs themselves.
 
 ### What comes back
 
 - Edits made on the phone sync back into the Classic catalog
-- Photographs added on the phone download into Classic automatically, into a collection called **From Lightroom**. To choose which folder they land in, open the **Lightroom Sync** tab in Preferences and set **Location**
+- Photographs added on the phone download into Classic automatically and appear in the **All Synced Photographs** collection. To choose which folder they land in, open the **Lightroom Sync** tab in Preferences and set **Location**
 
 ## Editing on a phone, step by step
 

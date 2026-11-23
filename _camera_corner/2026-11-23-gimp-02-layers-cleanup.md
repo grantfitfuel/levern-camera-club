@@ -25,7 +25,7 @@ Check the rules before entering a retouched photograph in a competition.
 
 1. Right-click the photograph's layer and choose **Duplicate Layer**
 2. Make the change to the copy, for example **Colors, Curves** to brighten
-3. Right-click the copy and choose **Add Layer Mask**. Choose **Black (full transparency)** and click **Add**. The change disappears
+3. Right-click the copy and choose **Add Layer Mask** (also in **Layer, Mask**). Choose **Black (full transparency)** and click **Add**. The change disappears
 4. Choose the **Paintbrush** (**P**), a soft brush, and **Opacity** around 20% in Tool Options
 5. Press **D** for black and white colours and **X** so **white** is in front. Paint where you want the change to show
 6. Painted too much? Press **X** to swap to black and paint it back

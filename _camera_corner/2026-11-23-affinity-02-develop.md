@@ -11,7 +11,7 @@ challenge: "Open a RAW file. Correct the white balance, recover the highlights, 
 ---
 When you open a RAW file, Affinity puts you in the **Develop** studio. Think of it as the darkroom: get the basic picture right here, then move on to layers in the Pixel studio.
 
-The panels on the right are called **Basic**, **Lens** and **Details**, with more such as Tones depending on version. Click a panel's tab or heading to open it. Each adjustment has a tick box beside it; it switches on as soon as you move a slider, and you can untick it to compare.
+The panels on the right include **Basic**, **Lens**, **Details** and **Tones**, with more added in recent updates. Click a panel's tab or heading to open it. Each adjustment has a tick box beside it; it switches on as soon as you move a slider, and you can untick it to compare.
 
 ## 1. Basic
 
@@ -19,10 +19,10 @@ Work down the panel:
 
 - **Exposure:** overall brightness
 - **Blackpoint:** how dark the darkest parts are
-- **Brightness** and **Contrast**
-- **White Balance:** use the **picker** and click on something neutral grey, or drag **Temperature** and **Tint**
+- **White Balance:** use the **picker** and click on something neutral grey, or drag the temperature and tint sliders
 - **Shadows & Highlights:** drag Highlights down to bring back a bright sky, Shadows up to open dark areas. Gently
-- **Clarity**, **Vibrance** and **Saturation:** modest amounts
+
+Brightness, contrast, clarity, vibrance and saturation are nearby, in Basic or the next panel depending on version. Use modest amounts.
 
 Keep an eye on the **Histogram** for clipping: a spike against either edge means lost detail.
 
@@ -30,12 +30,12 @@ Keep an eye on the **Histogram** for clipping: a spike against either edge means
 
 - **Lens correction:** Affinity usually recognises your lens automatically. Check the lens shown is right
 - **Chromatic aberration reduction:** removes coloured fringes on edges
-- **Defringe** and **Vignette** removal as needed
+- Other lens fixes, such as removing a darkened vignette, as needed
 
 ## 3. Details
 
-- **Detail Refinement:** sharpening. Zoom to 100% first (Ctrl+1 or Cmd+1)
-- **Noise Reduction:** raise **Luminance** for high ISO photographs. Do not overdo it or skin and skies turn waxy
+- **Sharpening** (called Detail Refinement in some versions). Zoom to 100% first
+- **Noise Reduction:** raise the luminance slider for high ISO photographs. Do not overdo it or skin and skies turn waxy
 
 ## Local changes in Develop
 
@@ -47,6 +47,6 @@ The **split view** buttons in the context toolbar show the original and your edi
 
 ## Moving to the Pixel studio
 
-Click **Develop** at the top left (in the context toolbar). Affinity applies your settings and opens the photograph as a layer in the Pixel studio. Depending on the options next to the button, the RAW layer can stay **linked** or **embedded**, which lets you go back and change the Develop settings later. If in doubt, choose embedded.
+Click the **Develop** icon in the context toolbar. Affinity applies your settings and moves you into the Pixel studio, with the photograph as a layer.
 
 > Get the light right in Develop. Everything after is easier.

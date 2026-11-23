@@ -22,17 +22,17 @@ Choose **File, New Catalog**, give it a name and a place to live, and click **OK
 
 ## The layout
 
-- **Left: the tool tabs.** A column of small icons, one per group of tools: Library, Capture, Lens, Composition, Exposure, Color, Details, Adjustments, Metadata and Output, depending on version. Hover over each icon to see its name. Each tab holds a stack of **tools**, such as the Exposure tool or the White Balance tool
+- **Left: the tool tabs.** A column of small icons, one per group of tools, such as Library, Capture, Lens, Exposure, Color, Details, Retouch, Metadata and Output; the exact set depends on version and workspace. Hover over each icon to see its name. Each tab holds a stack of **tools**, such as the Exposure tool or the White Balance tool
 - **Middle: the Viewer.** The photograph you are working on
-- **The Browser.** Thumbnails of the current folder or album, usually along the bottom or the right. Press **Ctrl+Shift+B** (Cmd+Shift+B on a Mac) to show or hide it
-- **Top: the toolbar,** with the **cursor tools**: the pointer, pan, crop (**C**), straighten (**R**), keystone (**K**), mask drawing (**B**) and more. Click and hold an icon to see related tools
+- **The Browser.** Thumbnails of the current folder or album, usually along the bottom or the right.. The View menu shows or hides it
+- **Top: the toolbar,** with the **cursor tools**: the pointer, pan, crop, straighten, keystone, mask drawing and more. Hover over each to see its name and shortcut key. Click and hold an icon to see related tools
 
 Many photographers prefer the tools on the right. Choose **Window, Workspace** and try the different layouts until one suits you.
 
 ## Importing
 
 1. Insert your memory card
-2. Choose **File, Import Images** (Ctrl+Shift+I, or Cmd+Shift+I on a Mac)
+2. Choose **File, Import Images**, or click the **Import** button at the top left
 3. **Import From:** your card
 4. **Import To:** choose **Folder**, pick your main Photographs folder, and set a **Sub Folder** naming such as year and date
 5. **Backup To:** optional. Tick it to copy to a second drive at the same time
@@ -47,7 +47,8 @@ Many photographers prefer the tools on the right. Choose **Window, Workspace** a
 
 ## Undo and reset
 
-- **Ctrl+Z** (Cmd+Z) undoes
+- **Ctrl+Z** (Cmd+Z on a Mac) undoes
+- **.** (full stop) zooms to 100%; **,** (comma) fits the photograph to the window
 - Each tool has a small **reset** arrow at its top right. Click it to undo just that tool
 - The **reset** button in the top toolbar resets the whole photograph
 

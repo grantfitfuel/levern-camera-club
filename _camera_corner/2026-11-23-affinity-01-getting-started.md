@@ -6,7 +6,7 @@ permalink: /camera-corner/editing-tips/affinity/getting-started/
 course_step: 1
 order: 75
 level: Beginner
-summary: "Affinity, now owned by Canva, is a free Photoshop alternative for Windows and Mac. What it is, how to get it and how the screen is laid out."
+summary: "Affinity, now owned by Canva, is a free Photoshop alternative for Windows, Mac and iPad. What it is, how to get it and how the screen is laid out."
 challenge: "Install Affinity, open one RAW and one JPEG photograph, and notice how the studio changes between them. Find the Layers panel and the History panel before you start editing."
 ---
 Affinity began as three apps (Affinity Photo, Designer and Publisher). In late 2025 Canva, which owns it, merged them into one app simply called **Affinity**, and made it **free**. You need a free Canva account to sign in. The core editing tools, RAW development, layers and masks are all free; only the **Canva AI** tools (such as Generative Fill and Remove Background) need a paid Canva plan.
@@ -17,12 +17,14 @@ Anyone with the older Affinity Photo 2 can keep using it. The tips here follow t
 
 ## Getting it
 
-1. Go to **affinity.studio** and download the app for Windows or Mac
+1. Go to **affinity.studio** and download the app for Windows or Mac. On an iPad, install **Affinity** from the App Store (the iPad version arrived in November 2026)
 2. Install it and sign in with a Canva account (or create one; it is free)
+
+The tips here describe the Windows and Mac version. The iPad version has the same tools, designed for touch and Apple Pencil.
 
 ## Studios
 
-Affinity groups its tools into **studios**, chosen from a button at the top left of the window (in the context toolbar). For photographs the two that matter are:
+Affinity groups its tools into **studios**, chosen from the studio button in the **context toolbar** along the top of the window. For photographs the two that matter are:
 
 - **Develop:** for RAW files. Opening a RAW file puts you here automatically
 - **Pixel:** for everything else: layers, retouching, adjustments, painting
@@ -45,7 +47,7 @@ Choose **File, Open** (Ctrl+O, or Cmd+O on a Mac), or drag a photograph onto the
 
 ## Moving around and undoing
 
-- **Ctrl+0** (Cmd+0) fits the photograph to the window; **Ctrl++** and **Ctrl+-** zoom in and out
+- Use the **zoom** controls in the View menu or toolbar to fit the photograph to the window or see it at 100%
 - Hold the **Space bar** and drag to move around
 - **Ctrl+Z** (Cmd+Z) undoes. The **History** panel lists every step; drag its slider back to rewind
 
