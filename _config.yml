@@ -14,7 +14,7 @@ plugins:
 baseurl: ""
 url: https://leverncameraclub.com
 show_camera_corner: false
-camera_corner_url: /cc-preview-4m8x/
+camera_corner_url: /camera-corner/
 # look: dark (original) or vellum (light paper)
 look: vellum
 
@@ -23,12 +23,11 @@ collections:
     output: false
   # Camera Corner is a hidden preview for now (Grant, Nov 2026): it works at
   # camera_corner_url below but isn't linked, listed in the sitemap or indexed.
-  # To make it public: show_camera_corner: true, camera_corner_url: /camera-corner/,
-  # permalink below to /camera-corner/:title/, and in camera-corner.html set
-  # permalink: /camera-corner/ and remove the noindex/sitemap lines.
+  # To make it public: show_camera_corner: true, remove noindex: true below, and
+  # remove the noindex/sitemap lines in camera-corner.html and editing-course.html.
   camera_corner:
     output: true
-    permalink: /cc-preview-4m8x/:title/
+    permalink: /camera-corner/:title/
 
 defaults:
   - scope:

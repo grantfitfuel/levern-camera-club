@@ -2,11 +2,12 @@
 title: "Lightroom Classic, Lightroom or Photoshop?"
 date: 2026-11-23
 topic: Editing course
+permalink: /camera-corner/editing-course/choosing-your-tools/
 course_step: 1
 order: 60
 level: Beginner
 summary: "Three Adobe apps that overlap and confuse everyone. What each one is for, and a simple way to use them together."
-challenge: "Write down where your photographs live today: which computer, which drives, which phone. Then decide which app will be your main library, and which you will use only now and then. Keep the note; the next step builds on it."
+challenge: "Write down where your photographs live today: which computer, which drives, which phone. Then decide which app will be your main library, and which you will use only now and then. Keep the note; step 3 builds on it."
 quiz: |-
   Q: Where does Lightroom Classic keep your photographs?
   * In folders on your own computer or drives, with a catalog that records them and your edits
@@ -50,20 +51,21 @@ Pick one app as home for all your photographs, and use the others only when you 
 - **You shoot mostly on a phone, or move between devices:** Lightroom. Everything syncs, and you can edit on the train and finish on the computer
 - **Either way:** Photoshop is the finishing tool for the few pictures that need more than Lightroom can give
 
-You can have both. Lightroom Classic can sync chosen collections to Lightroom, so you can edit them on your phone or tablet too. Step 6 shows how.
+You can have both. Lightroom Classic can sync chosen collections to Lightroom, so you can edit them on your phone or tablet too. Step 7 shows how.
 
 ## The workflow this course follows
 
-1. **Import and organise** in Lightroom Classic
-2. **Pick your best,** quickly, before you edit anything
-3. **Edit the whole picture** in a set order
-4. **Edit parts of it** with masks
-5. **Edit on the move** with Lightroom on a phone or tablet
-6. **Take it into Photoshop** when Lightroom is not enough
-7. **Clean up and dodge and burn** in Photoshop
-8. **Export** for a competition, the web or print
+1. **Find your way around** the apps (step 2)
+2. **Import and organise** in Lightroom Classic (step 3)
+3. **Pick your best,** quickly, before you edit anything (step 4)
+4. **Edit the whole picture** in a set order (step 5)
+5. **Edit parts of it** with masks (step 6)
+6. **Edit on the move** with Lightroom on a phone or tablet (step 7)
+7. **Take it into Photoshop** when Lightroom is not enough (step 8)
+8. **Clean up and dodge and burn** in Photoshop (step 9)
+9. **Export** for a competition, the web or print (step 10)
 
-Most photographs never need steps 6 and 7. A good one often needs only a few minutes in step 3.
+Most photographs never need Photoshop at all. A good one often needs only a few minutes of editing in step 5.
 
 ## RAW or JPEG?
 

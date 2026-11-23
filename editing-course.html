@@ -1,0 +1,37 @@
+---
+title: Editing course
+description: A step-by-step editing course for Lightroom Classic, Lightroom and Photoshop, from importing to exporting.
+permalink: /camera-corner/editing-course/
+noindex: true
+sitemap: false
+---
+{% assign steps = site.camera_corner | where: "topic", "Editing course" | sort: "course_step" %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><a href="{{ site.camera_corner_url | relative_url }}">Camera Corner</a> · Editing course</p>
+    <h1>From card to <em>competition</em></h1>
+    <p class="lede">A step-by-step process for Lightroom Classic, Lightroom on your phone and Photoshop. Work through it in order, or jump to the step you need. Each step ends with something to try and a short quiz.</p>
+  </div>
+</section>
+
+<div class="wrap learn">
+  <ol class="lessons">
+    {% for l in steps %}
+    {% assign words = l.content | strip_html | number_of_words %}
+    {% assign mins = words | divided_by: 200 | plus: 1 %}
+    <li class="lesson">
+      <a href="{{ l.url | relative_url }}">
+        <span class="ln">{% if l.course_step < 10 %}0{% endif %}{{ l.course_step }}</span>
+        <span class="lt">
+          <span class="lt-title">{{ l.title }}</span>
+          <span class="lt-sum">{{ l.summary }}</span>
+        </span>
+        <span class="lm">
+          {% if l.level and l.level != "" %}<span class="lvl lvl-level">{{ l.level }}</span>{% endif %}
+          <span>{{ mins }} min read</span>
+        </span>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

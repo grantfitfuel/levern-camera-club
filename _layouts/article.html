@@ -10,7 +10,7 @@ layout: default
 {% assign mins = words | divided_by: 200 | plus: 1 %}
 <div class="rd-progress" data-read-progress aria-hidden="true"><span></span></div>
 <article class="wrap narrow article" data-lesson="{{ page.url | relative_url }}">
-  <p class="eyebrow"><a href="{{ site.camera_corner_url | relative_url }}">Camera Corner</a>{% if page.topic and page.topic != "" %} · {{ page.topic }}{% endif %}{% if page.course_step %}{% assign course = site.camera_corner | where: "topic", page.topic %} · Step {{ page.course_step }} of {{ course.size }}{% endif %}</p>
+  <p class="eyebrow"><a href="{{ site.camera_corner_url | relative_url }}">Camera Corner</a>{% if page.course_step %} · <a href="{{ '/camera-corner/editing-course/' | relative_url }}">{{ page.topic }}</a>{% elsif page.topic and page.topic != "" %} · {{ page.topic }}{% endif %}{% if page.course_step %}{% assign course = site.camera_corner | where: "topic", page.topic %} · Step {{ page.course_step }} of {{ course.size }}{% endif %}</p>
   <h1>{{ page.title }}</h1>
   {% if page.summary and page.summary != "" %}<p class="rd-sum">{{ page.summary }}</p>{% endif %}
   <p class="meta">{% if page.author and page.author != "" %}By {{ page.author }} · {% endif %}{% if page.level and page.level != "" %}{{ page.level }} · {% endif %}{{ mins }} min read</p>

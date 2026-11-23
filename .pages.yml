@@ -125,7 +125,7 @@ content:
           values: [ Light, Composition, Technique, Editing, Editing course, Genres, Behind the shot, Phone photography, Competitions ]
       - name: course_step
         label: Editing course step (optional)
-        description: Only for lessons in the Editing course. Shows "Step N of 9" on the lesson.
+        description: Only for lessons in the Editing course. Shows "Step N of" the course on the lesson.
         type: number
       - name: level
         label: Level (optional)

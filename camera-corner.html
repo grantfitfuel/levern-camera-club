@@ -1,6 +1,6 @@
 ---
 title: Camera Corner
-permalink: /cc-preview-4m8x/
+permalink: /camera-corner/
 noindex: true
 sitemap: false
 ---
@@ -21,10 +21,10 @@ sitemap: false
   {% else %}
   {% assign course = site.camera_corner | where: "topic", "Editing course" | sort: "course_step" %}
   {% if course.size > 0 %}
-  <a class="course-card" href="{{ course.first.url | relative_url }}">
+  <a class="course-card" href="{{ '/camera-corner/editing-course/' | relative_url }}">
     <span class="cc-k">Editing course · {{ course.size }} steps</span>
     <span class="cc-t">From card to competition: Lightroom &amp; Photoshop</span>
-    <span class="cc-s">A step-by-step process for Lightroom Classic, Lightroom on your phone and Photoshop, from importing to exporting. Start at step 1 →</span>
+    <span class="cc-s">A step-by-step process for Lightroom Classic, Lightroom on your phone and Photoshop, from importing to exporting. See the steps →</span>
   </a>
   {% endif %}
   <div class="learn-tools">
