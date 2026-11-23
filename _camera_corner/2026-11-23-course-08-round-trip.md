@@ -1,37 +1,17 @@
 ---
 title: "Taking a photograph into Photoshop"
 date: 2026-11-23
-topic: Editing course
-permalink: /camera-corner/editing-course/round-trip/
+topic: Editing tips
+permalink: /camera-corner/editing-tips/round-trip/
 course_step: 8
 order: 67
 level: Intermediate
 summary: "Do most of the work in Lightroom. When you need layers, careful retouching or to combine photographs, send it to Photoshop and bring it back."
 challenge: "Send one Lightroom edit to Photoshop. Add a Curves adjustment layer, invert its mask, and paint it in over one area with a soft white brush at low opacity. Save, close, and find the -Edit file next to the original in Lightroom."
-quiz: |-
-  Q: Which shortcut sends a photograph from Lightroom Classic to Photoshop?
-  * Ctrl+E (Cmd+E on a Mac)
-  - Ctrl+J (Cmd+J on a Mac)
-  - Ctrl+Shift+E (Cmd+Shift+E on a Mac)
-
-  Q: On a layer mask, what does painting with black do?
-  * Hides that layer in the area you paint
-  - Darkens the photograph
-  - Deletes the layer
-
-  Q: Why use an adjustment layer instead of adjusting the photograph directly?
-  * It can be changed, masked or removed later without harming the photograph
-  - It makes the file smaller
-  - Photoshop cannot adjust photographs directly
-
-  Q: What happens when you save and close in Photoshop after a round trip?
-  * The edited file appears in Lightroom next to the original
-  - The original RAW file is overwritten
-  - Nothing, you must import it again
 ---
 Lightroom is quick and keeps everything organised. Photoshop does things Lightroom cannot: layers, precise retouching, combining photographs. The usual approach is to edit in Lightroom first, then make a round trip to Photoshop and back.
 
-If the Photoshop screen is unfamiliar, the Finding your way around lesson (step 2) shows where everything is.
+If the Photoshop screen is unfamiliar, the Finding your way around lesson (tip 2) shows where everything is.
 
 ## Sending it across
 

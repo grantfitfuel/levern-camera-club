@@ -1,35 +1,15 @@
 ---
 title: "Finding your way around the apps"
 date: 2026-11-23
-topic: Editing course
-permalink: /camera-corner/editing-course/finding-your-way/
+topic: Editing tips
+permalink: /camera-corner/editing-tips/finding-your-way/
 course_step: 2
 order: 61
 level: Beginner
 summary: "Where everything is in Lightroom Classic, Photoshop and Lightroom on a phone, and how to use a slider, a panel and a tool. Read this first if the screens look baffling."
 challenge: "Open Lightroom Classic and find each of these without looking back at the lesson: the Develop module, the Basic panel, the History panel and the Crop tool. Move the Exposure slider, then double-click the word Exposure to reset it. Then do the same in Lightroom on your phone."
-quiz: |-
-  Q: In Lightroom Classic, where do you switch between Library and Develop?
-  * The module names at the top right of the window
-  - The File menu
-  - The filmstrip at the bottom
-
-  Q: How do you put a Lightroom slider back to its starting point?
-  * Double-click the slider's name
-  - Drag it to the far left
-  - Press Delete
-
-  Q: In Photoshop, how do you reach a tool hidden behind another one in the toolbar?
-  * Click and hold, or right-click, the visible tool
-  - Use the Window menu
-  - Press Tab
-
-  Q: In Photoshop, which keys make the brush smaller and larger?
-  * [ and ]
-  - + and -
-  - B and Shift+B
 ---
-The rest of the course says things like "in the Basic panel" or "use the Spot Healing Brush". This lesson shows where those are and how to use them. Keep it open in another window the first few times.
+The other tips say things like "in the Basic panel" or "use the Spot Healing Brush". This lesson shows where those are and how to use them. Keep it open in another window the first few times.
 
 ## Getting the apps
 

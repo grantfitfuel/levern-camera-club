@@ -122,10 +122,10 @@ content:
         label: Topic
         type: select
         options:
-          values: [ Light, Composition, Technique, Editing, Editing course, Genres, Behind the shot, Phone photography, Competitions ]
+          values: [ Light, Composition, Technique, Editing, Editing tips, Genres, Behind the shot, Phone photography, Competitions ]
       - name: course_step
-        label: Editing course step (optional)
-        description: Only for lessons in the Editing course. Shows "Step N of" the course on the lesson.
+        label: Editing tips number (optional)
+        description: Only for the Editing tips. Sets their order and shows "N of 10" on the lesson.
         type: number
       - name: level
         label: Level (optional)

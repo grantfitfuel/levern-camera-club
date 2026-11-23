@@ -1,33 +1,13 @@
 ---
 title: "The editing order in Lightroom Classic"
 date: 2026-11-23
-topic: Editing course
-permalink: /camera-corner/editing-course/global-edits/
+topic: Editing tips
+permalink: /camera-corner/editing-tips/global-edits/
 course_step: 5
 order: 64
 level: Beginner
 summary: "Work down the Develop panels in a sensible order: fix the foundations, set the tones, then the colour, and finish with detail."
 challenge: "Edit one photograph using only the order in this lesson, writing down each step as you go. Then press the backslash key to compare before and after. Did any step make it worse? Undo that one."
-quiz: |-
-  Q: Why set the profile and lens corrections first?
-  * They change the starting point that every other slider works from
-  - They are the most creative steps
-  - Lightroom will not let you change them later
-
-  Q: Holding Alt (Option on a Mac) while dragging the Whites or Blacks slider shows what?
-  * Which areas are clipping to pure white or pure black
-  - A before and after view
-  - The histogram at full size
-
-  Q: What is the difference between Vibrance and Saturation?
-  * Vibrance boosts muted colours more and protects skin tones; Saturation boosts every colour equally
-  - Vibrance only works on black and white photographs
-  - There is no difference
-
-  Q: Which key toggles the before and after view?
-  * Backslash (\)
-  - Y
-  - J
 ---
 Lightroom lets you move any slider in any order, but some steps change what the later ones do. Working in a steady order gives better results and fewer second guesses.
 

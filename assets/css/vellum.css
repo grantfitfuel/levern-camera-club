@@ -168,7 +168,7 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
 .slide.is-tall img { object-position: 50% 50% !important; }
 @media (min-width: 900px) { .slide.is-tall img { object-position: 82% 50% !important; } }
 
-/* Camera Corner: Editing course feature card */
+/* Camera Corner: Editing tips feature card */
 .course-card { display: block; margin: 0 0 28px; padding: 22px 24px; background: #fffaf0; border: 1px solid rgba(90,66,28,.2); border-left: 4px solid var(--gold); border-radius: 6px; color: var(--ink); text-decoration: none; box-shadow: 0 2px 10px rgba(60,40,10,.06); transition: transform .2s, box-shadow .2s; }
 .course-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(60,40,10,.12); }
 .course-card span { display: block; }

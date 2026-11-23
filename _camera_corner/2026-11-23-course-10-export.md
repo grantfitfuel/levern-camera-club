@@ -1,33 +1,13 @@
 ---
 title: "Exporting for competitions, screens and print"
 date: 2026-11-23
-topic: Editing course
-permalink: /camera-corner/editing-course/export/
+topic: Editing tips
+permalink: /camera-corner/editing-tips/export/
 course_step: 10
 order: 69
 level: Beginner
 summary: "The last step is getting the right file out: the right size, colour space and name for wherever it is going."
 challenge: "Create two export presets in Lightroom Classic: one for club competitions and one for social media. Export the same photograph with each and compare the files' sizes and pixel dimensions."
-quiz: |-
-  Q: Which colour space should you use for photographs shown on screens and projectors?
-  * sRGB
-  - ProPhoto RGB
-  - Adobe RGB
-
-  Q: Which shortcut opens the Export window in Lightroom Classic?
-  * Ctrl+Shift+E (Cmd+Shift+E on a Mac)
-  - Ctrl+E (Cmd+E on a Mac)
-  - Ctrl+J (Cmd+J on a Mac)
-
-  Q: Before exporting for a competition, what should you check?
-  * The competition's size, file type and naming rules
-  - That the photograph is square
-  - That sharpening is turned off
-
-  Q: Why save export presets?
-  * So every export for the same purpose comes out right without re-entering settings
-  - To make exports faster to upload
-  - Because Lightroom forgets your settings otherwise
 ---
 A beautiful edit can still look wrong if it is exported at the wrong size or in the wrong colour space. Exporting creates a new file from your edit; the original and the edit stay untouched in Lightroom.
 
@@ -101,4 +81,4 @@ For printing at home or at a lab, export as TIFF or high quality JPEG at full si
 
 The Exporting for screen and print lesson goes further into sizes and print settings.
 
-> That is the course. Choose, find your way round, import, cull, edit, refine, finish, export. Then go out and shoot some more.
+> That is the whole process. Choose, find your way round, import, cull, edit, refine, finish, export. Then go out and shoot some more.

@@ -1,33 +1,13 @@
 ---
 title: "Local edits with masks"
 date: 2026-11-23
-topic: Editing course
-permalink: /camera-corner/editing-course/masks/
+topic: Editing tips
+permalink: /camera-corner/editing-tips/masks/
 course_step: 6
 order: 65
 level: Intermediate
 summary: "Global edits change the whole photograph. Masks change one part: a sky, a face, a path of light. This is where an edit starts to look considered."
 challenge: "Pick a landscape. Use Select Sky to darken the sky a little, then use a Radial Gradient to lift the exposure gently on your main subject. Turn on the overlay to check each mask, then compare before and after."
-quiz: |-
-  Q: Which shortcut opens the Masking panel in Lightroom Classic?
-  * Shift+W
-  - Shift+M
-  - K
-
-  Q: You have masked the sky but it has spilled onto a mountain. What do you do?
-  * Subtract from the mask with a brush or another selection
-  - Delete the mask and start again
-  - Lower the Exposure slider
-
-  Q: What is dodging and burning?
-  * Lightening and darkening chosen areas to guide the eye
-  - Adding grain and a vignette
-  - Changing the white balance in one area
-
-  Q: Which key shows or hides the mask overlay?
-  * O
-  - J
-  - Y
 ---
 After the global edit, look at the photograph and ask where the eye goes first. If it goes somewhere other than your subject, masks fix that.
 

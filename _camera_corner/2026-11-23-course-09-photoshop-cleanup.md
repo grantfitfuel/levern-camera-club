@@ -1,37 +1,17 @@
 ---
 title: "Clean-up and dodge and burn in Photoshop"
 date: 2026-11-23
-topic: Editing course
-permalink: /camera-corner/editing-course/photoshop-cleanup/
+topic: Editing tips
+permalink: /camera-corner/editing-tips/photoshop-cleanup/
 course_step: 9
 order: 68
 level: Intermediate
 summary: "Remove distractions and shape the light by hand, without ever touching the original pixels."
 challenge: "In Photoshop, remove three small distractions on an empty layer with the Spot Healing Brush. Then add a 50% grey Overlay layer and dodge and burn gently. Hide both layers to compare. Has the photograph improved, or just changed?"
-quiz: |-
-  Q: Why do clean-up on a new empty layer with Sample All Layers ticked?
-  * So the fixes sit separately and can be changed or removed
-  - Because healing tools do not work on the background
-  - To make the file smaller
-
-  Q: On a 50% grey layer in Overlay mode, what does painting with white do?
-  * Lightens that area (dodging)
-  - Darkens that area (burning)
-  - Removes that area
-
-  Q: Before using Generative Fill on a competition entry, what should you check?
-  * The competition's rules on AI-generated content
-  - Whether the photograph is in colour
-  - The file size limit
-
-  Q: What does the stamp visible shortcut (Ctrl+Alt+Shift+E, or Cmd+Option+Shift+E on a Mac) do?
-  * Merges everything visible into a new layer, keeping the layers below
-  - Flattens and saves the file
-  - Exports a JPEG
 ---
 These are the two jobs most photographers use Photoshop for: tidying up distractions and shaping the light. Both are done on separate layers, so nothing is permanent.
 
-Start by sending the photograph from Lightroom to Photoshop, as in step 8.
+Start by sending the photograph from Lightroom to Photoshop, as in tip 8.
 
 ## Clean-up, step by step
 

@@ -1,33 +1,13 @@
 ---
 title: "Importing and organising in Lightroom Classic"
 date: 2026-11-23
-topic: Editing course
-permalink: /camera-corner/editing-course/import-and-organise/
+topic: Editing tips
+permalink: /camera-corner/editing-tips/import-and-organise/
 course_step: 3
 order: 62
 level: Beginner
 summary: "Set up the catalog once, import the same way every time, and you will always find a photograph again."
 challenge: "Create an import preset that copies photographs into a dated folder, adds your copyright and a couple of general keywords. Use it for your next card. Then check that your catalog backs up automatically, and that your photographs themselves are backed up somewhere else."
-quiz: |-
-  Q: What is the Lightroom Classic catalog?
-  * A file that records where your photographs are and everything you have done to them
-  - A folder that holds your photographs
-  - A copy of every photograph at full size
-
-  Q: Your photographs are already in folders on your drive. Which import option leaves them where they are?
-  * Add
-  - Copy
-  - Move
-
-  Q: Does backing up the catalog back up your photographs?
-  * No. The photographs need their own backup
-  - Yes, the catalog contains them
-  - Only the RAW files
-
-  Q: Why build Smart Previews?
-  * So you can edit photographs when the drive holding them is not connected
-  - To make exports sharper
-  - To save space on the memory card
 ---
 Lightroom Classic is only as good as its organisation. Ten minutes of setting up now saves hours of hunting later.
 

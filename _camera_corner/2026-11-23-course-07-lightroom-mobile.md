@@ -1,33 +1,13 @@
 ---
 title: "Lightroom on your phone, tablet and the web"
 date: 2026-11-23
-topic: Editing course
-permalink: /camera-corner/editing-course/lightroom-mobile/
+topic: Editing tips
+permalink: /camera-corner/editing-tips/lightroom-mobile/
 course_step: 7
 order: 66
 level: Beginner
 summary: "Lightroom (the cloud version) works the same way on a phone, a tablet, a computer and in a web browser, and it can sync with Lightroom Classic."
 challenge: "Sync one collection from Lightroom Classic, then edit one of its photographs on your phone. Open Classic again and check the edit has arrived. If you only use your phone, edit a photograph in Lightroom using the panels in the order shown here."
-quiz: |-
-  Q: Where does Lightroom (the cloud version) keep your photographs?
-  * In Adobe's cloud storage, synced to all your devices
-  - Only on your phone
-  - In a Lightroom Classic catalog
-
-  Q: When you sync a collection from Classic, what does the cloud receive?
-  * Smart Previews, small editable copies, not your full files
-  - Your original RAW files
-  - Only the edits, with no photographs
-
-  Q: Do edits made on your phone to a synced photograph come back to Classic?
-  * Yes, they sync back into the catalog
-  - No, they stay on the phone
-  - Only if you export them
-
-  Q: Which Lightroom mobile panel holds Exposure, Contrast, Highlights and Shadows?
-  * Light
-  - Color
-  - Effects
 ---
 Adobe makes two Lightroom apps. Lightroom Classic lives on your computer. **Lightroom** (sometimes called Lightroom CC or Lightroom mobile) keeps your photographs in Adobe's cloud and works on a phone, tablet, computer and at lightroom.adobe.com.
 
