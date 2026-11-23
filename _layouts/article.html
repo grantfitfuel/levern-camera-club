@@ -15,6 +15,11 @@ layout: default
   <h1>{{ page.title }}</h1>
   {% if page.summary and page.summary != "" %}<p class="rd-sum">{{ page.summary }}</p>{% endif %}
   <p class="meta">{% if page.author and page.author != "" %}By {{ page.author }} · {% endif %}{% if page.level and page.level != "" %}{{ page.level }} · {% endif %}{{ mins }} min read</p>
+  {% if page.course_step %}
+  <aside class="sw-caveat" role="note">
+    <p><strong>Software changes often.</strong> These tips were written in {{ page.updated | default: page.date | date: "%B %Y" }}. Apps are updated regularly, so buttons, menus and names may have moved or changed since, and your version may not match these instructions exactly. If something is not where described, look for its name, or check the maker's own help pages.</p>
+  </aside>
+  {% endif %}
   {% comment %}The club logo is only the default share image for search and social previews, so it is not shown here.{% endcomment %}
   {% if page.image and page.image != "" and page.image != "/images/site/levern-logo.png" %}
   <figure class="article-image">

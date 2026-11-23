@@ -183,3 +183,6 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
 .app-head h2 { margin: 0; font-family: var(--display); font-size: 1.7rem; }
 .app-cost { margin: 4px 0 0; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
 .app-blurb { margin: 6px 0 0; color: var(--muted); }
+.sw-caveat { margin: 18px 0 8px; padding: 12px 16px; border: 1px dashed rgba(90,66,28,.35); border-radius: 6px; background: rgba(255,250,240,.6); font-size: .92rem; color: var(--muted); }
+.sw-caveat p { margin: 0; }
+.sw-caveat strong { color: var(--ink); }
