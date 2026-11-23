@@ -19,7 +19,7 @@ sitemap: false
   {% if all.size == 0 %}
     <div class="empty"><p>Lessons will appear here soon.</p></div>
   {% else %}
-  {% assign course = site.camera_corner | where: "topic", "Editing tips" | sort: "course_step" %}
+  {% assign course = site.camera_corner | where: "topic", "Adobe" | sort: "course_step" %}
   {% if course.size > 0 %}
   <a class="course-card" href="{{ '/camera-corner/editing-tips/' | relative_url }}">
     <span class="cc-k">Tips on editing · {{ course.size }} parts</span>

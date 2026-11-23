@@ -1,7 +1,7 @@
 ---
 title: "Taking a photograph into Photoshop"
 date: 2026-11-23
-topic: Editing tips
+topic: Adobe
 permalink: /camera-corner/editing-tips/round-trip/
 course_step: 8
 order: 67

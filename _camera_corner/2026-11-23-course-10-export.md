@@ -1,7 +1,7 @@
 ---
 title: "Exporting for competitions, screens and print"
 date: 2026-11-23
-topic: Editing tips
+topic: Adobe
 permalink: /camera-corner/editing-tips/export/
 course_step: 10
 order: 69

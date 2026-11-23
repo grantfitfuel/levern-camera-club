@@ -1,7 +1,7 @@
 ---
 title: "Finding your way around the apps"
 date: 2026-11-23
-topic: Editing tips
+topic: Adobe
 permalink: /camera-corner/editing-tips/finding-your-way/
 course_step: 2
 order: 61

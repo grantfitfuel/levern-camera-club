@@ -1,7 +1,7 @@
 ---
 title: "Lightroom Classic, Lightroom or Photoshop?"
 date: 2026-11-23
-topic: Editing tips
+topic: Adobe
 permalink: /camera-corner/editing-tips/choosing-your-tools/
 course_step: 1
 order: 60

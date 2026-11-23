@@ -1,7 +1,7 @@
 ---
 title: "The editing order in Lightroom Classic"
 date: 2026-11-23
-topic: Editing tips
+topic: Adobe
 permalink: /camera-corner/editing-tips/global-edits/
 course_step: 5
 order: 64

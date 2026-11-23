@@ -1,7 +1,7 @@
 ---
 title: "Lightroom on your phone, tablet and the web"
 date: 2026-11-23
-topic: Editing tips
+topic: Adobe
 permalink: /camera-corner/editing-tips/lightroom-mobile/
 course_step: 7
 order: 66

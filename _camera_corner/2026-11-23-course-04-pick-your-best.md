@@ -1,7 +1,7 @@
 ---
 title: "Picking your best photographs"
 date: 2026-11-23
-topic: Editing tips
+topic: Adobe
 permalink: /camera-corner/editing-tips/pick-your-best/
 course_step: 4
 order: 63

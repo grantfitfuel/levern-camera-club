@@ -1,7 +1,7 @@
 ---
 title: "Clean-up and dodge and burn in Photoshop"
 date: 2026-11-23
-topic: Editing tips
+topic: Adobe
 permalink: /camera-corner/editing-tips/photoshop-cleanup/
 course_step: 9
 order: 68
