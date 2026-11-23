@@ -2,7 +2,7 @@
 title: "Finding your way around the apps"
 date: 2026-11-23
 topic: Adobe
-permalink: /camera-corner/editing-tips/finding-your-way/
+permalink: /camera-corner/editing-tips/adobe/finding-your-way/
 course_step: 2
 order: 61
 level: Beginner

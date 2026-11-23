@@ -2,7 +2,7 @@
 title: "Importing and organising in Lightroom Classic"
 date: 2026-11-23
 topic: Adobe
-permalink: /camera-corner/editing-tips/import-and-organise/
+permalink: /camera-corner/editing-tips/adobe/import-and-organise/
 course_step: 3
 order: 62
 level: Beginner

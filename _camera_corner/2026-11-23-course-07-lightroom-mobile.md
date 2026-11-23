@@ -2,7 +2,7 @@
 title: "Lightroom on your phone, tablet and the web"
 date: 2026-11-23
 topic: Adobe
-permalink: /camera-corner/editing-tips/lightroom-mobile/
+permalink: /camera-corner/editing-tips/adobe/lightroom-mobile/
 course_step: 7
 order: 66
 level: Beginner

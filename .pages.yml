@@ -122,10 +122,10 @@ content:
         label: Topic
         type: select
         options:
-          values: [ Light, Composition, Technique, Editing, Adobe, Genres, Behind the shot, Phone photography, Competitions ]
+          values: [ Light, Composition, Technique, Editing, Adobe, Snapseed, Affinity, Capture One, DxO PhotoLab, Luminar Neo, darktable, GIMP, Phone photo apps, Genres, Behind the shot, Phone photography, Competitions ]
       - name: course_step
-        label: Adobe tips number (optional)
-        description: Only for the Adobe editing tips. Sets their order and shows "N of 10" on the lesson.
+        label: Editing tips number (optional)
+        description: Only for editing software tips. Sets their order within that software and shows "N of" on the lesson.
         type: number
       - name: level
         label: Level (optional)

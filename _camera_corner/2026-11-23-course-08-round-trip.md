@@ -2,7 +2,7 @@
 title: "Taking a photograph into Photoshop"
 date: 2026-11-23
 topic: Adobe
-permalink: /camera-corner/editing-tips/round-trip/
+permalink: /camera-corner/editing-tips/adobe/round-trip/
 course_step: 8
 order: 67
 level: Intermediate

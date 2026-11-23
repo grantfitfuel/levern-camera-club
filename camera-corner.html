@@ -19,12 +19,12 @@ sitemap: false
   {% if all.size == 0 %}
     <div class="empty"><p>Lessons will appear here soon.</p></div>
   {% else %}
-  {% assign course = site.camera_corner | where: "topic", "Adobe" | sort: "course_step" %}
-  {% if course.size > 0 %}
+  {% assign apps = site.data.camera_corner.software %}
+  {% if apps.size > 0 %}
   <a class="course-card" href="{{ '/camera-corner/editing-tips/' | relative_url }}">
-    <span class="cc-k">Tips on editing · {{ course.size }} parts</span>
-    <span class="cc-t">Tips on editing in Lightroom &amp; Photoshop</span>
-    <span class="cc-s">A step-by-step process for Lightroom Classic, Lightroom on your phone and Photoshop, from importing to exporting. See the steps →</span>
+    <span class="cc-k">Tips on editing · {{ apps.size }} apps</span>
+    <span class="cc-t">Step-by-step tips for the software you use</span>
+    <span class="cc-s">{% for a in apps %}{% if forloop.last %}and {{ a.name }}{% else %}{{ a.name }}, {% endif %}{% endfor %}. Choose yours →</span>
   </a>
   {% endif %}
   <div class="learn-tools">

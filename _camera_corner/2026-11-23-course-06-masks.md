@@ -2,7 +2,7 @@
 title: "Local edits with masks"
 date: 2026-11-23
 topic: Adobe
-permalink: /camera-corner/editing-tips/masks/
+permalink: /camera-corner/editing-tips/adobe/masks/
 course_step: 6
 order: 65
 level: Intermediate

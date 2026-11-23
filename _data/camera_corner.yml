@@ -5,8 +5,55 @@ topics:
   - Composition
   - Technique
   - Editing
-  - Adobe
   - Genres
   - Behind the shot
   - Phone photography
   - Competitions
+  - Adobe
+  - Snapseed
+  - Affinity
+  - Capture One
+  - DxO PhotoLab
+  - Luminar Neo
+  - darktable
+  - GIMP
+  - Phone photo apps
+# Editing software shown on the Tips on editing page, in this order.
+# "topic" must match the Topic chosen on each lesson.
+software:
+  - topic: Adobe
+    name: Adobe Lightroom & Photoshop
+    cost: Subscription
+    blurb: The full process, from importing to exporting, in Lightroom Classic, Lightroom on your phone and Photoshop.
+  - topic: Snapseed
+    name: Snapseed
+    cost: Free · phone and tablet
+    blurb: Google's free phone editor. Quick, capable and no adverts.
+  - topic: Affinity
+    name: Affinity
+    cost: Free · Windows and Mac
+    blurb: Now owned by Canva and free. Layers, retouching and RAW development, like Photoshop.
+  - topic: Capture One
+    name: Capture One
+    cost: Paid · Windows and Mac
+    blurb: A Lightroom alternative loved for its colour and tethered shooting.
+  - topic: DxO PhotoLab
+    name: DxO PhotoLab
+    cost: One-off purchase · Windows and Mac
+    blurb: Superb lens corrections and noise reduction, with U Point local adjustments.
+  - topic: Luminar Neo
+    name: Luminar Neo
+    cost: Paid · Windows and Mac
+    blurb: AI-led editing that does a lot with a few sliders.
+  - topic: darktable
+    name: darktable
+    cost: Free · Windows, Mac and Linux
+    blurb: A free, open source alternative to Lightroom.
+  - topic: GIMP
+    name: GIMP
+    cost: Free · Windows, Mac and Linux
+    blurb: A free, open source alternative to Photoshop.
+  - topic: Phone photo apps
+    name: Apple Photos & Google Photos
+    cost: Free · already on your phone
+    blurb: The editors that came with your phone, used properly.

@@ -1,37 +1,51 @@
 ---
 title: Tips on editing
-description: Step-by-step tips on editing in Lightroom Classic, Lightroom and Photoshop, from importing to exporting.
+description: Step-by-step editing tips for Adobe Lightroom and Photoshop, Snapseed, Affinity, Capture One, DxO PhotoLab, Luminar Neo, darktable, GIMP and the photo apps on your phone.
 permalink: /camera-corner/editing-tips/
 noindex: true
 sitemap: false
 ---
-{% assign steps = site.camera_corner | where: "topic", "Adobe" | sort: "course_step" %}
 <section class="page-head">
   <div class="wrap">
-    <p class="eyebrow"><a href="{{ site.camera_corner_url | relative_url }}">Camera Corner</a> · Adobe</p>
+    <p class="eyebrow"><a href="{{ site.camera_corner_url | relative_url }}">Camera Corner</a> · Editing</p>
     <h1>Tips on <em>editing</em></h1>
-    <p class="lede">A step-by-step process for Lightroom Classic, Lightroom on your phone and Photoshop. Work through it in order, or jump to the step you need. Each one ends with something to try.</p>
+    <p class="lede">Step-by-step tips for the software you use, from where to find each tool to exporting the finished photograph. Choose your app below. The general Editing lessons in Camera Corner apply whichever you use.</p>
+    <nav class="app-jump" aria-label="Software">
+      {% for a in site.data.camera_corner.software %}{% assign n = site.camera_corner | where: "topic", a.topic %}{% if n.size > 0 %}<a href="#{{ a.topic | slugify }}">{{ a.name }}</a>{% endif %}{% endfor %}
+    </nav>
   </div>
 </section>
 
 <div class="wrap learn">
-  <ol class="lessons">
-    {% for l in steps %}
-    {% assign words = l.content | strip_html | number_of_words %}
-    {% assign mins = words | divided_by: 200 | plus: 1 %}
-    <li class="lesson">
-      <a href="{{ l.url | relative_url }}">
-        <span class="ln">{% if l.course_step < 10 %}0{% endif %}{{ l.course_step }}</span>
-        <span class="lt">
-          <span class="lt-title">{{ l.title }}</span>
-          <span class="lt-sum">{{ l.summary }}</span>
-        </span>
-        <span class="lm">
-          {% if l.level and l.level != "" %}<span class="lvl lvl-level">{{ l.level }}</span>{% endif %}
-          <span>{{ mins }} min read</span>
-        </span>
-      </a>
-    </li>
-    {% endfor %}
-  </ol>
+  {% for a in site.data.camera_corner.software %}
+  {% assign steps = site.camera_corner | where: "topic", a.topic | sort: "course_step" %}
+  {% if steps.size > 0 %}
+  <section class="app-tips" id="{{ a.topic | slugify }}">
+    <div class="app-head">
+      <h2>{{ a.name }}</h2>
+      <p class="app-cost">{{ a.cost }}</p>
+      <p class="app-blurb">{{ a.blurb }}</p>
+    </div>
+    <ol class="lessons">
+      {% for l in steps %}
+      {% assign words = l.content | strip_html | number_of_words %}
+      {% assign mins = words | divided_by: 200 | plus: 1 %}
+      <li class="lesson">
+        <a href="{{ l.url | relative_url }}">
+          <span class="ln">{% if l.course_step < 10 %}0{% endif %}{{ l.course_step }}</span>
+          <span class="lt">
+            <span class="lt-title">{{ l.title }}</span>
+            <span class="lt-sum">{{ l.summary }}</span>
+          </span>
+          <span class="lm">
+            {% if l.level and l.level != "" %}<span class="lvl lvl-level">{{ l.level }}</span>{% endif %}
+            <span>{{ mins }} min read</span>
+          </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+  {% endfor %}
 </div>

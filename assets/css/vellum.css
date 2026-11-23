@@ -175,3 +175,11 @@ h1 em, h2 em, .statement em, .footer-name em, .hero-title em { font-weight: 400;
 .course-card .cc-k { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
 .course-card .cc-t { font-family: var(--display); font-size: 1.45rem; font-weight: 600; margin: 6px 0 6px; line-height: 1.2; }
 .course-card .cc-s { color: var(--muted); line-height: 1.5; }
+.app-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.app-jump a { padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(90,66,28,.25); background: rgba(255,255,255,.35); color: var(--ink); text-decoration: none; font-size: .9rem; }
+.app-jump a:hover { background: #fffaf0; }
+.app-tips { margin: 0 0 56px; scroll-margin-top: 100px; }
+.app-head { border-left: 4px solid var(--gold); padding: 2px 0 2px 18px; margin-bottom: 8px; }
+.app-head h2 { margin: 0; font-family: var(--display); font-size: 1.7rem; }
+.app-cost { margin: 4px 0 0; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.app-blurb { margin: 6px 0 0; color: var(--muted); }
