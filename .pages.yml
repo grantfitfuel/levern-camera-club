@@ -18,7 +18,7 @@ content:
     fields:
       - name: title
         label: Competition name
-        description: 'For example "Autumn Competition: Markets" or "Inter-club: Paisley Shield"'
+        description: 'For example "Autumn Competition: Markets" or "Inter-club: (name of the trophy)"'
         type: string
         required: true
       - name: date
